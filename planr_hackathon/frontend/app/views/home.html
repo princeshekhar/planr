@@ -5,7 +5,7 @@
     </div>
     <div class="heading-part arrow"></div>
 </div>
-<div class="row large-padding" data-bind="foreach: myevents">
+<div id="home-myevents" class="row large-padding" data-bind="foreach: myevents">
     <div class="row card">
         <div class="thumb"><img src="img/angelhack.png"/></div>
         <div class="card-content">
@@ -59,3 +59,24 @@
         </div>
     </div>
 </div>
+<nav id="homeSideBar" class="hide">
+    <div class="row">
+        <div class="row list-item active">
+            <div class="thumb"><img src="img/sidebar/event/home.png"/></div>
+            <div class="list-content large-padding-left"><a href="#home">Home</a></div>
+        </div>
+        <div class="row list-item">
+            <div class="thumb"><img src="img/sidebar/event/doc.png"/></div>
+            <div class="list-content large-padding-left"><a href="#createEvent">Create Event</a></div>
+        </div>
+        <div class="row list-item">
+            <div class="thumb"><img src="img/sidebar/event/logout.png"/></div>
+            <div class="list-content large-padding-left"><a href="#logout">Logout</a></div>
+        </div>
+
+        <div class="row list-item">
+            <div class="thumb"><img src="img/sidebar/event/pro.png"/></div>
+            <div class="list-content large-padding-left">Go Pro</div>
+        </div>
+    </div>
+</nav>

@@ -1,3 +1,11 @@
+/*
+ * Titan Frontend Library
+ * ---------------------------
+ * Developed by Shoaib Merchant
+ *
+ * http://www.actonate.com/
+ */
+
 var TitanWebSocket = "http://192.168.43.231:81/PlanrCloudService/signalr";
 var connection = $.hubConnection(TitanWebSocket);
 var TitanHubProxy = connection.createHubProxy('TitanHub');
@@ -43,7 +51,6 @@ TitanHubProxy.on('reloadEvents', function() {
 });
 
 TitanHubProxy.on('reloadEventDetails', function(eventId) {
-
     if(_eventDetailsModel.loaded()==true && _eventDetailsModel.eventId() == eventId)
     {
         titanUI.loadEventDetails(titanLive.connectionId, eventId ,function()

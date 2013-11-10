@@ -2,8 +2,6 @@
  * Titan Frontend Library
  * ---------------------------
  * Developed by Shoaib Merchant
- * Date Started - 1st June, 2013
- * Copyright Actonate
  *
  * http://www.actonate.com/
  */

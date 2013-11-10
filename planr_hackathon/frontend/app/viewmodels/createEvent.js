@@ -15,6 +15,11 @@ define(function() {
     {
         ko.applyBindings(collaboratorsModel, document.getElementById('collab-area'));
 
+        $(".list-item a").unbind('click');
+        $(".list-item a").click(function(e){
+            $('body').css("overflow","auto");
+        });
+
         $("#eventCreateSubmit").click(function(e){
 
 
@@ -66,6 +71,24 @@ define(function() {
 
             });
         });
+
+        $(".menu").unbind('click');
+        $(".menu").click(function(e){
+            if(!$("#homeSideBar").is(".showing"))
+            {
+                $("#homeSideBar").show();
+                $("#homeSideBar").addClass("showing");
+
+                $('body').css("overflow","hidden");
+            }
+            else{
+                $("#homeSideBar").hide();
+                $("#homeSideBar").removeClass("showing");
+                $('body').css("overflow","auto");
+            }
+        });
+
+
 
         $("#addCollaboratorSubmit").click(function(e)
         {

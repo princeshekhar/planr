@@ -11,6 +11,11 @@
 
     function init()
     {
+        $(".list-item a").unbind('click');
+        $(".list-item a").click(function(e){
+            $('body').css("overflow","auto");
+        });
+
         if(_eventDetailsModel.loaded() == false || (_eventDetailsModel.loaded()==true && (_eventDetailsModel.eventId()!=eventId)))
         {
             titanUI.loadEventDetails(titanLive.connectionId, eventId, function()
@@ -42,10 +47,12 @@
                 $("#eventSideBar").addClass("showing");
                 $("#rightBarOnline").hide();
                 $("#rightBarOnline").removeClass("showing");
+                $('body').css("overflow","hidden");
             }
             else{
                 $("#eventSideBar").hide();
                 $("#eventSideBar").removeClass("showing");
+                $('body').css("overflow","auto");
             }
 
         });
@@ -59,10 +66,12 @@
                 $("#rightBarOnline").addClass("showing");
                 $("#eventSideBar").hide();
                 $("#eventSideBar").removeClass("showing");
+                $('body').css("overflow","hidden");
             }
             else{
                 $("#rightBarOnline").hide();
                 $("#rightBarOnline").removeClass("showing");
+                $('body').css("overflow","auto");
             }
 
 

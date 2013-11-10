@@ -12,37 +12,37 @@
     <file path="/main.js" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384028164224" ignored="false" />
     <file path="/rest.js" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384057222219" ignored="false" />
     <file path="/models.js" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384057541414" ignored="false" />
-    <file path="/live.js" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384058914892" ignored="false" />
+    <file path="/live.js" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384064974890" ignored="false" />
     <file path="/login.html" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384018936010" ignored="false" />
     <file path="/error.js" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384001717516" ignored="false" />
-    <file path="/error.html" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384001806314" ignored="false" />
+    <file path="/error.html" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384063488339" ignored="false" />
     <file path="/dashboard.js" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384010139313" ignored="false" />
     <file path="/dashboard.html" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384003336466" ignored="false" />
     <file path="/fblogin.js" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384013792853" ignored="false" />
     <file path="/mainShell.js" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384032641931" ignored="false" />
-    <file path="/home.js" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384055896891" ignored="false" />
-    <file path="/home.html" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384056383627" ignored="false" />
+    <file path="/home.js" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384063913065" ignored="false" />
+    <file path="/home.html" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384063466077" ignored="false" />
     <file path="/mainShell.html" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384044504539" ignored="false" />
-    <file path="/style.css" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384058788130" ignored="false" />
+    <file path="/style.css" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384064229952" ignored="false" />
     <file path="/logout.js" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384017303745" ignored="false" />
     <file path="$PROJECT_DIR$/js/vendor/jquery.js" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384018904763" ignored="false" />
-    <file path="/createEvent.js" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384055949701" ignored="false" />
-    <file path="/createEvent.html" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384055936631" ignored="false" />
+    <file path="/createEvent.js" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384063642773" ignored="false" />
+    <file path="/createEvent.html" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384062424701" ignored="false" />
     <file path="/zepto.js" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384027894839" ignored="false" />
     <file path="/jquery.mmenu.all.css" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384029264481" ignored="false" />
     <file path="/eventDetails.html" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384029878322" ignored="false" />
     <file path="/manageEvent.js" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384051262685" ignored="false" />
-    <file path="/manageEvent.html" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384051656825" ignored="false" />
+    <file path="/manageEvent.html" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384064267053" ignored="false" />
     <file path="/lib.js" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384042759573" ignored="false" />
     <file path="/a.dummy" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384056466667" ignored="false" />
     <file path="/shoaib.css" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384051439554" ignored="false" />
     <file path="/manageVenue.js" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384050924013" ignored="false" />
-    <file path="/manageVenue.html" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384050747822" ignored="false" />
-    <file path="/manageDate.html" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384052352131" ignored="false" />
+    <file path="/manageVenue.html" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384062175058" ignored="false" />
+    <file path="/manageDate.html" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384062140975" ignored="false" />
     <file path="/manageDate.js" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384052868081" ignored="false" />
     <file path="/calendar.html" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384052331836" ignored="false" />
-    <file path="/manageTasks.html" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384058870777" ignored="false" />
-    <file path="/manageTasks.js" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384057397835" ignored="false" />
+    <file path="/manageTasks.html" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384062115043" ignored="false" />
+    <file path="/manageTasks.js" changelist="1d5666a1-aa41-4dd6-acb7-3096de362f45" time="1384060793030" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,75 +103,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="manageTasks.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/manageTasks.html">
+      <file leaf-file-name="home.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="57" selection-start="2041" selection-end="2041" vertical-scroll-proportion="1.3076923">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="503" column="68" selection-start="7257" selection-end="7257" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manageTasks.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/viewmodels/manageTasks.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="130" column="66" selection-start="4850" selection-end="4850" vertical-scroll-proportion="-3.36">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/viewmodels/home.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="35" selection-start="259" selection-end="259" vertical-scroll-proportion="-8.84">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/titan/models.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="222" column="59" selection-start="4961" selection-end="4961" vertical-scroll-proportion="-5.44">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="live.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/titan/live.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="39" selection-start="922" selection-end="922" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rest.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/titan/rest.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="37" selection-start="995" selection-end="995" vertical-scroll-proportion="0.39851025">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="createEvent.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/viewmodels/createEvent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="85" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0">
+            <state line="66" column="16" selection-start="2934" selection-end="3148" vertical-scroll-proportion="-6.730769">
               <folding />
             </state>
           </provider>
@@ -180,16 +115,79 @@
       <file leaf-file-name="createEvent.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/createEvent.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="13" selection-start="614" selection-end="625" vertical-scroll-proportion="-2.0">
+            <state line="48" column="18" selection-start="2612" selection-end="2612" vertical-scroll-proportion="-14.923077">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manageDate.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/viewmodels/manageDate.js">
+      <file leaf-file-name="manageVenue.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/viewmodels/manageVenue.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="50" selection-start="671" selection-end="671" vertical-scroll-proportion="0.0">
+            <state line="55" column="24" selection-start="1638" selection-end="1638" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manageDate.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/manageDate.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="121" column="16" selection-start="5459" selection-end="5459" vertical-scroll-proportion="-10.461538">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manageEvent.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/manageEvent.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="60" selection-start="929" selection-end="929" vertical-scroll-proportion="-3.0784314">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logout.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/viewmodels/logout.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="31" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="live.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/titan/live.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="48" column="15" selection-start="1289" selection-end="1289" vertical-scroll-proportion="0.49486652">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manageVenue.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/manageVenue.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="76" column="44" selection-start="3965" selection-end="3965" vertical-scroll-proportion="-6.5384617">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="695" column="36" selection-start="10161" selection-end="10161" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manageTasks.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/manageTasks.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="83" column="18" selection-start="5131" selection-end="5131" vertical-scroll-proportion="-10.653846">
               <folding />
             </state>
           </provider>
@@ -205,31 +203,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/manageDate.html" />
-        <option value="$PROJECT_DIR$/app/viewmodels/manageEvent.js" />
-        <option value="$PROJECT_DIR$/app/viewmodels/manageVenue.js" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/app/viewmodels/mainShell.js" />
-        <option value="$PROJECT_DIR$/app/viewmodels/manageDate.js" />
+        <option value="$PROJECT_DIR$/app/views/error.html" />
+        <option value="$PROJECT_DIR$/app/viewmodels/login.js" />
+        <option value="$PROJECT_DIR$/app/views/home.html" />
         <option value="$PROJECT_DIR$/app/views/createEvent.html" />
         <option value="$PROJECT_DIR$/app/viewmodels/createEvent.js" />
         <option value="$PROJECT_DIR$/app/viewmodels/home.js" />
-        <option value="$PROJECT_DIR$/app/views/home.html" />
-        <option value="$PROJECT_DIR$/app/titan/rest.js" />
+        <option value="$PROJECT_DIR$/app/viewmodels/manageDate.js" />
+        <option value="$PROJECT_DIR$/app/viewmodels/manageEvent.js" />
         <option value="$PROJECT_DIR$/app/viewmodels/manageTasks.js" />
-        <option value="$PROJECT_DIR$/app/titan/models.js" />
-        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/app/viewmodels/manageVenue.js" />
+        <option value="$PROJECT_DIR$/app/views/manageDate.html" />
         <option value="$PROJECT_DIR$/app/views/manageTasks.html" />
+        <option value="$PROJECT_DIR$/app/views/manageVenue.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/app/views/manageEvent.html" />
         <option value="$PROJECT_DIR$/app/titan/live.js" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="683" />
+    <option name="width" value="683" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -452,7 +449,7 @@
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="683" y="0" width="683" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -460,7 +457,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24944155" sideWeight="0.6712329" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52018636" sideWeight="0.6712329" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -537,117 +534,115 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/viewmodels/mainShell.js">
+    <entry file="file://$PROJECT_DIR$/app/viewmodels/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="61" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasks.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="215" column="24" selection-start="9994" selection-end="9994" vertical-scroll-proportion="-6.8846154">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/viewmodels/manageVenue.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="39" selection-start="1727" selection-end="1727" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/viewmodels/manageEvent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="16" selection-start="564" selection-end="626" vertical-scroll-proportion="-11.56">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="67" selection-start="400" selection-end="400" vertical-scroll-proportion="-5.8846154">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/viewmodels/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="35" selection-start="259" selection-end="259" vertical-scroll-proportion="-8.84">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/viewmodels/manageDate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="50" selection-start="671" selection-end="671" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/createEvent.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="614" selection-end="625" vertical-scroll-proportion="-2.0">
+        <state line="36" column="24" selection-start="1226" selection-end="1226" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/viewmodels/createEvent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="85" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0">
+        <state line="20" column="11" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/viewmodels/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="11" selection-start="1104" selection-end="1104" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/viewmodels/manageDate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="46" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/viewmodels/manageEvent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="8" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/viewmodels/manageTasks.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="66" selection-start="4850" selection-end="4850" vertical-scroll-proportion="-3.36">
+        <state line="106" column="8" selection-start="3934" selection-end="3934" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://G:/tasks.html">
+    <entry file="file://$PROJECT_DIR$/app/viewmodels/manageVenue.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="273" column="8" selection-start="12528" selection-end="12910" vertical-scroll-proportion="0.5120482">
+        <state line="55" column="24" selection-start="1638" selection-end="1638" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
+    <entry file="file://$PROJECT_DIR$/app/views/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="503" column="68" selection-start="7257" selection-end="7257" vertical-scroll-proportion="0.0">
+        <state line="66" column="16" selection-start="2934" selection-end="3148" vertical-scroll-proportion="-6.730769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/createEvent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="18" selection-start="2612" selection-end="2612" vertical-scroll-proportion="-14.923077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/manageDate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="121" column="16" selection-start="5459" selection-end="5459" vertical-scroll-proportion="-10.461538">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/manageTasks.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="57" selection-start="2041" selection-end="2041" vertical-scroll-proportion="1.3076923">
+        <state line="83" column="18" selection-start="5131" selection-end="5131" vertical-scroll-proportion="-10.653846">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/titan/models.js">
+    <entry file="file://$PROJECT_DIR$/app/views/manageVenue.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="222" column="59" selection-start="4961" selection-end="4961" vertical-scroll-proportion="-5.44">
+        <state line="76" column="44" selection-start="3965" selection-end="3965" vertical-scroll-proportion="-6.5384617">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="695" column="36" selection-start="10161" selection-end="10161" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/manageEvent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="60" selection-start="929" selection-end="929" vertical-scroll-proportion="-3.0784314">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/viewmodels/logout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="31" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/titan/live.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="39" selection-start="922" selection-end="922" vertical-scroll-proportion="0.0">
+        <state line="48" column="15" selection-start="1289" selection-end="1289" vertical-scroll-proportion="0.49486652">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/titan/rest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="37" selection-start="995" selection-end="995" vertical-scroll-proportion="0.39851025">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

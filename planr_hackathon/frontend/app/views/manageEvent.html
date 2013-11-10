@@ -12,21 +12,11 @@
     </div>
     <div class="row section huge-padding medium-padding-top">
         <div class="section-header large-padding-bot">Recent Activity</div>
-        <div class="activity">
-            <div class="band blue"></div>
-            <div class="side-text">Aravind added a collaborator. <span class="time">20min ago.</span></div>
-        </div>
-        <div class="activity">
-            <div class="band orange"></div>
-            <div class="side-text">Vasu suggested a venue. <span class="time">20min ago.</span></div>
-        </div>
-        <div class="activity">
-            <div class="band blue"></div>
-            <div class="side-text">Aravind added a collaborator. <span class="time">20min ago.</span></div>
-        </div>
-        <div class="activity">
-            <div class="band orange"></div>
-            <div class="side-text">Vasu suggested a venue. <span class="time">20min ago.</span></div>
+        <div class="activity-list" data-bind="foreach: notifications">
+            <div class="activity">
+                <div class="band blue"></div>
+                <div class="side-text"><span class="" data-bind="text: text">No previous activity.</span><span class="time"></span></div>
+            </div>
         </div>
     </div>
     <div id="collab-area" class="row huge-padding medium-padding-top">
@@ -67,15 +57,15 @@
             </div>
             <div class="row list-item">
                 <div class="thumb"><img src="img/sidebar/event/loc.png"/></div>
-                <div class="list-content large-padding-left"><a data-bind='attr: { href: "#manageVenue/"+eventId()}'>Decide Venue</a></div>
+                <div class="list-content large-padding-left"><a data-bind='attr: { href: "#manageVenue/"+eventId()}'>Venue</a></div>
             </div>
             <div class="row list-item">
                 <div class="thumb"><img src="img/sidebar/event/cal.png"/></div>
-                <div class="list-content large-padding-left"><a data-bind='attr: { href: "#manageDate/"+eventId()}'>Decide Date & Time</a></div>
+                <div class="list-content large-padding-left"><a data-bind='attr: { href: "#manageDate/"+eventId()}'>Date & Time</a></div>
             </div>
             <div class="row list-item">
                 <div class="thumb"><img src="img/sidebar/event/pie.png"/></div>
-                <div class="list-content large-padding-left"><a data-bind='attr: { href: "#manageTasks/"+eventId()}'>Decide Tasks</a></div>
+                <div class="list-content large-padding-left"><a data-bind='attr: { href: "#manageTasks/"+eventId()}'>Manage Tasks</a></div>
             </div>
             <div class="row list-item">
                 <div class="thumb"><img src="img/sidebar/event/prize.png"/></div>
@@ -90,8 +80,8 @@
                 <div class="list-content large-padding-left"><a data-bind='attr: { href: "#liveStream/"+eventId()}'>Live Stream!</a></div>
             </div>
             <div class="row list-item">
-                <div class="thumb"><img src="img/sidebar/event/pro.png"/></div>
-                <div class="list-content large-padding-left"><a href="#">Go Pro</a></div>
+                <div class="thumb"><img src="img/sidebar/event/home.png"/></div>
+                <div class="list-content large-padding-left"><a href="#home">Home</a></div>
             </div>
         </div>
     </nav>

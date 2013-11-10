@@ -35,10 +35,10 @@ define(['plugins/router', 'durandal/app'], function (router, app) {
 
                    titanUI.loadEvents(titanLive.connectionId, function()
                    {
-
+                       router.navigate('home');
                    });
 
-                   router.navigate('home');
+
                }
            });
         });
