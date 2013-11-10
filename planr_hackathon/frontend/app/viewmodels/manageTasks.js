@@ -139,8 +139,6 @@
 
             taskObj.deadline = $("#taskDeadline .form-month").val() + "-" + $("#taskDeadline .form-day").val() + "-" + $("#taskDeadline .form-year").val();
 
-            alert(JSON.stringify(taskObj));
-
             titan.createTask(taskObj, function(data){
 
                 if(data.code == 0)

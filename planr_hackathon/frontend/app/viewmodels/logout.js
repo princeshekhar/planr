@@ -14,7 +14,9 @@ define(['plugins/router', 'durandal/app'], function (router, app) {
       titan.name = "";
       titan.email = "";
 
-      router.navigate('fblogin');
+      window.location.reload();
+
+      //router.navigate('fblogin');
     };
 
 

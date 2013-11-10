@@ -1,11 +1,3 @@
-/*
- * Titan Frontend Library
- * ---------------------------
- * Developed by Shoaib Merchant
- *
- * http://www.actonate.com/
- */
-
 var LoginRequest = function()
 {
     this.connectionId = "";

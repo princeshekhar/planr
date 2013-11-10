@@ -1,10 +1,16 @@
 /*
- * Titan Frontend Library
+ * Titan REST Library
  * ---------------------------
  * Developed by Shoaib Merchant
+ * Date Started - 1st June, 2013
+ * Copyright Actonate
  *
  * http://www.actonate.com/
  */
+
+//var TitanService = "http://localhost:1371/api/";
+//var TitanService = "http://brewberryscloud.azurewebsites.net/api/";
+// var TitanService = "http://localhost:1371/api/";
 var TitanService = "http://192.168.43.231:81/PlanrCloudService/api/";
 
 function Titan() {
