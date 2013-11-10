@@ -1,5 +1,4 @@
-﻿
-define(function() {
+﻿define(['plugins/router', 'durandal/app'], function (router, app) {
     var createEvent = function () {
         //this.displayName = 'Welcome to the Durandal Starter Kit!';
     };
@@ -20,6 +19,10 @@ define(function() {
             $('body').css("overflow","auto");
         });
 
+
+        $("#createEventProceed").click(function(e){
+              router.navigate('manageEvent/' + createdEventId);
+        });
         $("#eventCreateSubmit").click(function(e){
 
 
