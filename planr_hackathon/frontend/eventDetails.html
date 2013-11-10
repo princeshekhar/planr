@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Planr</title>
+        
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="format-detection" content="telephone=no"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <link rel="apple-touch-startup-image" href="lib/durandal/img/ios-startup-image-landscape.png" media="(orientation:landscape)" />
+        <link rel="apple-touch-startup-image" href="lib/durandal/img/ios-startup-image-portrait.png" media="(orientation:portrait)" />
+        <link rel="apple-touch-icon" href="lib/durandal/img/icon.png"/>
+        <link href="css/style.css" rel="stylesheet" />
+        <link href="css/jquery.mmenu.all.css" rel="stylesheet" />
+        <link href="css/autoPadder.css" rel="stylesheet" />
+        <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+
+        <script type="text/javascript" src="js/jquery.validate.js"></script>
+        <script type="text/javascript" src="js/jquery.mmenu.min.all.js"></script>
+        
+
+        <link rel="stylesheet" href="css/foundation.css">
+        <script src="js/vendor/custom.modernizr.js"></script>
+
+        
+
+        <script type="text/javascript">
+            $(document).bind("mobileinit", function(){
+              //apply overrides here
+            });
+
+            $(document).ready(function(){
+              $('#rightBarOnline').mmenu({
+                zposition:'front',
+                position:'right'
+              });
+              $('#onlineCount').click(function(){
+                $('#rightBarOnline').trigger('open');
+              });
+              $('#rightBarOnline').trigger('open');
+            });
+        </script>
+    </head>
+    <body>
+    <nav id="rightBarOnline">
+      <div class="row">
+        <div class="row online-status">
+          <div class="band"></div>
+          <div class="online-dot offline"></div>
+          <div class="person-name">Vasu Mahesh</div>
+        </div>
+        <div class="row online-status">
+          <div class="band red"></div>
+          <div class="online-dot"></div>
+          <div class="person-name">Shoaib Merchant</div>
+        </div>
+        <div class="row online-status">
+          <div class="band orange"></div>
+          <div class="online-dot"></div>
+          <div class="person-name">Aravind Prasad</div>
+        </div>
+      </div>
+    </nav>
+      <!-- <div class="row app-header">
+      <div class="top-icon menu"></div>
+      <div class="page-title">Plan<span class="yellow">r</span></div>
+      <div class="top-icon search"></div>
+      </div> -->
+      <div class="app-header-test-container">
+        <div class="app-header-b"></div>
+        <div class="app-header-lb"></div>
+        <div class="row app-header-test">
+          <div class="columns small-2 top-icon menu"></div>
+          <div class="columns small-8 page-title">Plan<span class="yellow">r</span></div>
+         <!-- <div id="onlineCount" class="columns small-2 top-icon online"><div class="online-inner">2</div></div>-->
+            <div class="columns small-2 top-icon search"></div>
+        </div>
+      </div>
+      <div class="padder-fixer"></div>
+      <div class="row app-bg-white">
+        <div class="row ">
+          <div class="row huge-padding large-padding-top">
+            <div class="small-4 columns medium-padding">
+              <img src="img/makeathonbig.png"/>
+            </div>
+            <div class="small-8 columns medium-padding">
+              <div class="row event-details-name large-padding-left">Event Name</div>
+              <div class="row event-details-subtext large-padding-top large-padding-left">Date - To Be Announced</div>
+              <div class="row event-details-subtext large-padding-left">Time - To Be Announced</div>
+              <div class="row event-details-code large-padding-top  large-padding-left">RYSE</div>
+            </div>
+          </div>
+          <div class="row section huge-padding medium-padding-top">
+            <div class="section-header large-padding-bot">Recent Activity</div>
+            <div class="activity">
+              <div class="band blue"></div>
+              <div class="side-text">Aravind added a collaborator. <span class="time">20min ago.</span></div>
+            </div>
+            <div class="activity">
+              <div class="band orange"></div>
+               <div class="side-text">Vasu suggested a venue. <span class="time">20min ago.</span></div>
+            </div>
+            <div class="activity">
+              <div class="band blue"></div>
+              <div class="side-text">Aravind added a collaborator. <span class="time">20min ago.</span></div>
+            </div>
+            <div class="activity">
+              <div class="band orange"></div>
+               <div class="side-text">Vasu suggested a venue. <span class="time">20min ago.</span></div>
+            </div>
+          </div>
+          <div class="row huge-padding medium-padding-top">
+              <div class="small-12 columns medium-padding section-header ">Add Collaborators</div>
+              <div class="small-12 columns medium-padding no-padding-bot">
+                <div class="plus-adder">
+                  <input type="text" class="generic-text-box generic-plus" placeholder="Name or Email of Collaborator"/>
+                  <div class="custom-white-button">+</div>
+                </div>
+              </div>
+              <div class="small-12 columns medium-padding no-padding-bot">
+                <div class="contributor row medium-padding-top">
+                  <div class="row contributor-name">John Doe</div>
+                  <div class="row contributor-email medium-paddin-top medium-padding-bot tiny-padding-left">johndoe@yahoo.com</div>
+                </div>
+                <div class="contributor row medium-padding-top">
+                  <div class="row contributor-name">John Doe</div>
+                  <div class="row contributor-email medium-paddin-top medium-padding-bot tiny-padding-left">johndoe@yahoo.com</div>
+                </div>
+                <div class="row alert-type-1 large-padding-top">
+                  An Invite Email will be sent to the contributors.
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+        <script>
+          document.write('<script src=' +
+          ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+          '.js><\/script>')
+          </script>
+          
+          <script src="js/foundation.min.js"></script>
+          <!--
+          
+          <script src="js/foundation/foundation.js"></script>
+          
+          <script src="js/foundation/foundation.interchange.js"></script>
+          
+          <script src="js/foundation/foundation.abide.js"></script>
+          
+          <script src="js/foundation/foundation.dropdown.js"></script>
+          
+          <script src="js/foundation/foundation.placeholder.js"></script>
+          
+          <script src="js/foundation/foundation.forms.js"></script>
+          
+          <script src="js/foundation/foundation.alerts.js"></script>
+          
+          <script src="js/foundation/foundation.magellan.js"></script>
+          
+          <script src="js/foundation/foundation.reveal.js"></script>
+          
+          <script src="js/foundation/foundation.tooltips.js"></script>
+          
+          <script src="js/foundation/foundation.clearing.js"></script>
+          
+          <script src="js/foundation/foundation.cookie.js"></script>
+          
+          <script src="js/foundation/foundation.joyride.js"></script>
+          
+          <script src="js/foundation/foundation.orbit.js"></script>
+          
+          <script src="js/foundation/foundation.section.js"></script>
+          
+          <script src="js/foundation/foundation.topbar.js"></script>
+          
+          -->
+          
+          <script>
+            $(document).foundation();
+          </script>
+    </body>
+</html>

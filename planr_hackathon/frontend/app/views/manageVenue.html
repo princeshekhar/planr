@@ -1,0 +1,91 @@
+﻿<div class="row huge-padding large-padding-top">
+    <div class="row card-generic">
+        <div id="suggestALocation" class="row medium-padding section-header medium-padding-left">Suggest a New Location <div class="arrow-expand"></div></div>
+        <div id="data-suggest" class="row hide">
+            <div class="row map-place" id="suggest-loc"></div>
+            <div class="map-data row large-padding">
+                <div id="sugg-add" class="small-8 columns location-sub tiny-padding-top">
+
+                </div>
+                <input type="hidden" id="suggest-loc-coord"/>
+                <input type="hidden" id="suggest-loc-address"/>
+            </div>
+            <div class="row map-controls">
+                <div class="columns small-6 add-loc stat-button">
+                    Add
+                </div>
+                <div class="columns small-6 rmv-loc stat-button closeSuggest">
+                    Cancel
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="suggestion-container" data-bind="foreach: venueSuggestions">
+        <div class="row map-sample venue-suggestion" >
+          <!--  <div data-bind="attr: {coord: coordinates }" class="row map-place"></div>-->
+            <div class="map-data row large-padding">
+                <div class="row location-title medium-padding-bottom" data-bind="text: userName"></div>
+                <div class="row location-sub" data-bind="text: address"></div>
+            </div>
+            <div class="row map-controls">
+                <div data-bind="attr: {id: suggestionId}" class="columns small-6 up-button stat-button">
+                    <img src="img/up.png"/> <span data-bind="text: likes" class="number"></span>
+                </div>
+                <div data-bind="attr: {id: suggestionId}" class="columns small-6 down-button stat-button">
+                    <img src="img/down.png"/><span data-bind="text: dislikes" class="number"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="rightBarOnline">
+        <div class="row" data-bind="foreach: collaborators">
+            <div class="row online-status">
+                <div class="band"></div>
+                <div data-bind="attr: {class: (online == true)?'online-dot':'offline'}" ></div>
+                <div data-bind="text: name" class="person-name"></div>
+            </div>
+        </div>
+    </div>
+    <nav id="eventSideBar">
+        <div class="row">
+
+            <div class="row list-item">
+                <div class="row event-name">
+                    <a data-bind='attr: { href: "#manageEvent/"+eventId(), title: name}, text: name'></a>
+                </div>
+                <div class="row event-by" data-bind='text: "Created by " + createdBy()'> John Doe</div>
+            </div>
+            <div class="row list-item active">
+                <div class="thumb"><img src="img/sidebar/event/loc.png"/></div>
+                <div class="list-content large-padding-left"><a data-bind='attr: { href: "#manageVenue/"+eventId()}'>Decide Venue</a></div>
+            </div>
+            <div class="row list-item">
+                <div class="thumb"><img src="img/sidebar/event/cal.png"/></div>
+                <div class="list-content large-padding-left"><a data-bind='attr: { href: "#manageDate/"+eventId()}'>Decide Date & Time</a></div>
+            </div>
+            <div class="row list-item">
+                <div class="thumb"><img src="img/sidebar/event/pie.png"/></div>
+                <div class="list-content large-padding-left"><a data-bind='attr: { href: "#manageTasks/"+eventId()}'>Decide Tasks</a></div>
+            </div>
+            <div class="row list-item">
+                <div class="thumb"><img src="img/sidebar/event/prize.png"/></div>
+                <div class="list-content large-padding-left"><a data-bind='attr: { href: "#publishEvent/"+eventId()}'>Publish the Event</a></div>
+            </div>
+            <div class="row list-item">
+                <div class="thumb"><img src="img/sidebar/event/ads.png"/></div>
+                <div class="list-content large-padding-left"><a data-bind='attr: { href: "#manageTasks/"+eventId()}'>Set Invitees</a></div>
+            </div>
+            <div class="row list-item">
+                <div class="thumb"><img src="img/sidebar/event/plane.png"/></div>
+                <div class="list-content large-padding-left"><a data-bind='attr: { href: "#liveStream/"+eventId()}'>Live Stream!</a></div>
+            </div>
+            <div class="row list-item">
+                <div class="thumb"><img src="img/sidebar/event/pro.png"/></div>
+                <div class="list-content large-padding-left"><a href="#">Go Pro</a></div>
+            </div>
+        </div>
+    </nav>
+</div>

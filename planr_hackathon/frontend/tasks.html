@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Planr</title>
+        
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="format-detection" content="telephone=no"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <link rel="apple-touch-startup-image" href="lib/durandal/img/ios-startup-image-landscape.png" media="(orientation:landscape)" />
+        <link rel="apple-touch-startup-image" href="lib/durandal/img/ios-startup-image-portrait.png" media="(orientation:portrait)" />
+        <link rel="apple-touch-icon" href="lib/durandal/img/icon.png"/>
+        <link href="css/style.css" rel="stylesheet" />
+        <link href="css/jquery.mmenu.all.css" rel="stylesheet" />
+        <link href="css/autoPadder.css" rel="stylesheet" />
+        <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="js/qrcode.js"></script>
+        <script type="text/javascript" src="js/jquery.validate.js"></script>
+        <script type="text/javascript" src="js/jquery.mmenu.min.all.js"></script>
+        
+
+        <link rel="stylesheet" href="css/foundation.css">
+        <script src="js/vendor/custom.modernizr.js"></script>
+
+        
+
+        <script type="text/javascript">
+        function daysInMonth(month, year)
+        {
+          return new Date(year, month, 0).getDate();
+        }
+            $(document).bind("mobileinit", function(){
+              //apply overrides here
+            });
+
+            $(document).ready(function(){
+              $('#addTaskContent').slideUp(0);
+             $('#eventSideBar').mmenu({
+                }); 
+              $('#homeSideBar').mmenu({
+              });              
+              $('.menu').on('click',function(){
+                $('#homeSideBar').trigger('open');
+              });
+              $('#addNewTaskHeader').click(function(){
+                $('#addTaskContent').slideToggle(500);
+              });
+              $('.priority-set').click(function(){
+                  if($(this).hasClass('active'))
+                  {
+                    $(this).removeClass('active');
+                  }
+                  else
+                  {
+                    $(document).find('.priority-set.active').removeClass('active');
+                    $(this).addClass('active');
+                    if($(this).is('.low-level'))
+                      $('#priority').val(0);
+                    if($(this).is('.warning-level'))
+                      $('#priority').val(1);
+                    if($(this).is('.danger-level'))
+                      $('#priority').val(2);
+                  }
+              });
+              loadDateTimePicker();
+              $(".form-month").change(function()
+              { 
+                if($(this).find("option:selected").val() != "-1" && $(this).parent().find("form-year option:selected").val() != "-1")
+                {
+                  var selDate = $(this).parent().find(".form-day option:selected").val(); 
+                  var selMonth = $(this).find("option:selected").val();
+                  var selYear = $(this).parent().find(".form-year option:selected").val();
+                  
+                  var count = daysInMonth(selMonth,selYear);
+
+                  $(this).parent().find(".form-day").html("");
+                  $(".form-day").append("<option value=\"-1\">Day</option>");
+                  for(i=0;i<count;i++)
+                  {
+                    $(this).parent().find(".form-day").append("<option value=\""+ (i+1) + "\">"+(i+1)+"</option>");
+                  }
+                  $(this).parent().find(".form-day").val(selDate);  
+                }
+              });
+              $(".form-year").change(function()
+              {
+                if($(this).find("option:selected").val() != "-1" && $(this).parent().find(".form-month option:selected").val() != "-1")
+                {
+                  var selDate = $(this).parent().find(".form-day option:selected").val();
+                  var selMonth = $(this).parent().find(".form-month option:selected").val();
+                  var selYear = $(this).find("option:selected").val();
+
+                  var count = daysInMonth(selMonth,selYear);
+                  
+                  $(this).parent().find(".form-day").html("");
+                  $(".form-day").append("<option value=\"-1\">Day</option>");
+                  for(i=0;i<count;i++)
+                  {
+                    $(this).parent().find(".form-day").append("<option value=\""+ (i+1) + "\">"+(i+1)+"</option>");
+                  }
+                  if(selDate != "29")
+                  {
+                    $(this).parent().find(".form-day").val(selDate);  
+                  }
+                }
+              });
+              $(".form-date").focusout(function()
+              {
+                  if($(this).is(".required"))
+                  {
+                    var selDay = $(this).find(".form-day option:selected").val();
+                    var selMonth = $(this).find(".form-month option:selected").val();
+                    var selYear = $(this).find(".form-year option:selected").val();
+                    if(selDay == "-1" || selMonth == "-1" || selYear == "-1")
+                    {
+                      $(this).addClass("form-error");
+                      if($(this).next().prop("tagName") != "P")
+                      {
+                        $(this).after('<p class="form-error-text">' + $(this).attr("title") + ' has not been filled.</p>');
+                      }
+                    }
+                    else
+                    {
+                      $(this).removeClass("form-error");
+                      if($(this).next().prop("tagName") == "P")
+                      {
+                        $(this).next().remove();
+                      }
+                    }
+                  }
+              });
+            });
+            function loadDateTimePicker(dateObj)
+            {
+              var months = new Array("January", "February","March","April","May","June","July","August","September","October","November","December");
+              var i;
+              $(".form-month").append("<option value=\"-1\">Month</option>");
+              for(i=1;i<=12;i++)
+              {
+                $(".form-month").append("<option value=\""+ i + "\">"+months[i-1]+"</option>");
+              } 
+              var startYear = 1920;
+              var currentTime = new Date();
+              var currentYear = parseInt(currentTime.getFullYear());
+              $(".form-year").append("<option value=\"-1\">Year</option>");
+              for(i=startYear;i<=currentYear;i++)
+              {
+                $(".form-year").append("<option value=\""+ i + "\">"+i+"</option>");
+              }
+              $(".form-date").each(function ()
+              {
+                  if($(this).is(".min18"))
+                  {
+                    var targetYear = parseInt(currentTime.getFullYear()) - 18;  
+                    var startYear = 1920;
+                    $(this).find(".form-year").html("");
+                    $(".form-year").append("<option value=\"-1\">Year</option>");
+                    for(i=startYear;i<=targetYear;i++)
+                    {
+                      $(".form-year").append("<option value=\""+ i + "\">"+i+"</option>");
+                    }
+                  }
+                  if($(this).is(".future"))
+                  {
+                    var startYear = 1950; 
+                    var targetYear = 2050;
+                    $(this).find(".form-year").html("");
+                    $(".form-year").append("<option value=\"-1\">Year</option>");
+                    for(i=startYear;i<=targetYear;i++)
+                    {
+                      $(".form-year").append("<option value=\""+ i + "\">"+i+"</option>");
+                    }
+                  }
+                  if($(this).is(".ccard"))
+                  {
+                    var d = new Date();
+                    var startYear = d.getFullYear();  
+                    var targetYear = 2030;
+                    $(this).find(".form-year").html("");
+                    $(".form-year").append("<option value=\"-1\">Year</option>");
+                    for(i=startYear;i<=targetYear;i++)
+                    {
+                      $(".form-year").append("<option value=\""+ i + "\">"+i+"</option>");
+                    }
+                  }
+                  if($(this).is(".current-date"))
+                  {
+                    $(this).find(".form-year").val(currentTime.getFullYear());
+                    $(this).find(".form-month").val(currentTime.getMonth()+1);
+                    
+                    var selMonth = $(this).find(".form-month option:selected").val();
+                    var selYear = $(this).find(".form-year option:selected").val();
+                    
+                    var i,count = daysInMonth(selMonth, selYear);
+                    $(this).find(".form-day").html("");
+                    $(this).find(".form-day").append("<option value=\"-1\">Day</option>");
+                    for(i=0;i<count;i++)
+                    {
+                      $(this).find(".form-day").append("<option value=\""+ (i+1) + "\">"+(i+1)+"</option>");
+                    }
+
+                    $(this).find(".form-day").val(currentTime.getDate());
+                    return;
+                  }
+                  
+                    var i,count = 31;
+                    $(this).find(".form-day").html("");
+                    $(this).find(".form-day").append("<option value=\"-1\">Day</option>");
+                    for(i=0;i<count;i++)
+                    {
+                      $(this).find(".form-day").append("<option value=\""+ (i+1) + "\">"+(i+1)+"</option>");
+                    }
+
+                  
+              });
+            }
+
+        </script>
+    </head>
+    <body>
+    
+      <!-- <div class="row app-header">
+      <div class="top-icon menu"></div>
+      <div class="page-title">Plan<span class="yellow">r</span></div>
+      <div class="top-icon search"></div>
+      </div> -->
+      <div class="app-header-test-container">
+        <div class="app-header-b"></div>
+        <div class="app-header-lb"></div>
+        <div class="row app-header-test">
+        <div class="top-icon menu"></div>
+        <div class="page-title">Plan<span class="yellow">r</span></div>
+        <div class="top-icon search"></div>
+        </div>
+      </div>
+      <div class="padder-fixer"></div>
+      <div class="row app-bg-white">
+        <div class="row huge-padding large-padding-top">
+        <div class="row card-generic">
+        <div id="addNewTaskHeader" class="row medium-padding section-header medium-padding-left">Add a New Task <div class="arrow-expand"></div></div>
+        <div class="row large-padding no-padding-top" id="addTaskContent">
+          <div class="small-12 columns medium-padding no-padding-bot">
+            <input type="text" class="generic-text-box" placeholder="Task Title"/>
+          </div>
+          <div class="small-12 columns medium-padding no-padding-bot">
+            <input type="text" class="generic-text-box" placeholder="Assign To"/>
+          </div>
+          <div class="small-12 columns medium-padding no-padding-bot">
+            <textarea class="generic-text-box" placeholder="Task Description"></textarea>
+          </div>
+          <div class="small-12 columns medium-padding no-padding-top">
+            <div class="inline priority-label">Priority</div>
+            <div class="inline">
+              <input type="hidden" id="priority" />
+              <div class="priority-set danger-level"></div>
+              <div class="priority-set warning-level"></div>
+              <div class="priority-set low-level"></div>
+            </div>
+          </div>
+          <div class="small-12 columns medium-padding no-padding-top form-date ccard">
+          <div class="inline day-label">Deadline</div>
+          <select class="form-day day-select"></select>
+          <select class="form-month day-select"></select>
+          <select class="form-year day-select"></select>
+          </div>
+          <div class="small-12 columns medium-padding no-padding-top">
+            <button class="primary button">Create Task</button>
+          </div>
+        </div>
+        </div>
+        </div>
+      </div>
+        <script>
+          document.write('<script src=' +
+          ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+          '.js><\/script>')
+          </script>
+          
+          <script src="js/foundation.min.js"></script>
+          <!--
+          
+          <script src="js/foundation/foundation.js"></script>
+          
+          <script src="js/foundation/foundation.interchange.js"></script>
+          
+          <script src="js/foundation/foundation.abide.js"></script>
+          
+          <script src="js/foundation/foundation.dropdown.js"></script>
+          
+          <script src="js/foundation/foundation.placeholder.js"></script>
+          
+          <script src="js/foundation/foundation.forms.js"></script>
+          
+          <script src="js/foundation/foundation.alerts.js"></script>
+          
+          <script src="js/foundation/foundation.magellan.js"></script>
+          
+          <script src="js/foundation/foundation.reveal.js"></script>
+          
+          <script src="js/foundation/foundation.tooltips.js"></script>
+          
+          <script src="js/foundation/foundation.clearing.js"></script>
+          
+          <script src="js/foundation/foundation.cookie.js"></script>
+          
+          <script src="js/foundation/foundation.joyride.js"></script>
+          
+          <script src="js/foundation/foundation.orbit.js"></script>
+          
+          <script src="js/foundation/foundation.section.js"></script>
+          
+          <script src="js/foundation/foundation.topbar.js"></script>
+          
+          -->
+          
+          <script>
+            $(document).foundation();
+          </script>
+    </body>
+</html>

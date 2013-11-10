@@ -1,0 +1,36 @@
+﻿<div class="row huge-padding large-padding-top">
+    <div class="small-12 columns medium-padding no-padding-bot">
+        <input type="text" id="eventCreateName" class="generic-text-box" placeholder="Event Name"/>
+    </div>
+    <div class="small-12 columns medium-padding no-padding-top">
+        <button id="eventCreateSubmit" class="primary button">Create Event</button>
+    </div>
+    <div class="columns small-6">
+        <div id="qrcode"></div>
+    </div>
+    <div class="columns small-6">
+        <div class="row center-text large-padding large-padding-top hide" id="QRText"></div>
+    </div>
+
+    <div id="collab-area" class="create-event-options hide">
+        <div class="small-12 columns medium-padding large-padding-top section-header">Add Collaborators</div>
+        <div class="small-12 columns medium-padding large-padding-bot">
+            <div class="plus-adder">
+                <input type="text" id="addCollaboratorEmail" class="generic-text-box generic-plus" placeholder="Enter Email"/>
+                <div id="addCollaboratorSubmit" class="custom-white-button">+</div>
+            </div>
+        </div>
+        <div class="small-12 columns alert-type-1 large-padding-top">
+            An Invite Email will be sent to the contributors.
+        </div>
+        <div data-bind="foreach: collabos" class="small-12 columns medium-padding no-padding-bot">
+            <div class="contributor row medium-padding-top">
+                <div class="row contributor-name" data-bind="text: email"></div>
+                <div class="row contributor-email medium-paddin-top medium-padding-bot tiny-padding-left"></div>
+            </div>
+        </div>
+        <div class="small-12 columns large-padding-top">
+            <button class="proceed-button">Proceed to finalize details</button>
+        </div>
+    </div>
+</div>

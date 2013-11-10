@@ -1,0 +1,91 @@
+﻿<div class="row app-bg-white">
+    <div class="row huge-padding large-padding-top">
+        <div class="row card-generic">
+            <div id="addNewTaskHeader" class="row medium-padding section-header medium-padding-left">Add a New Task <div class="arrow-expand"></div></div>
+            <div class="row large-padding no-padding-top" id="addTaskContent">
+                <div class="small-12 columns medium-padding no-padding-bot">
+                    <select id="taskAssignedTo" data-bind="foreach: collaborators" class="generic-select" placeholder="Assign To">
+                        <option data-bind="attr: {value: userId}, text: name"></option>
+                    </select>
+                </div>
+                <div class="small-12 columns medium-padding no-padding-bot">
+                    <textarea id="taskDescription" class="generic-text-box" placeholder="Task Description"></textarea>
+                </div>
+                <div class="small-12 columns medium-padding no-padding-top">
+                    <div class="inline priority-label">Priority</div>
+                    <div class="inline">
+                        <input type="hidden" id="taskPriority" value="0" />
+                        <div class="priority-set danger-level"></div>
+                        <div class="priority-set warning-level"></div>
+                        <div class="priority-set low-level active"></div>
+                    </div>
+                </div>
+                <div id="taskDeadline" class="small-12 columns medium-padding no-padding-top form-date ccard">
+                    <div class="inline day-label">Deadline</div>
+                    <select class="form-day day-select"></select>
+                    <select class="form-month day-select"></select>
+                    <select class="form-year day-select"></select>
+                </div>
+                <div class="small-12 columns medium-padding no-padding-top">
+                    <button id="taskCreate" class="primary button">Create Task</button>
+                </div>
+            </div>
+        </div>
+        <div data-bind="foreach: tasks" class="tasks-list">
+            <div class="row card-generic large-padding">
+            <div data-bind="text: creatorUserName" class="row task-title medium-padding-bot"></div>
+            <div class="row task-assignee large-padding-bot">Assigned by <span data-bind="text: userName"  class=""></span><span class="task-date">Deadline up to <span data-bind="text: deadline"  class=""></span></span></div>
+            <div data-bind="text: description" class="task-desp medium-padding-bot medium-padding-top"></div>
+        </div>
+        </div>
+
+    </div>
+    <div id="rightBarOnline">
+        <div class="row" data-bind="foreach: collaborators">
+            <div class="row online-status">
+                <div class="band"></div>
+                <div data-bind="attr: {class: (online == true)?'online-dot':'offline'}" ></div>
+                <div data-bind="text: name" class="person-name"></div>
+            </div>
+        </div>
+    </div>
+    <nav id="eventSideBar">
+        <div class="row">
+
+            <div class="row list-item">
+                <div class="row event-name">
+                    <a data-bind='attr: { href: "#manageEvent/"+eventId(), title: name}, text: name'></a>
+                </div>
+                <div class="row event-by" data-bind='text: "Created by " + createdBy()'> John Doe</div>
+            </div>
+            <div class="row list-item">
+                <div class="thumb"><img src="img/sidebar/event/loc.png"/></div>
+                <div class="list-content large-padding-left"><a data-bind='attr: { href: "#manageVenue/"+eventId()}'>Decide Venue</a></div>
+            </div>
+            <div class="row list-item">
+                <div class="thumb"><img src="img/sidebar/event/cal.png"/></div>
+                <div class="list-content large-padding-left"><a data-bind='attr: { href: "#manageDate/"+eventId()}'>Decide Date & Time</a></div>
+            </div>
+            <div class="row list-item active">
+                <div class="thumb"><img src="img/sidebar/event/pie.png"/></div>
+                <div class="list-content large-padding-left"><a data-bind='attr: { href: "#manageTasks/"+eventId()}'>Decide Tasks</a></div>
+            </div>
+            <div class="row list-item">
+                <div class="thumb"><img src="img/sidebar/event/prize.png"/></div>
+                <div class="list-content large-padding-left"><a data-bind='attr: { href: "#publishEvent/"+eventId()}'>Publish the Event</a></div>
+            </div>
+            <div class="row list-item">
+                <div class="thumb"><img src="img/sidebar/event/ads.png"/></div>
+                <div class="list-content large-padding-left"><a data-bind='attr: { href: "#manageTasks/"+eventId()}'>Set Invitees</a></div>
+            </div>
+            <div class="row list-item">
+                <div class="thumb"><img src="img/sidebar/event/plane.png"/></div>
+                <div class="list-content large-padding-left"><a data-bind='attr: { href: "#liveStream/"+eventId()}'>Live Stream!</a></div>
+            </div>
+            <div class="row list-item">
+                <div class="thumb"><img src="img/sidebar/event/pro.png"/></div>
+                <div class="list-content large-padding-left"><a href="#">Go Pro</a></div>
+            </div>
+        </div>
+    </nav>
+</div>

@@ -1,0 +1,61 @@
+﻿<div class="row heading medium-padding-top">
+    <div class="heading-part text event-title">My Events</div>
+    <div class="heading-part line-container">
+        <div class="line"></div>
+    </div>
+    <div class="heading-part arrow"></div>
+</div>
+<div class="row large-padding" data-bind="foreach: myevents">
+    <div class="row card">
+        <div class="thumb"><img src="img/angelhack.png"/></div>
+        <div class="card-content">
+            <div class="row medium-padding-left event-text medium-padding-top">
+                <a style="color:#2c4681 !important;" data-bind='attr: { href: "#manageEvent/"+eventId, title: name}, text: name'></a>
+            </div>
+            <div data-bind="text: date" class="row large-padding-top medium-padding-left sub-text"></div>
+            <div data-bind="text: time" class="row sub-text medium-padding-left"></div>
+        </div>
+    </div>
+</div>
+<div class="row heading medium-padding-top">
+    <div class="heading-part text event-title">Attending</div>
+    <div class="heading-part line-container">
+        <div class="line"></div>
+    </div>
+    <div class="heading-part arrow"></div>
+</div>
+<div class="row large-padding">
+    <div class="row card">
+        <div class="thumb"><img src="img/angelhack.png"/></div>
+        <div class="card-content">
+            <div class="row medium-padding-left event-text medium-padding-top">Angel Hack Hyderabad</div>
+            <div class="row large-padding-top medium-padding-left sub-text">8th-9th November 2013</div>
+            <div class="row sub-text medium-padding-left">9:00AM - 1:00PM</div>
+        </div>
+    </div>
+</div>
+<div class="row heading medium-padding-top">
+    <div class="heading-part text event-title">Discover</div>
+    <div class="heading-part line-container">
+        <div class="line"></div>
+    </div>
+    <div class="heading-part arrow"></div>
+</div>
+<div class="row large-padding">
+    <div class="columns small-6 medium-padding vert-col">
+        <div class="vert-card">
+            <div class="row vert-img-container"><img src="img/angelhackbig.png"/></div>
+            <div class="row event-text medium-padding">Angel Hack Hyderabad</div>
+            <div class="row large-padding-top medium-padding-left sub-text">8th-9th November 2013</div>
+            <div class="row sub-text medium-padding-left">9:00AM - 1:00PM</div>
+        </div>
+    </div>
+    <div class="columns small-6 medium-padding vert-col">
+        <div class="vert-card">
+            <div class="row vert-img-container"><img src="img/makeathonbig.png"/></div>
+            <div class="row event-text medium-padding">IEEE Make-a-thon</div>
+            <div class="row large-padding-top medium-padding-left sub-text">1st-10th November 2013</div>
+            <div class="row sub-text medium-padding-left">12:00AM - 6:00PM</div>
+        </div>
+    </div>
+</div>

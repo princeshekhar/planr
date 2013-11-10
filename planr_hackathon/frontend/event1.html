@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Planr</title>
+        
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="format-detection" content="telephone=no"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <link rel="apple-touch-startup-image" href="lib/durandal/img/ios-startup-image-landscape.png" media="(orientation:landscape)" />
+        <link rel="apple-touch-startup-image" href="lib/durandal/img/ios-startup-image-portrait.png" media="(orientation:portrait)" />
+        <link rel="apple-touch-icon" href="lib/durandal/img/icon.png"/>
+        <link href="css/style.css" rel="stylesheet" />
+        <link href="css/jquery.mmenu.all.css" rel="stylesheet" />
+        <link href="css/autoPadder.css" rel="stylesheet" />
+        <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="js/qrcode.js"></script>
+        <script type="text/javascript" src="js/jquery.validate.js"></script>
+        <script type="text/javascript" src="js/technited.toolkit.js"></script>
+        <script type="text/javascript" src="js/jquery.mmenu.min.all.js"></script>
+        
+
+        <link rel="stylesheet" href="css/foundation.css">
+        <script src="js/vendor/custom.modernizr.js"></script>
+
+        
+
+        <script type="text/javascript">
+            $(document).bind("mobileinit", function(){
+              //apply overrides here
+            });
+
+            $(document).ready(function(){
+
+             $('#eventSideBar').mmenu({
+                }); 
+              $('#homeSideBar').mmenu({
+              });              
+              $('.menu').on('click',function(){
+                $('#homeSideBar').trigger('open');
+              });
+            });
+        </script>
+    </head>
+    <body>
+      <nav id="eventSideBar">
+        <div class="row">
+        <div class="padder-fixer"></div>
+          <div class="row list-item">
+            <div class="row event-name">Event Name</div>
+            <div class="row event-by">Created by John Doe</div>
+          </div>
+          <div class="row list-item active">
+            <div class="thumb"><img src="img/sidebar/event/cal.png"/></div> 
+            <div class="list-content large-padding-left">Decide Date & Time</div>
+          </div>
+          <div class="row list-item">
+            <div class="thumb"><img src="img/sidebar/event/loc.png"/></div> 
+            <div class="list-content large-padding-left">Decide Venue</div>
+          </div>
+          <div class="row list-item">
+            <div class="thumb"><img src="img/sidebar/event/pie.png"/></div> 
+            <div class="list-content large-padding-left">Decide Tasks</div>
+          </div>
+          <div class="row list-item">
+            <div class="thumb"><img src="img/sidebar/event/prize.png"/></div> 
+            <div class="list-content large-padding-left">Publish the Event</div>
+          </div>
+          <div class="row list-item">
+            <div class="thumb"><img src="img/sidebar/event/ads.png"/></div> 
+            <div class="list-content large-padding-left">Set Tickets</div>
+          </div>
+          <div class="row list-item">
+            <div class="thumb"><img src="img/sidebar/event/tools.png"/></div> 
+            <div class="list-content large-padding-left">Settings</div>
+          </div>
+          <div class="row list-item">
+            <div class="thumb"><img src="img/sidebar/event/plane.png"/></div> 
+            <div class="list-content large-padding-left">Advertisements</div>
+          </div>
+          <div class="row list-item">
+            <div class="thumb"><img src="img/sidebar/event/pro.png"/></div> 
+            <div class="list-content large-padding-left">Go Pro</div>
+          </div>
+        </div>
+      </nav>
+      <nav id="homeSideBar">
+        <div class="row">
+        <div class="padder-fixer"></div>
+          <div class="row list-item">
+            <div class="large-thumb"><img src="img/user.png"/></div>
+            <div class="rest-content huge-padding-top">
+              <div class="row event-name">John Doe</div>
+              <div class="row event-by">Joined 4 Months ago.</div>
+            </div>
+          </div>
+          <div class="row list-item active">
+            <div class="thumb"><img src="img/sidebar/event/doc.png"/></div> 
+            <div class="list-content large-padding-left">Create Event</div>
+          </div>
+          <div class="row list-item">
+            <div class="thumb"><img src="img/sidebar/event/loc.png"/></div> 
+            <div class="list-content large-padding-left">Manage Existing Events</div>
+          </div>
+          <div class="row list-item">
+            <div class="thumb"><img src="img/sidebar/event/cal.png"/></div> 
+            <div class="list-content large-padding-left">Upcoming Events</div>
+          </div>
+          <div class="row list-item">
+            <div class="thumb"><img src="img/sidebar/event/prize.png"/></div> 
+            <div class="list-content large-padding-left">Badges Collected</div>
+          </div>
+          <div class="row list-item">
+            <div class="thumb"><img src="img/sidebar/event/tools.png"/></div> 
+            <div class="list-content large-padding-left">Profile Settings</div>
+          </div>
+          <div class="row list-item">
+            <div class="thumb"><img src="img/sidebar/event/pie.png"/></div> 
+            <div class="list-content large-padding-left">Events Archives</div>
+          </div>
+          <div class="row list-item">
+            <div class="thumb"><img src="img/sidebar/event/plane.png"/></div> 
+            <div class="list-content large-padding-left">History</div>
+          </div>
+          <div class="row list-item">
+            <div class="thumb"><img src="img/sidebar/event/pro.png"/></div> 
+            <div class="list-content large-padding-left">Go Pro</div>
+          </div>
+        </div>
+      </nav>
+      <!-- <div class="row app-header">
+      <div class="top-icon menu"></div>
+      <div class="page-title">Plan<span class="yellow">r</span></div>
+      <div class="top-icon search"></div>
+      </div> -->
+      <div class="app-header-test-container">
+        <div class="app-header-b"></div>
+        <div class="app-header-lb"></div>
+        <div class="row app-header-test">
+        <div class="top-icon menu"></div>
+        <div class="page-title">Plan<span class="yellow">r</span></div>
+        <div class="top-icon search"></div>
+        </div>
+      </div>
+      <div class="padder-fixer"></div>
+      <div class="row app-bg-white">
+        <div class="row huge-padding large-padding-top">
+          <div class="small-12 columns medium-padding no-padding-bot">
+            <input type="text" class="generic-text-box" placeholder="Event Name"/>
+          </div>
+          <div class="small-12 columns medium-padding no-padding-top">
+            <button class="primary button">Create Event</button>
+          </div>
+          <div class="columns small-6">
+            <div id="qrcode"></div>
+          </div>
+          <div class="columns small-6">
+            <div class="row center-text smaller large-padding">Special Code & QR</div>
+            <div class="row center-text large-padding no-padding-top" id="QRText">RJKS346JD2</div>
+          </div>
+          <div class="small-12 columns medium-padding highlight">
+            Congrats your event has been created.
+          </div>
+          <div class="small-12 columns medium-padding section-header">Add Collaborators</div>
+          <div class="small-12 columns medium-padding no-padding-bot">
+            <div class="plus-adder">
+              <input type="text" class="generic-text-box generic-plus" placeholder="Name or Email of Collaborator"/>
+              <div class="custom-white-button">+</div>
+            </div>
+          </div>
+          <div class="small-12 columns medium-padding no-padding-bot">
+            <div class="contributor row medium-padding-top">
+              <div class="row contributor-name">John Doe</div>
+              <div class="row contributor-email medium-paddin-top medium-padding-bot tiny-padding-left">johndoe@yahoo.com</div>
+            </div>
+            <div class="contributor row medium-padding-top">
+              <div class="row contributor-name">John Doe</div>
+              <div class="row contributor-email medium-paddin-top medium-padding-bot tiny-padding-left">johndoe@yahoo.com</div>
+            </div>
+            <div class="row alert-type-1 large-padding-top">
+              An Invite Email will be sent to the contributors.
+            </div>
+          </div>
+          <div class="small-12 columns large-padding-top">
+            <button class="proceed-button">Proceed to finalize details</button>
+          </div>
+        </div>
+      </div>
+        <script>
+          document.write('<script src=' +
+          ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+          '.js><\/script>')
+          </script>
+          
+          <script src="js/foundation.min.js"></script>
+          <!--
+          
+          <script src="js/foundation/foundation.js"></script>
+          
+          <script src="js/foundation/foundation.interchange.js"></script>
+          
+          <script src="js/foundation/foundation.abide.js"></script>
+          
+          <script src="js/foundation/foundation.dropdown.js"></script>
+          
+          <script src="js/foundation/foundation.placeholder.js"></script>
+          
+          <script src="js/foundation/foundation.forms.js"></script>
+          
+          <script src="js/foundation/foundation.alerts.js"></script>
+          
+          <script src="js/foundation/foundation.magellan.js"></script>
+          
+          <script src="js/foundation/foundation.reveal.js"></script>
+          
+          <script src="js/foundation/foundation.tooltips.js"></script>
+          
+          <script src="js/foundation/foundation.clearing.js"></script>
+          
+          <script src="js/foundation/foundation.cookie.js"></script>
+          
+          <script src="js/foundation/foundation.joyride.js"></script>
+          
+          <script src="js/foundation/foundation.orbit.js"></script>
+          
+          <script src="js/foundation/foundation.section.js"></script>
+          
+          <script src="js/foundation/foundation.topbar.js"></script>
+          
+          -->
+          
+          <script>
+            $(document).foundation();
+          </script>
+    </body>
+</html>

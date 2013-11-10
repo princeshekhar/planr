@@ -1,0 +1,98 @@
+﻿<div class="row">
+    <div id="event-basic-details" class="row huge-padding large-padding-top">
+        <div class="small-4 columns medium-padding">
+            <img src="img/makeathonbig.png"/>
+        </div>
+        <div class="small-8 columns medium-padding">
+            <div data-bind="text: name" class="row event-details-name large-padding-left"></div>
+            <div data-bind="text: date" class="row event-details-subtext date large-padding-top large-padding-left"></div>
+            <div data-bind="text: time" class="row event-details-subtext time large-padding-left"></div>
+            <div data-bind="text: code"  class="row event-details-code large-padding-top  large-padding-left"></div>
+        </div>
+    </div>
+    <div class="row section huge-padding medium-padding-top">
+        <div class="section-header large-padding-bot">Recent Activity</div>
+        <div class="activity">
+            <div class="band blue"></div>
+            <div class="side-text">Aravind added a collaborator. <span class="time">20min ago.</span></div>
+        </div>
+        <div class="activity">
+            <div class="band orange"></div>
+            <div class="side-text">Vasu suggested a venue. <span class="time">20min ago.</span></div>
+        </div>
+        <div class="activity">
+            <div class="band blue"></div>
+            <div class="side-text">Aravind added a collaborator. <span class="time">20min ago.</span></div>
+        </div>
+        <div class="activity">
+            <div class="band orange"></div>
+            <div class="side-text">Vasu suggested a venue. <span class="time">20min ago.</span></div>
+        </div>
+    </div>
+    <div id="collab-area" class="row huge-padding medium-padding-top">
+        <div class="small-12 columns medium-padding section-header ">Add Collaborators</div>
+        <div class="small-12 columns medium-padding no-padding-bot">
+            <div class="plus-adder">
+                <input type="text" id="addCollaboratorEmail" class="generic-text-box generic-plus" placeholder="Name or Email of Collaborator"/>
+                <div id="addCollaboratorSubmit" class="custom-white-button">+</div>
+            </div>
+        </div>
+        <div class="small-12 columns alert-type-1 large-padding-top">
+            An Invite Email will be sent to the contributors.
+        </div>
+        <div data-bind="foreach: collaborators" class="small-12 columns medium-padding no-padding-bot">
+            <div class="contributor row medium-padding-top">
+                <div class="row contributor-name" data-bind="text: email"></div>
+                <div class="row contributor-email medium-paddin-top medium-padding-bot tiny-padding-left"></div>
+            </div>
+        </div>
+    </div>
+    <div id="rightBarOnline">
+        <div class="row" data-bind="foreach: collaborators">
+            <div class="row online-status">
+                <div class="band"></div>
+                <div data-bind="attr: {class: (online == true)?'online-dot':'offline'}" ></div>
+                <div data-bind="text: name" class="person-name"></div>
+            </div>
+        </div>
+    </div>
+    <nav id="eventSideBar">
+        <div class="row">
+
+            <div class="row list-item active">
+                <div class="row event-name">
+                    <a data-bind='attr: { href: "#manageEvent/"+eventId(), title: name}, text: name'></a>
+                </div>
+                <div class="row event-by" data-bind='text: "Created by " + createdBy()'> John Doe</div>
+            </div>
+            <div class="row list-item">
+                <div class="thumb"><img src="img/sidebar/event/loc.png"/></div>
+                <div class="list-content large-padding-left"><a data-bind='attr: { href: "#manageVenue/"+eventId()}'>Decide Venue</a></div>
+            </div>
+            <div class="row list-item">
+                <div class="thumb"><img src="img/sidebar/event/cal.png"/></div>
+                <div class="list-content large-padding-left"><a data-bind='attr: { href: "#manageDate/"+eventId()}'>Decide Date & Time</a></div>
+            </div>
+            <div class="row list-item">
+                <div class="thumb"><img src="img/sidebar/event/pie.png"/></div>
+                <div class="list-content large-padding-left"><a data-bind='attr: { href: "#manageTasks/"+eventId()}'>Decide Tasks</a></div>
+            </div>
+            <div class="row list-item">
+                <div class="thumb"><img src="img/sidebar/event/prize.png"/></div>
+                <div class="list-content large-padding-left"><a data-bind='attr: { href: "#publishEvent/"+eventId()}'>Publish the Event</a></div>
+            </div>
+            <div class="row list-item">
+                <div class="thumb"><img src="img/sidebar/event/ads.png"/></div>
+                <div class="list-content large-padding-left"><a data-bind='attr: { href: "#manageTasks/"+eventId()}'>Set Invitees</a></div>
+            </div>
+            <div class="row list-item">
+                <div class="thumb"><img src="img/sidebar/event/plane.png"/></div>
+                <div class="list-content large-padding-left"><a data-bind='attr: { href: "#liveStream/"+eventId()}'>Live Stream!</a></div>
+            </div>
+            <div class="row list-item">
+                <div class="thumb"><img src="img/sidebar/event/pro.png"/></div>
+                <div class="list-content large-padding-left"><a href="#">Go Pro</a></div>
+            </div>
+        </div>
+    </nav>
+</div>

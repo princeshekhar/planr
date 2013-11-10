@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Planr</title>
+        
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="format-detection" content="telephone=no"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=yes" />
+        
+        <link rel="apple-touch-startup-image" href="lib/durandal/img/ios-startup-image-landscape.png" media="(orientation:landscape)" />
+        <link rel="apple-touch-startup-image" href="lib/durandal/img/ios-startup-image-portrait.png" media="(orientation:portrait)" />
+        <link rel="apple-touch-icon" href="lib/durandal/img/icon.png"/>
+
+
+
+        <link href="css/style.css" rel="stylesheet" />
+        <link href="css/shoaib.css" rel="stylesheet" />
+        <link href="css/autoPadder.css" rel="stylesheet" />
+        <link href="css/jquery.mmenu.all.css" rel="stylesheet" />
+
+        <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+
+        <script type="text/javascript" src="js/jquery.validate.js"></script>
+        <script type="text/javascript" src="js/qrcode.js"></script>
+        <script type="text/javascript" src="js/technited.toolkit.js"></script>
+        <script type="text/javascript" src="js/jquery.mmenu.js"></script>
+
+        <script type="text/javascript"
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfqe1y4WTF1hKQ4T3WNKpPTV0wvtvE52c&sensor=false">
+        </script>
+
+        <link rel="stylesheet" href="css/foundation.css">
+        <script src="js/vendor/custom.modernizr.js"></script>
+        
+        <script type="text/javascript">
+            if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+                var msViewportStyle = document.createElement("style");
+                var mq = "@@-ms-viewport{width:auto!important}";
+                msViewportStyle.appendChild(document.createTextNode(mq));
+                document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+            }
+        </script>
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <script>
+           window.fbAsyncInit = function() {
+                // init the FB JS SDK
+                FB.init({
+                    appId      : '608370065886350',                        // App ID from the app dashboard
+                    channelUrl : '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel file for x-domain comms
+                    status     : true,                                 // Check Facebook Login status
+                    xfbml      : true                                  // Look for social plugins on the page
+                });
+
+                // Additional initialization code such as adding Event Listeners goes here
+            };
+
+            // Load the SDK asynchronously
+            (function(){
+                // If we've already installed the SDK, we're done
+                if (document.getElementById('facebook-jssdk')) {return;}
+
+                // Get the first script element, which we'll use to find the parent node
+                var firstScriptElement = document.getElementsByTagName('script')[0];
+
+                // Create a new script element and set its id
+                var facebookJS = document.createElement('script');
+                facebookJS.id = 'facebook-jssdk';
+
+                // Set the new script's source to the source of the Facebook JS SDK
+                facebookJS.src = '//connect.facebook.net/en_US/all.js';
+
+                // Insert the Facebook JS SDK into the DOM
+                firstScriptElement.parentNode.insertBefore(facebookJS, firstScriptElement);
+            }());
+
+        </script>
+        <div class="alert-container"></div>
+        <div id="applicationHost">
+
+<!--             <div class="splash">
+              <div class="message">
+                  Durandal Starter Project
+              </div>
+              <i class="icon-spinner icon-2x icon-spin active"></i>
+          </div> -->
+        </div>
+
+   <!--     <nav id="homeSideBar" class="hide">
+            <div class="row">
+
+                <div class="row list-item">
+                    <div class="large-thumb"><img src="img/user.png"/></div>
+                    <div class="rest-content huge-padding-top">
+                        <div class="row event-name">John Doe</div>
+                        <div class="row event-by">Joined 4 Months ago.</div>
+                    </div>
+                </div>
+                <div class="row list-item active">
+                    <div class="thumb"><img src="img/sidebar/event/doc.png"/></div>
+                    <div class="list-content large-padding-left">Create Event</div>
+                </div>
+                <div class="row list-item">
+                    <div class="thumb"><img src="img/sidebar/event/loc.png"/></div>
+                    <div class="list-content large-padding-left">Manage Existing Events</div>
+                </div>
+                <div class="row list-item">
+                    <div class="thumb"><img src="img/sidebar/event/cal.png"/></div>
+                    <div class="list-content large-padding-left">Upcoming Events</div>
+                </div>
+                <div class="row list-item">
+                    <div class="thumb"><img src="img/sidebar/event/prize.png"/></div>
+                    <div class="list-content large-padding-left">Badges Collected</div>
+                </div>
+                <div class="row list-item">
+                    <div class="thumb"><img src="img/sidebar/event/tools.png"/></div>
+                    <div class="list-content large-padding-left">Profile Settings</div>
+                </div>
+                <div class="row list-item">
+                    <div class="thumb"><img src="img/sidebar/event/pie.png"/></div>
+                    <div class="list-content large-padding-left">Events Archives</div>
+                </div>
+                <div class="row list-item">
+                    <div class="thumb"><img src="img/sidebar/event/plane.png"/></div>
+                    <div class="list-content large-padding-left">History</div>
+                </div>
+                <div class="row list-item">
+                    <div class="thumb"><img src="img/sidebar/event/pro.png"/></div>
+                    <div class="list-content large-padding-left">Go Pro</div>
+                </div>
+            </div>
+        </nav>      -->
+
+
+        <script type="text/javascript" src="js/knockout-3.0.0.js"></script>
+        <script type="text/javascript" src="js/jquery.signalR-1.1.3.js"></script>
+
+        <script src="app/titan/models.js" type="text/javascript"></script>
+        <script src="app/titan/rest.js" type="text/javascript"></script>
+        <script src="app/titan/lib.js" type="text/javascript"></script>
+        <script src="app/titan/live.js" type="text/javascript"></script>
+
+
+        <script src="lib/require/require.js" data-main="app/main"></script>
+        <script>
+
+
+            $(document).ready(function(){
+
+             /*   $('#homeSideBar').mmenu({});
+
+
+                $("body").on( "click", ".menu.home-menu", function() {
+                    $('#homeSideBar').addClass("mm-opened").addClass("mm-current");
+
+                    $(".mm-page").addClass("mm-page-open");
+                });
+
+
+
+                $("body").on( "click", ".mm-page-open", function(e) {
+                    e.preventDefault();
+                    $('#homeSideBar').removeClass("mm-opened").removeClass("mm-current");
+                    $('#eventSideBar').removeClass("mm-opened").removeClass("mm-current");
+                    $(".mm-page").removeClass("mm-page-open");
+                });  */
+
+            });
+        </script>
+
+        <script src="js/foundation.min.js"></script>
+    </body>
+</html>

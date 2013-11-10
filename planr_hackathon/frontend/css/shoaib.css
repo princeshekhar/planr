@@ -1,0 +1,40 @@
+body{
+    webkit-user-select:none;
+}
+#rightBarOnline
+{
+    position:fixed;
+    display:none;
+    background:#424242;
+    width:80%;
+    z-index: 9999;
+    right:0;
+    padding-top: 67px;
+    top:0;
+    height:100%;
+    box-shadow: 0 0 10px #222;
+}
+#eventSideBar
+{
+    position:fixed;
+    background-color: #F6F6F6;
+    box-shadow: 0 0 10px #222;
+    display:none;
+    width:80%;
+    z-index: 9999;
+    padding-top: 67px;
+    left:0;
+    top:0;
+    height:100%;
+}
+.list-item a{
+    color:#666;
+}
+.list-item.active a{
+    color:#FFF;
+}
+.search
+{
+   background-repeat: no-repeat;
+    background-position: center center;
+}
