@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PlanrDBModelStoreContainer" CdmEntityContainer="PlanrDBEntities1">
+    <EntitySetMapping Name="collaborators">
+      <EntityTypeMapping TypeName="PlanrDBModel.collaborator">
+        <MappingFragment StoreEntitySet="collaborators">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="user_role" ColumnName="user_role" />
+          <ScalarProperty Name="event_id" ColumnName="event_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="connections">
+      <EntityTypeMapping TypeName="PlanrDBModel.connection">
+        <MappingFragment StoreEntitySet="connections">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="connection_id" ColumnName="connection_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="date_suggestions">
+      <EntityTypeMapping TypeName="PlanrDBModel.date_suggestions">
+        <MappingFragment StoreEntitySet="date_suggestions">
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="suggestion_id" ColumnName="suggestion_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="events">
+      <EntityTypeMapping TypeName="PlanrDBModel.event">
+        <MappingFragment StoreEntitySet="events">
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="venue" ColumnName="venue" />
+          <ScalarProperty Name="photo" ColumnName="photo" />
+          <ScalarProperty Name="coordinates" ColumnName="coordinates" />
+          <ScalarProperty Name="invite_type" ColumnName="invite_type" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="idea_suggestions">
+      <EntityTypeMapping TypeName="PlanrDBModel.idea_suggestions">
+        <MappingFragment StoreEntitySet="idea_suggestions">
+          <ScalarProperty Name="photo" ColumnName="photo" />
+          <ScalarProperty Name="idea" ColumnName="idea" />
+          <ScalarProperty Name="suggestion_id" ColumnName="suggestion_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="notifications">
+      <EntityTypeMapping TypeName="PlanrDBModel.notification">
+        <MappingFragment StoreEntitySet="notifications">
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="event_id" ColumnName="event_id" />
+          <ScalarProperty Name="text" ColumnName="text" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="suggestions">
+      <EntityTypeMapping TypeName="PlanrDBModel.suggestion">
+        <MappingFragment StoreEntitySet="suggestions">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="event_id" ColumnName="event_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tasks">
+      <EntityTypeMapping TypeName="PlanrDBModel.task">
+        <MappingFragment StoreEntitySet="tasks">
+          <ScalarProperty Name="priority" ColumnName="priority" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="deadline" ColumnName="deadline" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="event_id" ColumnName="event_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="time_suggestions">
+      <EntityTypeMapping TypeName="PlanrDBModel.time_suggestions">
+        <MappingFragment StoreEntitySet="time_suggestions">
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="suggestion_id" ColumnName="suggestion_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user_attending">
+      <EntityTypeMapping TypeName="PlanrDBModel.user_attending">
+        <MappingFragment StoreEntitySet="user_attending">
+          <ScalarProperty Name="event_id" ColumnName="event_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user_likes">
+      <EntityTypeMapping TypeName="PlanrDBModel.user_likes">
+        <MappingFragment StoreEntitySet="user_likes">
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="suggestion_id" ColumnName="suggestion_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user_tasks">
+      <EntityTypeMapping TypeName="PlanrDBModel.user_tasks">
+        <MappingFragment StoreEntitySet="user_tasks">
+          <ScalarProperty Name="completed_on" ColumnName="completed_on" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="task_id" ColumnName="task_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="PlanrDBModel.user">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="color_code" ColumnName="color_code" />
+          <ScalarProperty Name="fb_token" ColumnName="fb_token" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="venue_suggestions">
+      <EntityTypeMapping TypeName="PlanrDBModel.venue_suggestions">
+        <MappingFragment StoreEntitySet="venue_suggestions">
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="venue" ColumnName="venue" />
+          <ScalarProperty Name="photo" ColumnName="photo" />
+          <ScalarProperty Name="coordinates" ColumnName="coordinates" />
+          <ScalarProperty Name="suggestion_id" ColumnName="suggestion_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="user_notifications" TypeName="PlanrDBModel.user_notifications" StoreEntitySet="user_notifications">
+      <EndProperty Name="user">
+        <ScalarProperty Name="id" ColumnName="users_id" />
+      </EndProperty>
+      <EndProperty Name="notification">
+        <ScalarProperty Name="id" ColumnName="notifications1_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

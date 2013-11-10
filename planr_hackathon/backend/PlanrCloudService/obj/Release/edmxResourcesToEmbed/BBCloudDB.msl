@@ -1,0 +1,542 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BrewberrysCloudDBModelStoreContainer" CdmEntityContainer="BrewberrysCloudDBEntities">
+    <EntitySetMapping Name="axi_admins">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_admins">
+        <MappingFragment StoreEntitySet="axi_admins">
+          <ScalarProperty Name="modified" ColumnName="modified" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="failed_attempt" ColumnName="failed_attempt" />
+          <ScalarProperty Name="last_logout_ip" ColumnName="last_logout_ip" />
+          <ScalarProperty Name="last_logout_time" ColumnName="last_logout_time" />
+          <ScalarProperty Name="last_login_ip" ColumnName="last_login_ip" />
+          <ScalarProperty Name="last_login_time" ColumnName="last_login_time" />
+          <ScalarProperty Name="activated" ColumnName="activated" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_banks">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_banks">
+        <MappingFragment StoreEntitySet="axi_banks">
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="account_number" ColumnName="account_number" />
+          <ScalarProperty Name="ifsc_code" ColumnName="ifsc_code" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_blocked_ip">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_blocked_ip">
+        <MappingFragment StoreEntitySet="axi_blocked_ip">
+          <ScalarProperty Name="attempts" ColumnName="attempts" />
+          <ScalarProperty Name="ipAddr" ColumnName="ipAddr" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_cafe_activations">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_cafe_activations">
+        <MappingFragment StoreEntitySet="axi_cafe_activations">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="activated_time" ColumnName="activated_time" />
+          <ScalarProperty Name="modified" ColumnName="modified" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="cafe_id" ColumnName="cafe_id" />
+          <ScalarProperty Name="activation_code" ColumnName="activation_code" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_cafe_connections">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_cafe_connections">
+        <MappingFragment StoreEntitySet="axi_cafe_connections">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="end_time" ColumnName="end_time" />
+          <ScalarProperty Name="start_time" ColumnName="start_time" />
+          <ScalarProperty Name="cafe_id" ColumnName="cafe_id" />
+          <ScalarProperty Name="connection_id" ColumnName="connection_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_cafe_details">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_cafe_details">
+        <MappingFragment StoreEntitySet="axi_cafe_details">
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="incharge_id" ColumnName="incharge_id" />
+          <ScalarProperty Name="lat_long" ColumnName="lat_long" />
+          <ScalarProperty Name="zip_code" ColumnName="zip_code" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="cafe_id" ColumnName="cafe_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_cafe_incharges">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_cafe_incharges">
+        <MappingFragment StoreEntitySet="axi_cafe_incharges">
+          <ScalarProperty Name="modified" ColumnName="modified" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="failed_attempt" ColumnName="failed_attempt" />
+          <ScalarProperty Name="last_logout_ip" ColumnName="last_logout_ip" />
+          <ScalarProperty Name="last_logout_time" ColumnName="last_logout_time" />
+          <ScalarProperty Name="last_login_ip" ColumnName="last_login_ip" />
+          <ScalarProperty Name="last_login_time" ColumnName="last_login_time" />
+          <ScalarProperty Name="activated" ColumnName="activated" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_cafe_menu_items">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_cafe_menu_items">
+        <MappingFragment StoreEntitySet="axi_cafe_menu_items">
+          <ScalarProperty Name="CP" ColumnName="CP" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="menuItemCode" ColumnName="menuItemCode" />
+          <ScalarProperty Name="cafeID" ColumnName="cafeID" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_cafe_profile">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_cafe_profile">
+        <MappingFragment StoreEntitySet="axi_cafe_profile">
+          <ScalarProperty Name="modified" ColumnName="modified" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_cafes">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_cafes">
+        <MappingFragment StoreEntitySet="axi_cafes">
+          <ScalarProperty Name="license_key" ColumnName="license_key" />
+          <ScalarProperty Name="last_login_ip" ColumnName="last_login_ip" />
+          <ScalarProperty Name="last_login_time" ColumnName="last_login_time" />
+          <ScalarProperty Name="expiration_date" ColumnName="expiration_date" />
+          <ScalarProperty Name="activated" ColumnName="activated" />
+          <ScalarProperty Name="guid" ColumnName="guid" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_control_city">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_control_city">
+        <MappingFragment StoreEntitySet="axi_control_city">
+          <ScalarProperty Name="lon" ColumnName="lon" />
+          <ScalarProperty Name="lat" ColumnName="lat" />
+          <ScalarProperty Name="state_id" ColumnName="state_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_control_config">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_control_config">
+        <MappingFragment StoreEntitySet="axi_control_config">
+          <ScalarProperty Name="smtp_port" ColumnName="smtp_port" />
+          <ScalarProperty Name="smtp_password" ColumnName="smtp_password" />
+          <ScalarProperty Name="smtp_username" ColumnName="smtp_username" />
+          <ScalarProperty Name="smtp_server" ColumnName="smtp_server" />
+          <ScalarProperty Name="support_email" ColumnName="support_email" />
+          <ScalarProperty Name="default_timezone" ColumnName="default_timezone" />
+          <ScalarProperty Name="default_country" ColumnName="default_country" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_control_country">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_control_country">
+        <MappingFragment StoreEntitySet="axi_control_country">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_control_license">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_control_license">
+        <MappingFragment StoreEntitySet="axi_control_license">
+          <ScalarProperty Name="last_used_time" ColumnName="last_used_time" />
+          <ScalarProperty Name="modified" ColumnName="modified" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="used" ColumnName="used" />
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_control_state">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_control_state">
+        <MappingFragment StoreEntitySet="axi_control_state">
+          <ScalarProperty Name="country_id" ColumnName="country_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_geo_tagging">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_geo_tagging">
+        <MappingFragment StoreEntitySet="axi_geo_tagging">
+          <ScalarProperty Name="lon" ColumnName="lon" />
+          <ScalarProperty Name="lat" ColumnName="lat" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_ho_params">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_ho_params">
+        <MappingFragment StoreEntitySet="axi_ho_params">
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_invoice_sync">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_invoice_sync">
+        <MappingFragment StoreEntitySet="axi_invoice_sync">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="invoice_json" ColumnName="invoice_json" />
+          <ScalarProperty Name="discount_number" ColumnName="discount_number" />
+          <ScalarProperty Name="discount_value" ColumnName="discount_value" />
+          <ScalarProperty Name="end_time" ColumnName="end_time" />
+          <ScalarProperty Name="start_time" ColumnName="start_time" />
+          <ScalarProperty Name="table_id" ColumnName="table_id" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="remarks" ColumnName="remarks" />
+          <ScalarProperty Name="tax_amount" ColumnName="tax_amount" />
+          <ScalarProperty Name="card_transaction_id" ColumnName="card_transaction_id" />
+          <ScalarProperty Name="cash_out" ColumnName="cash_out" />
+          <ScalarProperty Name="cash_in" ColumnName="cash_in" />
+          <ScalarProperty Name="payment_mode" ColumnName="payment_mode" />
+          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="invoice_no" ColumnName="invoice_no" />
+          <ScalarProperty Name="cafe_id" ColumnName="cafe_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_menu_items">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_menu_items">
+        <MappingFragment StoreEntitySet="axi_menu_items">
+          <ScalarProperty Name="CP" ColumnName="CP" />
+          <ScalarProperty Name="enabled" ColumnName="enabled" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="MRP" ColumnName="MRP" />
+          <ScalarProperty Name="subcategory_id" ColumnName="subcategory_id" />
+          <ScalarProperty Name="category_id" ColumnName="category_id" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_menu_items_category">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_menu_items_category">
+        <MappingFragment StoreEntitySet="axi_menu_items_category">
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_menu_items_recipe">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_menu_items_recipe">
+        <MappingFragment StoreEntitySet="axi_menu_items_recipe">
+          <ScalarProperty Name="menu_item_code" ColumnName="menu_item_code" />
+          <ScalarProperty Name="raw_material_code" ColumnName="raw_material_code" />
+          <ScalarProperty Name="unit" ColumnName="unit" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_menu_items_subcategory">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_menu_items_subcategory">
+        <MappingFragment StoreEntitySet="axi_menu_items_subcategory">
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_profile_menu_items">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_profile_menu_items">
+        <MappingFragment StoreEntitySet="axi_profile_menu_items">
+          <ScalarProperty Name="CP" ColumnName="CP" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="menuItemCode" ColumnName="menuItemCode" />
+          <ScalarProperty Name="profileID" ColumnName="profileID" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_psk_admin">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_psk_admin">
+        <MappingFragment StoreEntitySet="axi_psk_admin">
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="mob" ColumnName="mob" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="cafe_id" ColumnName="cafe_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_psk_balance">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_psk_balance">
+        <MappingFragment StoreEntitySet="axi_psk_balance">
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+          <ScalarProperty Name="psk_id" ColumnName="psk_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_psk_deposit">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_psk_deposit">
+        <MappingFragment StoreEntitySet="axi_psk_deposit">
+          <ScalarProperty Name="amount" ColumnName="amount" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="psk_id" ColumnName="psk_id" />
+          <ScalarProperty Name="bank_id" ColumnName="bank_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_psk_ho_logs">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_psk_ho_logs">
+        <MappingFragment StoreEntitySet="axi_psk_ho_logs">
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="comment" ColumnName="comment" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="param_id" ColumnName="param_id" />
+          <ScalarProperty Name="cafe_id" ColumnName="cafe_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_psk_manager">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_psk_manager">
+        <MappingFragment StoreEntitySet="axi_psk_manager">
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="mob" ColumnName="mob" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="cafe_id" ColumnName="cafe_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_psk_menu_item_log">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_psk_menu_item_log">
+        <MappingFragment StoreEntitySet="axi_psk_menu_item_log">
+          <ScalarProperty Name="closing" ColumnName="closing" />
+          <ScalarProperty Name="wastage" ColumnName="wastage" />
+          <ScalarProperty Name="consumption" ColumnName="consumption" />
+          <ScalarProperty Name="received" ColumnName="received" />
+          <ScalarProperty Name="item_order" ColumnName="item_order" />
+          <ScalarProperty Name="opening" ColumnName="opening" />
+          <ScalarProperty Name="menu_item_id" ColumnName="menu_item_id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="psk_id" ColumnName="psk_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_psk_purchase">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_psk_purchase">
+        <MappingFragment StoreEntitySet="axi_psk_purchase">
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_psk_purchase_log">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_psk_purchase_log">
+        <MappingFragment StoreEntitySet="axi_psk_purchase_log">
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="comment" ColumnName="comment" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="param_id" ColumnName="param_id" />
+          <ScalarProperty Name="cafe_id" ColumnName="cafe_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_psk_sales">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_psk_sales">
+        <MappingFragment StoreEntitySet="axi_psk_sales">
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_psk_sales_log">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_psk_sales_log">
+        <MappingFragment StoreEntitySet="axi_psk_sales_log">
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="comment" ColumnName="comment" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="param_id" ColumnName="param_id" />
+          <ScalarProperty Name="cafe_id" ColumnName="cafe_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_psk_stock_items">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_psk_stock_items">
+        <MappingFragment StoreEntitySet="axi_psk_stock_items">
+          <ScalarProperty Name="unit" ColumnName="unit" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_psk_stock_logs">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_psk_stock_logs">
+        <MappingFragment StoreEntitySet="axi_psk_stock_logs">
+          <ScalarProperty Name="closing_stock" ColumnName="closing_stock" />
+          <ScalarProperty Name="wastage" ColumnName="wastage" />
+          <ScalarProperty Name="local_purchase_rate" ColumnName="local_purchase_rate" />
+          <ScalarProperty Name="local_purchase" ColumnName="local_purchase" />
+          <ScalarProperty Name="ho_supply" ColumnName="ho_supply" />
+          <ScalarProperty Name="opening_stock" ColumnName="opening_stock" />
+          <ScalarProperty Name="updated" ColumnName="updated" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="stock_id" ColumnName="stock_id" />
+          <ScalarProperty Name="psk_id" ColumnName="psk_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_psk_user_link">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_psk_user_link">
+        <MappingFragment StoreEntitySet="axi_psk_user_link">
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="cafe_id" ColumnName="cafe_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_raw_materials">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_raw_materials">
+        <MappingFragment StoreEntitySet="axi_raw_materials">
+          <ScalarProperty Name="category_id" ColumnName="category_id" />
+          <ScalarProperty Name="re_order_at" ColumnName="re_order_at" />
+          <ScalarProperty Name="unit_id" ColumnName="unit_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_raw_materials_category">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_raw_materials_category">
+        <MappingFragment StoreEntitySet="axi_raw_materials_category">
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_session">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_session">
+        <MappingFragment StoreEntitySet="axi_session">
+          <ScalarProperty Name="expiry" ColumnName="expiry" />
+          <ScalarProperty Name="lon" ColumnName="lon" />
+          <ScalarProperty Name="lat" ColumnName="lat" />
+          <ScalarProperty Name="browser" ColumnName="browser" />
+          <ScalarProperty Name="ip" ColumnName="ip" />
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_sync_items">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_sync_items">
+        <MappingFragment StoreEntitySet="axi_sync_items">
+          <ScalarProperty Name="cafe_id" ColumnName="cafe_id" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="synched_time" ColumnName="synched_time" />
+          <ScalarProperty Name="created_time" ColumnName="created_time" />
+          <ScalarProperty Name="file" ColumnName="file" />
+          <ScalarProperty Name="sync_code" ColumnName="sync_code" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_unit">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_unit">
+        <MappingFragment StoreEntitySet="axi_unit">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="is_read_only" ColumnName="is_read_only" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="base_id" ColumnName="base_id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_users">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_users">
+        <MappingFragment StoreEntitySet="axi_users">
+          <ScalarProperty Name="modified" ColumnName="modified" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="failed_attempt" ColumnName="failed_attempt" />
+          <ScalarProperty Name="last_logout_ip" ColumnName="last_logout_ip" />
+          <ScalarProperty Name="last_logout_time" ColumnName="last_logout_time" />
+          <ScalarProperty Name="last_login_ip" ColumnName="last_login_ip" />
+          <ScalarProperty Name="last_login_time" ColumnName="last_login_time" />
+          <ScalarProperty Name="activated" ColumnName="activated" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_validation">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.axi_validation">
+        <MappingFragment StoreEntitySet="axi_validation">
+          <ScalarProperty Name="mobVerified" ColumnName="mobVerified" />
+          <ScalarProperty Name="emailVerified" ColumnName="emailVerified" />
+          <ScalarProperty Name="mobCode" ColumnName="mobCode" />
+          <ScalarProperty Name="emailCode" ColumnName="emailCode" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tables">
+      <EntityTypeMapping TypeName="BrewberrysCloudDBModel.Table">
+        <MappingFragment StoreEntitySet="Table">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="closed" ColumnName="closed" />
+          <ScalarProperty Name="started" ColumnName="started" />
+          <ScalarProperty Name="connection_id" ColumnName="connection_id" />
+          <ScalarProperty Name="cafe_id" ColumnName="cafe_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,531 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PlanrDBModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="PlanrDBEntities1" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="collaborators" EntityType="PlanrDBModel.collaborator" />
+    <EntitySet Name="connections" EntityType="PlanrDBModel.connection" />
+    <EntitySet Name="date_suggestions" EntityType="PlanrDBModel.date_suggestions" />
+    <EntitySet Name="events" EntityType="PlanrDBModel.event" />
+    <EntitySet Name="idea_suggestions" EntityType="PlanrDBModel.idea_suggestions" />
+    <EntitySet Name="notifications" EntityType="PlanrDBModel.notification" />
+    <EntitySet Name="suggestions" EntityType="PlanrDBModel.suggestion" />
+    <EntitySet Name="tasks" EntityType="PlanrDBModel.task" />
+    <EntitySet Name="time_suggestions" EntityType="PlanrDBModel.time_suggestions" />
+    <EntitySet Name="user_attending" EntityType="PlanrDBModel.user_attending" />
+    <EntitySet Name="user_likes" EntityType="PlanrDBModel.user_likes" />
+    <EntitySet Name="user_tasks" EntityType="PlanrDBModel.user_tasks" />
+    <EntitySet Name="users" EntityType="PlanrDBModel.user" />
+    <EntitySet Name="venue_suggestions" EntityType="PlanrDBModel.venue_suggestions" />
+    <AssociationSet Name="FK_coll_event" Association="PlanrDBModel.FK_coll_event">
+      <End Role="event" EntitySet="events" />
+      <End Role="collaborator" EntitySet="collaborators" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Comments_Person" Association="PlanrDBModel.FK_Comments_Person">
+      <End Role="user" EntitySet="users" />
+      <End Role="collaborator" EntitySet="collaborators" />
+    </AssociationSet>
+    <AssociationSet Name="fk_conn_users" Association="PlanrDBModel.fk_conn_users">
+      <End Role="user" EntitySet="users" />
+      <End Role="connection" EntitySet="connections" />
+    </AssociationSet>
+    <AssociationSet Name="fk_date_sugg" Association="PlanrDBModel.fk_date_sugg">
+      <End Role="suggestion" EntitySet="suggestions" />
+      <End Role="date_suggestions" EntitySet="date_suggestions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_attend_event" Association="PlanrDBModel.FK_attend_event">
+      <End Role="event" EntitySet="events" />
+      <End Role="user_attending" EntitySet="user_attending" />
+    </AssociationSet>
+    <AssociationSet Name="fk_events_user" Association="PlanrDBModel.fk_events_user">
+      <End Role="user" EntitySet="users" />
+      <End Role="event" EntitySet="events" />
+    </AssociationSet>
+    <AssociationSet Name="fk_notify_event" Association="PlanrDBModel.fk_notify_event">
+      <End Role="event" EntitySet="events" />
+      <End Role="notification" EntitySet="notifications" />
+    </AssociationSet>
+    <AssociationSet Name="fk_sugg_event" Association="PlanrDBModel.fk_sugg_event">
+      <End Role="event" EntitySet="events" />
+      <End Role="suggestion" EntitySet="suggestions" />
+    </AssociationSet>
+    <AssociationSet Name="fk_task_event" Association="PlanrDBModel.fk_task_event">
+      <End Role="event" EntitySet="events" />
+      <End Role="task" EntitySet="tasks" />
+    </AssociationSet>
+    <AssociationSet Name="fk_idea_sugg" Association="PlanrDBModel.fk_idea_sugg">
+      <End Role="suggestion" EntitySet="suggestions" />
+      <End Role="idea_suggestions" EntitySet="idea_suggestions" />
+    </AssociationSet>
+    <AssociationSet Name="fk_notify_user" Association="PlanrDBModel.fk_notify_user">
+      <End Role="user" EntitySet="users" />
+      <End Role="notification" EntitySet="notifications" />
+    </AssociationSet>
+    <AssociationSet Name="fk_likes_sugg" Association="PlanrDBModel.fk_likes_sugg">
+      <End Role="suggestion" EntitySet="suggestions" />
+      <End Role="user_likes" EntitySet="user_likes" />
+    </AssociationSet>
+    <AssociationSet Name="fk_sugg_user" Association="PlanrDBModel.fk_sugg_user">
+      <End Role="user" EntitySet="users" />
+      <End Role="suggestion" EntitySet="suggestions" />
+    </AssociationSet>
+    <AssociationSet Name="fk_time_sugg" Association="PlanrDBModel.fk_time_sugg">
+      <End Role="suggestion" EntitySet="suggestions" />
+      <End Role="time_suggestions" EntitySet="time_suggestions" />
+    </AssociationSet>
+    <AssociationSet Name="fk_venue_sugg" Association="PlanrDBModel.fk_venue_sugg">
+      <End Role="suggestion" EntitySet="suggestions" />
+      <End Role="venue_suggestions" EntitySet="venue_suggestions" />
+    </AssociationSet>
+    <AssociationSet Name="fk_task_user" Association="PlanrDBModel.fk_task_user">
+      <End Role="user" EntitySet="users" />
+      <End Role="task" EntitySet="tasks" />
+    </AssociationSet>
+    <AssociationSet Name="fk_tasks_tasks" Association="PlanrDBModel.fk_tasks_tasks">
+      <End Role="task" EntitySet="tasks" />
+      <End Role="user_tasks" EntitySet="user_tasks" />
+    </AssociationSet>
+    <AssociationSet Name="fk_tasks_userid" Association="PlanrDBModel.fk_tasks_userid">
+      <End Role="task" EntitySet="tasks" />
+      <End Role="user_tasks" EntitySet="user_tasks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_attend_user" Association="PlanrDBModel.FK_attend_user">
+      <End Role="user" EntitySet="users" />
+      <End Role="user_attending" EntitySet="user_attending" />
+    </AssociationSet>
+    <AssociationSet Name="fk_likes_user" Association="PlanrDBModel.fk_likes_user">
+      <End Role="user" EntitySet="users" />
+      <End Role="user_likes" EntitySet="user_likes" />
+    </AssociationSet>
+    <AssociationSet Name="user_notifications" Association="PlanrDBModel.user_notifications">
+      <End Role="notification" EntitySet="notifications" />
+      <End Role="user" EntitySet="users" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="collaborator">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="user_id" Nullable="false" />
+    <Property Type="Int32" Name="event_id" Nullable="false" />
+    <Property Type="Int32" Name="user_role" Nullable="false" />
+    <Property Type="Int32" Name="status" Nullable="false" />
+    <NavigationProperty Name="event" Relationship="PlanrDBModel.FK_coll_event" FromRole="collaborator" ToRole="event" />
+    <NavigationProperty Name="user" Relationship="PlanrDBModel.FK_Comments_Person" FromRole="collaborator" ToRole="user" />
+  </EntityType>
+  <EntityType Name="connection">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="connection_id" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="user_id" Nullable="false" />
+    <Property Type="DateTime" Name="created" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="status" Nullable="false" />
+    <NavigationProperty Name="user" Relationship="PlanrDBModel.fk_conn_users" FromRole="connection" ToRole="user" />
+  </EntityType>
+  <EntityType Name="date_suggestions">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="suggestion_id" Nullable="false" />
+    <Property Type="DateTime" Name="date" Nullable="false" Precision="3" />
+    <NavigationProperty Name="suggestion" Relationship="PlanrDBModel.fk_date_sugg" FromRole="date_suggestions" ToRole="suggestion" />
+  </EntityType>
+  <EntityType Name="event">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="user_id" Nullable="false" />
+    <Property Type="String" Name="venue" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="time" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="date" Precision="0" />
+    <Property Type="String" Name="code" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="type" Nullable="false" />
+    <Property Type="Int32" Name="invite_type" Nullable="false" />
+    <NavigationProperty Name="collaborators" Relationship="PlanrDBModel.FK_coll_event" FromRole="event" ToRole="collaborator" />
+    <NavigationProperty Name="user_attending" Relationship="PlanrDBModel.FK_attend_event" FromRole="event" ToRole="user_attending" />
+    <NavigationProperty Name="user" Relationship="PlanrDBModel.fk_events_user" FromRole="event" ToRole="user" />
+    <NavigationProperty Name="notifications" Relationship="PlanrDBModel.fk_notify_event" FromRole="event" ToRole="notification" />
+    <NavigationProperty Name="suggestions" Relationship="PlanrDBModel.fk_sugg_event" FromRole="event" ToRole="suggestion" />
+    <NavigationProperty Name="tasks" Relationship="PlanrDBModel.fk_task_event" FromRole="event" ToRole="task" />
+  </EntityType>
+  <EntityType Name="idea_suggestions">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="suggestion_id" Nullable="false" />
+    <Property Type="String" Name="idea" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="photo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="suggestion" Relationship="PlanrDBModel.fk_idea_sugg" FromRole="idea_suggestions" ToRole="suggestion" />
+  </EntityType>
+  <EntityType Name="notification">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="user_id" Nullable="false" />
+    <Property Type="DateTime" Name="created" Nullable="false" Precision="3" />
+    <Property Type="String" Name="text" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="event_id" Nullable="false" />
+    <Property Type="Int32" Name="code" Nullable="false" />
+    <NavigationProperty Name="event" Relationship="PlanrDBModel.fk_notify_event" FromRole="notification" ToRole="event" />
+    <NavigationProperty Name="user" Relationship="PlanrDBModel.fk_notify_user" FromRole="notification" ToRole="user" />
+    <NavigationProperty Name="users" Relationship="PlanrDBModel.user_notifications" FromRole="notification" ToRole="user" />
+  </EntityType>
+  <EntityType Name="suggestion">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="event_id" Nullable="false" />
+    <Property Type="Int32" Name="user_id" Nullable="false" />
+    <Property Type="DateTime" Name="created" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="status" Nullable="false" />
+    <NavigationProperty Name="date_suggestions" Relationship="PlanrDBModel.fk_date_sugg" FromRole="suggestion" ToRole="date_suggestions" />
+    <NavigationProperty Name="event" Relationship="PlanrDBModel.fk_sugg_event" FromRole="suggestion" ToRole="event" />
+    <NavigationProperty Name="idea_suggestions" Relationship="PlanrDBModel.fk_idea_sugg" FromRole="suggestion" ToRole="idea_suggestions" />
+    <NavigationProperty Name="user_likes" Relationship="PlanrDBModel.fk_likes_sugg" FromRole="suggestion" ToRole="user_likes" />
+    <NavigationProperty Name="user" Relationship="PlanrDBModel.fk_sugg_user" FromRole="suggestion" ToRole="user" />
+    <NavigationProperty Name="time_suggestions" Relationship="PlanrDBModel.fk_time_sugg" FromRole="suggestion" ToRole="time_suggestions" />
+    <NavigationProperty Name="venue_suggestions" Relationship="PlanrDBModel.fk_venue_sugg" FromRole="suggestion" ToRole="venue_suggestions" />
+  </EntityType>
+  <EntityType Name="task">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="event_id" Nullable="false" />
+    <Property Type="Int32" Name="user_id" Nullable="false" />
+    <Property Type="DateTime" Name="created" Nullable="false" Precision="3" />
+    <Property Type="String" Name="description" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="deadline" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="type" Nullable="false" />
+    <Property Type="Int32" Name="priority" Nullable="false" />
+    <NavigationProperty Name="event" Relationship="PlanrDBModel.fk_task_event" FromRole="task" ToRole="event" />
+    <NavigationProperty Name="user" Relationship="PlanrDBModel.fk_task_user" FromRole="task" ToRole="user" />
+    <NavigationProperty Name="user_tasks" Relationship="PlanrDBModel.fk_tasks_tasks" FromRole="task" ToRole="user_tasks" />
+    <NavigationProperty Name="user_tasks1" Relationship="PlanrDBModel.fk_tasks_userid" FromRole="task" ToRole="user_tasks" />
+  </EntityType>
+  <EntityType Name="time_suggestions">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="suggestion_id" Nullable="false" />
+    <Property Type="Time" Name="time" Nullable="false" Precision="7" />
+    <NavigationProperty Name="suggestion" Relationship="PlanrDBModel.fk_time_sugg" FromRole="time_suggestions" ToRole="suggestion" />
+  </EntityType>
+  <EntityType Name="user_attending">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="user_id" Nullable="false" />
+    <Property Type="Int32" Name="event_id" Nullable="false" />
+    <NavigationProperty Name="event" Relationship="PlanrDBModel.FK_attend_event" FromRole="user_attending" ToRole="event" />
+    <NavigationProperty Name="user" Relationship="PlanrDBModel.FK_attend_user" FromRole="user_attending" ToRole="user" />
+  </EntityType>
+  <EntityType Name="user_likes">
+    <Key>
+      <PropertyRef Name="user_id" />
+      <PropertyRef Name="suggestion_id" />
+    </Key>
+    <Property Type="Int32" Name="user_id" Nullable="false" />
+    <Property Type="Int32" Name="suggestion_id" Nullable="false" />
+    <Property Type="Int32" Name="type" Nullable="false" />
+    <NavigationProperty Name="suggestion" Relationship="PlanrDBModel.fk_likes_sugg" FromRole="user_likes" ToRole="suggestion" />
+    <NavigationProperty Name="user" Relationship="PlanrDBModel.fk_likes_user" FromRole="user_likes" ToRole="user" />
+  </EntityType>
+  <EntityType Name="user_tasks">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="task_id" Nullable="false" />
+    <Property Type="Int32" Name="user_id" Nullable="false" />
+    <Property Type="Int32" Name="status" Nullable="false" />
+    <Property Type="DateTime" Name="completed_on" Precision="3" />
+    <NavigationProperty Name="task" Relationship="PlanrDBModel.fk_tasks_tasks" FromRole="user_tasks" ToRole="task" />
+    <NavigationProperty Name="task1" Relationship="PlanrDBModel.fk_tasks_userid" FromRole="user_tasks" ToRole="task" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="email" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="password" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="fb_token" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="collaborators" Relationship="PlanrDBModel.FK_Comments_Person" FromRole="user" ToRole="collaborator" />
+    <NavigationProperty Name="connections" Relationship="PlanrDBModel.fk_conn_users" FromRole="user" ToRole="connection" />
+    <NavigationProperty Name="events" Relationship="PlanrDBModel.fk_events_user" FromRole="user" ToRole="event" />
+    <NavigationProperty Name="notifications" Relationship="PlanrDBModel.fk_notify_user" FromRole="user" ToRole="notification" />
+    <NavigationProperty Name="suggestions" Relationship="PlanrDBModel.fk_sugg_user" FromRole="user" ToRole="suggestion" />
+    <NavigationProperty Name="tasks" Relationship="PlanrDBModel.fk_task_user" FromRole="user" ToRole="task" />
+    <NavigationProperty Name="user_attending" Relationship="PlanrDBModel.FK_attend_user" FromRole="user" ToRole="user_attending" />
+    <NavigationProperty Name="user_likes" Relationship="PlanrDBModel.fk_likes_user" FromRole="user" ToRole="user_likes" />
+    <NavigationProperty Name="notifications1" Relationship="PlanrDBModel.user_notifications" FromRole="user" ToRole="notification" />
+  </EntityType>
+  <EntityType Name="venue_suggestions">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="suggestion_id" Nullable="false" />
+    <Property Type="String" Name="coordinates" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="photo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="venue" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="address" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="description" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="suggestion" Relationship="PlanrDBModel.fk_venue_sugg" FromRole="venue_suggestions" ToRole="suggestion" />
+  </EntityType>
+  <Association Name="FK_coll_event">
+    <End Type="PlanrDBModel.event" Role="event" Multiplicity="1" />
+    <End Type="PlanrDBModel.collaborator" Role="collaborator" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="event">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="collaborator">
+        <PropertyRef Name="event_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Comments_Person">
+    <End Type="PlanrDBModel.user" Role="user" Multiplicity="1" />
+    <End Type="PlanrDBModel.collaborator" Role="collaborator" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="collaborator">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_conn_users">
+    <End Type="PlanrDBModel.user" Role="user" Multiplicity="1" />
+    <End Type="PlanrDBModel.connection" Role="connection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="connection">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_date_sugg">
+    <End Type="PlanrDBModel.suggestion" Role="suggestion" Multiplicity="1" />
+    <End Type="PlanrDBModel.date_suggestions" Role="date_suggestions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="suggestion">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="date_suggestions">
+        <PropertyRef Name="suggestion_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_attend_event">
+    <End Type="PlanrDBModel.event" Role="event" Multiplicity="1" />
+    <End Type="PlanrDBModel.user_attending" Role="user_attending" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="event">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="user_attending">
+        <PropertyRef Name="event_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_events_user">
+    <End Type="PlanrDBModel.user" Role="user" Multiplicity="1" />
+    <End Type="PlanrDBModel.event" Role="event" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="event">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_notify_event">
+    <End Type="PlanrDBModel.event" Role="event" Multiplicity="1" />
+    <End Type="PlanrDBModel.notification" Role="notification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="event">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="notification">
+        <PropertyRef Name="event_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_sugg_event">
+    <End Type="PlanrDBModel.event" Role="event" Multiplicity="1" />
+    <End Type="PlanrDBModel.suggestion" Role="suggestion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="event">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="suggestion">
+        <PropertyRef Name="event_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_task_event">
+    <End Type="PlanrDBModel.event" Role="event" Multiplicity="1" />
+    <End Type="PlanrDBModel.task" Role="task" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="event">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="task">
+        <PropertyRef Name="event_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_idea_sugg">
+    <End Type="PlanrDBModel.suggestion" Role="suggestion" Multiplicity="1" />
+    <End Type="PlanrDBModel.idea_suggestions" Role="idea_suggestions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="suggestion">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="idea_suggestions">
+        <PropertyRef Name="suggestion_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_notify_user">
+    <End Type="PlanrDBModel.user" Role="user" Multiplicity="1" />
+    <End Type="PlanrDBModel.notification" Role="notification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="notification">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_likes_sugg">
+    <End Type="PlanrDBModel.suggestion" Role="suggestion" Multiplicity="1" />
+    <End Type="PlanrDBModel.user_likes" Role="user_likes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="suggestion">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="user_likes">
+        <PropertyRef Name="suggestion_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_sugg_user">
+    <End Type="PlanrDBModel.user" Role="user" Multiplicity="1" />
+    <End Type="PlanrDBModel.suggestion" Role="suggestion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="suggestion">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_time_sugg">
+    <End Type="PlanrDBModel.suggestion" Role="suggestion" Multiplicity="1" />
+    <End Type="PlanrDBModel.time_suggestions" Role="time_suggestions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="suggestion">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="time_suggestions">
+        <PropertyRef Name="suggestion_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_venue_sugg">
+    <End Type="PlanrDBModel.suggestion" Role="suggestion" Multiplicity="1" />
+    <End Type="PlanrDBModel.venue_suggestions" Role="venue_suggestions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="suggestion">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="venue_suggestions">
+        <PropertyRef Name="suggestion_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_task_user">
+    <End Type="PlanrDBModel.user" Role="user" Multiplicity="1" />
+    <End Type="PlanrDBModel.task" Role="task" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="task">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_tasks_tasks">
+    <End Type="PlanrDBModel.task" Role="task" Multiplicity="1" />
+    <End Type="PlanrDBModel.user_tasks" Role="user_tasks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="task">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="user_tasks">
+        <PropertyRef Name="task_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_tasks_userid">
+    <End Type="PlanrDBModel.task" Role="task" Multiplicity="1" />
+    <End Type="PlanrDBModel.user_tasks" Role="user_tasks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="task">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="user_tasks">
+        <PropertyRef Name="task_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_attend_user">
+    <End Type="PlanrDBModel.user" Role="user" Multiplicity="1" />
+    <End Type="PlanrDBModel.user_attending" Role="user_attending" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="user_attending">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_likes_user">
+    <End Type="PlanrDBModel.user" Role="user" Multiplicity="1" />
+    <End Type="PlanrDBModel.user_likes" Role="user_likes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="user_likes">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="user_notifications">
+    <End Type="PlanrDBModel.notification" Role="notification" Multiplicity="*" />
+    <End Type="PlanrDBModel.user" Role="user" Multiplicity="*" />
+  </Association>
+</Schema>

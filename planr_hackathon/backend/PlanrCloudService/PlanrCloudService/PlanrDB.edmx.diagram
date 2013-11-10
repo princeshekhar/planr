@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0ab3baa95dee4d80b9632b1d3ec4eefe" Name="Diagram1">
+        <EntityTypeShape EntityType="PlanrDBModel.collaborator" Width="1.5" PointX="7.510346758882676" PointY="8.1819388308478231" />
+        <EntityTypeShape EntityType="PlanrDBModel.connection" Width="1.5" PointX="8.8738397438422965" PointY="11.310745110414338" />
+        <EntityTypeShape EntityType="PlanrDBModel.date_suggestions" Width="1.5" PointX="6.03899893632112" PointY="0.65621735186139929" />
+        <EntityTypeShape EntityType="PlanrDBModel.event" Width="1.5" PointX="11.090591182508781" PointY="28.135065658080887" />
+        <EntityTypeShape EntityType="PlanrDBModel.idea_suggestions" Width="1.5" PointX="11.46787819055276" PointY="0.86963191668951512" />
+        <EntityTypeShape EntityType="PlanrDBModel.notification" Width="1.5" PointX="8.92357228553089" PointY="1.895198584485426" />
+        <EntityTypeShape EntityType="PlanrDBModel.suggestion" Width="1.5" PointX="6.0679219784531373" PointY="1.6734151102944348" />
+        <EntityTypeShape EntityType="PlanrDBModel.task" Width="1.5" PointX="3.4020172950821075" PointY="8.93902703045822" />
+        <EntityTypeShape EntityType="PlanrDBModel.time_suggestions" Width="1.5" PointX="7.9294038805781888" PointY="21.151605168893749" />
+        <EntityTypeShape EntityType="PlanrDBModel.user_attending" Width="1.5" PointX="0.97838756673894245" PointY="9.3501857413678362" />
+        <EntityTypeShape EntityType="PlanrDBModel.user_likes" Width="1.5" PointX="10.594645560995977" PointY="9.3047400011237436" />
+        <EntityTypeShape EntityType="PlanrDBModel.user_tasks" Width="1.5" PointX="4.1106464621194849" PointY="2.4376373749401594" />
+        <EntityTypeShape EntityType="PlanrDBModel.user" Width="1.5" PointX="2.8631548540960789" PointY="11.964090054838028" />
+        <EntityTypeShape EntityType="PlanrDBModel.venue_suggestions" Width="1.5" PointX="5.1920885560997245" PointY="29.109713478530622" />
+        <AssociationConnector Association="PlanrDBModel.FK_coll_event" />
+        <AssociationConnector Association="PlanrDBModel.FK_Comments_Person" />
+        <AssociationConnector Association="PlanrDBModel.fk_conn_user" />
+        <AssociationConnector Association="PlanrDBModel.fk_date_sugg" />
+        <AssociationConnector Association="PlanrDBModel.FK_attend_event" />
+        <AssociationConnector Association="PlanrDBModel.fk_events_user" />
+        <AssociationConnector Association="PlanrDBModel.fk_notify_event" />
+        <AssociationConnector Association="PlanrDBModel.fk_sugg_event" />
+        <AssociationConnector Association="PlanrDBModel.fk_task_event" />
+        <AssociationConnector Association="PlanrDBModel.fk_idea_sugg" />
+        <AssociationConnector Association="PlanrDBModel.fk_notify_user" />
+        <AssociationConnector Association="PlanrDBModel.fk_likes_sugg" />
+        <AssociationConnector Association="PlanrDBModel.fk_sugg_user" />
+        <AssociationConnector Association="PlanrDBModel.fk_time_sugg" />
+        <AssociationConnector Association="PlanrDBModel.fk_venue_sugg" />
+        <AssociationConnector Association="PlanrDBModel.fk_task_user" />
+        <AssociationConnector Association="PlanrDBModel.fk_tasks_tasks" />
+        <AssociationConnector Association="PlanrDBModel.fk_tasks_userid" />
+        <AssociationConnector Association="PlanrDBModel.FK_attend_user" />
+        <AssociationConnector Association="PlanrDBModel.fk_likes_user" />
+        <AssociationConnector Association="PlanrDBModel.user_notifications" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

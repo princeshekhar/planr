@@ -1,0 +1,652 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BrewberrysLocalDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="BrewberrysLocalDBModelStoreContainer">
+    <EntitySet Name="axi_admins" EntityType="BrewberrysLocalDBModel.Store.axi_admins" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="axi_blocked_ip" EntityType="BrewberrysLocalDBModel.Store.axi_blocked_ip" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="axi_cafe_activations" EntityType="BrewberrysLocalDBModel.Store.axi_cafe_activations" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="axi_cafe_details" EntityType="BrewberrysLocalDBModel.Store.axi_cafe_details" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="axi_cafe_incharges" EntityType="BrewberrysLocalDBModel.Store.axi_cafe_incharges" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="axi_cafe_menu_items" EntityType="BrewberrysLocalDBModel.Store.axi_cafe_menu_items" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="axi_cafe_profile" EntityType="BrewberrysLocalDBModel.Store.axi_cafe_profile" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="axi_cafes" EntityType="BrewberrysLocalDBModel.Store.axi_cafes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="axi_control_city" EntityType="BrewberrysLocalDBModel.Store.axi_control_city" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="axi_control_config" EntityType="BrewberrysLocalDBModel.Store.axi_control_config" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="axi_control_country" EntityType="BrewberrysLocalDBModel.Store.axi_control_country" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="axi_control_license" EntityType="BrewberrysLocalDBModel.Store.axi_control_license" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="axi_control_state" EntityType="BrewberrysLocalDBModel.Store.axi_control_state" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="axi_geo_tagging" EntityType="BrewberrysLocalDBModel.Store.axi_geo_tagging" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="axi_menu_items" EntityType="BrewberrysLocalDBModel.Store.axi_menu_items" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="axi_menu_items_category" EntityType="BrewberrysLocalDBModel.Store.axi_menu_items_category" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="axi_menu_items_subcategory" EntityType="BrewberrysLocalDBModel.Store.axi_menu_items_subcategory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="axi_profile_menu_items" EntityType="BrewberrysLocalDBModel.Store.axi_profile_menu_items" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="axi_psk_admin" EntityType="BrewberrysLocalDBModel.Store.axi_psk_admin" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="axi_psk_manager" EntityType="BrewberrysLocalDBModel.Store.axi_psk_manager" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="axi_psk_purchase" EntityType="BrewberrysLocalDBModel.Store.axi_psk_purchase" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="axi_psk_purchase_log" EntityType="BrewberrysLocalDBModel.Store.axi_psk_purchase_log" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="axi_psk_sales" EntityType="BrewberrysLocalDBModel.Store.axi_psk_sales" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="axi_psk_sales_log" EntityType="BrewberrysLocalDBModel.Store.axi_psk_sales_log" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="axi_psk_zonal" EntityType="BrewberrysLocalDBModel.Store.axi_psk_zonal" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="axi_session" EntityType="BrewberrysLocalDBModel.Store.axi_session" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="axi_users" EntityType="BrewberrysLocalDBModel.Store.axi_users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="axi_validation" EntityType="BrewberrysLocalDBModel.Store.axi_validation" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="BrewberrysLocalDBModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="fk_axi_cafe_menu_cafe_id" Association="BrewberrysLocalDBModel.Store.fk_axi_cafe_menu_cafe_id">
+      <End Role="axi_cafes" EntitySet="axi_cafes" />
+      <End Role="axi_cafe_menu_items" EntitySet="axi_cafe_menu_items" />
+    </AssociationSet>
+    <AssociationSet Name="fk_axi_cafes" Association="BrewberrysLocalDBModel.Store.fk_axi_cafes">
+      <End Role="axi_cafes" EntitySet="axi_cafes" />
+      <End Role="axi_cafe_activations" EntitySet="axi_cafe_activations" />
+    </AssociationSet>
+    <AssociationSet Name="fk_axi_prof_menu_prof" Association="BrewberrysLocalDBModel.Store.fk_axi_prof_menu_prof">
+      <End Role="axi_cafe_profile" EntitySet="axi_cafe_profile" />
+      <End Role="axi_profile_menu_items" EntitySet="axi_profile_menu_items" />
+    </AssociationSet>
+    <AssociationSet Name="fk_axi_psk_cafe_admin" Association="BrewberrysLocalDBModel.Store.fk_axi_psk_cafe_admin">
+      <End Role="axi_cafes" EntitySet="axi_cafes" />
+      <End Role="axi_psk_admin" EntitySet="axi_psk_admin" />
+    </AssociationSet>
+    <AssociationSet Name="fk_axi_psk_cafe_manager" Association="BrewberrysLocalDBModel.Store.fk_axi_psk_cafe_manager">
+      <End Role="axi_cafes" EntitySet="axi_cafes" />
+      <End Role="axi_psk_manager" EntitySet="axi_psk_manager" />
+    </AssociationSet>
+    <AssociationSet Name="fk_axi_psk_purchase_log" Association="BrewberrysLocalDBModel.Store.fk_axi_psk_purchase_log">
+      <End Role="axi_psk_purchase" EntitySet="axi_psk_purchase" />
+      <End Role="axi_psk_purchase_log" EntitySet="axi_psk_purchase_log" />
+    </AssociationSet>
+    <AssociationSet Name="fk_axi_psk_sales_log" Association="BrewberrysLocalDBModel.Store.fk_axi_psk_sales_log">
+      <End Role="axi_psk_sales" EntitySet="axi_psk_sales" />
+      <End Role="axi_psk_sales_log" EntitySet="axi_psk_sales_log" />
+    </AssociationSet>
+    <AssociationSet Name="fk_axi_psk_zonal_cafe" Association="BrewberrysLocalDBModel.Store.fk_axi_psk_zonal_cafe">
+      <End Role="axi_cafes" EntitySet="axi_cafes" />
+      <End Role="axi_psk_zonal" EntitySet="axi_psk_zonal" />
+    </AssociationSet>
+    <AssociationSet Name="fk_axi_psk_zonal_user" Association="BrewberrysLocalDBModel.Store.fk_axi_psk_zonal_user">
+      <End Role="axi_users" EntitySet="axi_users" />
+      <End Role="axi_psk_zonal" EntitySet="axi_psk_zonal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CafeDetails_Cafe" Association="BrewberrysLocalDBModel.Store.FK_CafeDetails_Cafe">
+      <End Role="axi_cafes" EntitySet="axi_cafes" />
+      <End Role="axi_cafe_details" EntitySet="axi_cafe_details" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CafeDetails_City" Association="BrewberrysLocalDBModel.Store.FK_CafeDetails_City">
+      <End Role="axi_control_city" EntitySet="axi_control_city" />
+      <End Role="axi_cafe_details" EntitySet="axi_cafe_details" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CafeDetails_Incharge" Association="BrewberrysLocalDBModel.Store.FK_CafeDetails_Incharge">
+      <End Role="axi_cafe_incharges" EntitySet="axi_cafe_incharges" />
+      <End Role="axi_cafe_details" EntitySet="axi_cafe_details" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CafeDetails_State" Association="BrewberrysLocalDBModel.Store.FK_CafeDetails_State">
+      <End Role="axi_control_state" EntitySet="axi_control_state" />
+      <End Role="axi_cafe_details" EntitySet="axi_cafe_details" />
+    </AssociationSet>
+    <AssociationSet Name="fk_country_id" Association="BrewberrysLocalDBModel.Store.fk_country_id">
+      <End Role="axi_control_country" EntitySet="axi_control_country" />
+      <End Role="axi_control_state" EntitySet="axi_control_state" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MenuItems_Category" Association="BrewberrysLocalDBModel.Store.FK_MenuItems_Category">
+      <End Role="axi_menu_items_category" EntitySet="axi_menu_items_category" />
+      <End Role="axi_menu_items" EntitySet="axi_menu_items" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MenuItems_Subcategory" Association="BrewberrysLocalDBModel.Store.FK_MenuItems_Subcategory">
+      <End Role="axi_menu_items_subcategory" EntitySet="axi_menu_items_subcategory" />
+      <End Role="axi_menu_items" EntitySet="axi_menu_items" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Session_User" Association="BrewberrysLocalDBModel.Store.FK_Session_User">
+      <End Role="axi_users" EntitySet="axi_users" />
+      <End Role="axi_session" EntitySet="axi_session" />
+    </AssociationSet>
+    <AssociationSet Name="fk_state_id" Association="BrewberrysLocalDBModel.Store.fk_state_id">
+      <End Role="axi_control_state" EntitySet="axi_control_state" />
+      <End Role="axi_control_city" EntitySet="axi_control_city" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="axi_admins">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="mobile" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="email" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="password" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="type" Type="int" Nullable="false" />
+    <Property Name="activated" Type="int" Nullable="false" />
+    <Property Name="last_login_time" Type="datetime" />
+    <Property Name="last_login_ip" Type="varchar" MaxLength="15" />
+    <Property Name="last_logout_time" Type="datetime" />
+    <Property Name="last_logout_ip" Type="varchar" MaxLength="15" />
+    <Property Name="failed_attempt" Type="int" Nullable="false" />
+    <Property Name="created" Type="datetime" Nullable="false" />
+    <Property Name="modified" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="axi_blocked_ip">
+    <Key>
+      <PropertyRef Name="ipAddr" />
+    </Key>
+    <Property Name="ipAddr" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="attempts" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="axi_cafe_activations">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="activation_code" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="cafe_id" Type="int" Nullable="false" />
+    <Property Name="created" Type="datetime" Nullable="false" />
+    <Property Name="modified" Type="datetime" Nullable="false" />
+    <Property Name="activated_time" Type="datetime" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="axi_cafe_details">
+    <Key>
+      <PropertyRef Name="cafe_id" />
+    </Key>
+    <Property Name="cafe_id" Type="int" Nullable="false" />
+    <Property Name="name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="type" Type="int" Nullable="false" />
+    <Property Name="address" Type="varchar" MaxLength="200" />
+    <Property Name="city" Type="int" />
+    <Property Name="state" Type="int" />
+    <Property Name="zip_code" Type="varchar" MaxLength="10" />
+    <Property Name="lat_long" Type="varchar" MaxLength="150" />
+    <Property Name="incharge_id" Type="int" />
+    <Property Name="phone" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="axi_cafe_incharges">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="mobile" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="email" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="password" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="activated" Type="int" Nullable="false" />
+    <Property Name="last_login_time" Type="datetime" />
+    <Property Name="last_login_ip" Type="varchar" MaxLength="15" />
+    <Property Name="last_logout_time" Type="datetime" />
+    <Property Name="last_logout_ip" Type="varchar" MaxLength="15" />
+    <Property Name="failed_attempt" Type="int" Nullable="false" />
+    <Property Name="created" Type="datetime" Nullable="false" />
+    <Property Name="modified" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="axi_cafe_menu_items">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="cafeID" Type="int" Nullable="false" />
+    <Property Name="menuItemCode" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="price" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="axi_cafe_profile">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="created" Type="datetime" Nullable="false" />
+    <Property Name="modified" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="axi_cafes">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="guid" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="activated" Type="int" Nullable="false" />
+    <Property Name="expiration_date" Type="datetime" Nullable="false" />
+    <Property Name="last_login_time" Type="datetime" />
+    <Property Name="last_login_ip" Type="varchar" MaxLength="15" />
+    <Property Name="license_key" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="axi_control_city">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="state_id" Type="int" Nullable="false" />
+    <Property Name="lat" Type="varchar" MaxLength="30" />
+    <Property Name="lon" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="axi_control_config">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="default_country" Type="int" Nullable="false" />
+    <Property Name="default_timezone" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="support_email" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="smtp_server" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="smtp_username" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="smtp_password" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="smtp_port" Type="varchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="axi_control_country">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="axi_control_license">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="total" Type="int" Nullable="false" />
+    <Property Name="used" Type="int" Nullable="false" />
+    <Property Name="created" Type="datetime" Nullable="false" />
+    <Property Name="modified" Type="datetime" Nullable="false" />
+    <Property Name="last_used_time" Type="datetime" />
+  </EntityType>
+  <EntityType Name="axi_control_state">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="country_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="axi_geo_tagging">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="lat" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="lon" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="axi_menu_items">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="code" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="description" Type="varchar" MaxLength="50" />
+    <Property Name="category_id" Type="int" />
+    <Property Name="subcategory_id" Type="int" />
+    <Property Name="MRP" Type="float" Nullable="false" />
+    <Property Name="image" Type="varchar" MaxLength="50" />
+    <Property Name="enabled" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="axi_menu_items_category">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="description" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="axi_menu_items_subcategory">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="description" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="axi_profile_menu_items">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="profileID" Type="int" Nullable="false" />
+    <Property Name="menuItemCode" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="price" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="axi_psk_admin">
+    <Key>
+      <PropertyRef Name="cafe_id" />
+    </Key>
+    <Property Name="cafe_id" Type="int" Nullable="false" />
+    <Property Name="name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="mob" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="email" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="axi_psk_manager">
+    <Key>
+      <PropertyRef Name="cafe_id" />
+    </Key>
+    <Property Name="cafe_id" Type="int" Nullable="false" />
+    <Property Name="name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="mob" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="email" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="axi_psk_purchase">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="description" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="axi_psk_purchase_log">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="cafe_id" Type="int" Nullable="false" />
+    <Property Name="param_id" Type="int" Nullable="false" />
+    <Property Name="date" Type="datetime" Nullable="false" />
+    <Property Name="comment" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="value" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="axi_psk_sales">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="description" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="axi_psk_sales_log">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="cafe_id" Type="int" Nullable="false" />
+    <Property Name="param_id" Type="int" Nullable="false" />
+    <Property Name="date" Type="datetime" Nullable="false" />
+    <Property Name="comment" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="value" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="axi_psk_zonal">
+    <Key>
+      <PropertyRef Name="cafe_id" />
+    </Key>
+    <Property Name="cafe_id" Type="int" Nullable="false" />
+    <Property Name="user_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="axi_session">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="user_id" Type="int" Nullable="false" />
+    <Property Name="GUID" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ip" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="browser" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="lat" Type="float" Nullable="false" />
+    <Property Name="lon" Type="float" Nullable="false" />
+    <Property Name="expiry" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="axi_users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="mobile" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="email" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="password" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="type" Type="int" Nullable="false" />
+    <Property Name="activated" Type="int" Nullable="false" />
+    <Property Name="last_login_time" Type="datetime" />
+    <Property Name="last_login_ip" Type="varchar" MaxLength="15" />
+    <Property Name="last_logout_time" Type="datetime" />
+    <Property Name="last_logout_ip" Type="varchar" MaxLength="15" />
+    <Property Name="failed_attempt" Type="int" Nullable="false" />
+    <Property Name="created" Type="datetime" Nullable="false" />
+    <Property Name="modified" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="axi_validation">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="emailCode" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="mobCode" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="emailVerified" Type="int" Nullable="false" />
+    <Property Name="mobVerified" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="fk_axi_cafe_menu_cafe_id">
+    <End Role="axi_cafes" Type="BrewberrysLocalDBModel.Store.axi_cafes" Multiplicity="1" />
+    <End Role="axi_cafe_menu_items" Type="BrewberrysLocalDBModel.Store.axi_cafe_menu_items" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_cafes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_cafe_menu_items">
+        <PropertyRef Name="cafeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_axi_cafes">
+    <End Role="axi_cafes" Type="BrewberrysLocalDBModel.Store.axi_cafes" Multiplicity="1" />
+    <End Role="axi_cafe_activations" Type="BrewberrysLocalDBModel.Store.axi_cafe_activations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_cafes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_cafe_activations">
+        <PropertyRef Name="cafe_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_axi_prof_menu_prof">
+    <End Role="axi_cafe_profile" Type="BrewberrysLocalDBModel.Store.axi_cafe_profile" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="axi_profile_menu_items" Type="BrewberrysLocalDBModel.Store.axi_profile_menu_items" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_cafe_profile">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_profile_menu_items">
+        <PropertyRef Name="profileID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_axi_psk_cafe_admin">
+    <End Role="axi_cafes" Type="BrewberrysLocalDBModel.Store.axi_cafes" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="axi_psk_admin" Type="BrewberrysLocalDBModel.Store.axi_psk_admin" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="axi_cafes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_psk_admin">
+        <PropertyRef Name="cafe_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_axi_psk_cafe_manager">
+    <End Role="axi_cafes" Type="BrewberrysLocalDBModel.Store.axi_cafes" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="axi_psk_manager" Type="BrewberrysLocalDBModel.Store.axi_psk_manager" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="axi_cafes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_psk_manager">
+        <PropertyRef Name="cafe_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_axi_psk_purchase_log">
+    <End Role="axi_psk_purchase" Type="BrewberrysLocalDBModel.Store.axi_psk_purchase" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="axi_psk_purchase_log" Type="BrewberrysLocalDBModel.Store.axi_psk_purchase_log" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_psk_purchase">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_psk_purchase_log">
+        <PropertyRef Name="param_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_axi_psk_sales_log">
+    <End Role="axi_psk_sales" Type="BrewberrysLocalDBModel.Store.axi_psk_sales" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="axi_psk_sales_log" Type="BrewberrysLocalDBModel.Store.axi_psk_sales_log" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_psk_sales">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_psk_sales_log">
+        <PropertyRef Name="param_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_axi_psk_zonal_cafe">
+    <End Role="axi_cafes" Type="BrewberrysLocalDBModel.Store.axi_cafes" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="axi_psk_zonal" Type="BrewberrysLocalDBModel.Store.axi_psk_zonal" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="axi_cafes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_psk_zonal">
+        <PropertyRef Name="cafe_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_axi_psk_zonal_user">
+    <End Role="axi_users" Type="BrewberrysLocalDBModel.Store.axi_users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="axi_psk_zonal" Type="BrewberrysLocalDBModel.Store.axi_psk_zonal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_psk_zonal">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CafeDetails_Cafe">
+    <End Role="axi_cafes" Type="BrewberrysLocalDBModel.Store.axi_cafes" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="axi_cafe_details" Type="BrewberrysLocalDBModel.Store.axi_cafe_details" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="axi_cafes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_cafe_details">
+        <PropertyRef Name="cafe_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CafeDetails_City">
+    <End Role="axi_control_city" Type="BrewberrysLocalDBModel.Store.axi_control_city" Multiplicity="0..1" />
+    <End Role="axi_cafe_details" Type="BrewberrysLocalDBModel.Store.axi_cafe_details" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_control_city">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_cafe_details">
+        <PropertyRef Name="city" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CafeDetails_Incharge">
+    <End Role="axi_cafe_incharges" Type="BrewberrysLocalDBModel.Store.axi_cafe_incharges" Multiplicity="0..1" />
+    <End Role="axi_cafe_details" Type="BrewberrysLocalDBModel.Store.axi_cafe_details" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_cafe_incharges">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_cafe_details">
+        <PropertyRef Name="incharge_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CafeDetails_State">
+    <End Role="axi_control_state" Type="BrewberrysLocalDBModel.Store.axi_control_state" Multiplicity="0..1" />
+    <End Role="axi_cafe_details" Type="BrewberrysLocalDBModel.Store.axi_cafe_details" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_control_state">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_cafe_details">
+        <PropertyRef Name="state" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_country_id">
+    <End Role="axi_control_country" Type="BrewberrysLocalDBModel.Store.axi_control_country" Multiplicity="1" />
+    <End Role="axi_control_state" Type="BrewberrysLocalDBModel.Store.axi_control_state" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_control_country">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_control_state">
+        <PropertyRef Name="country_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MenuItems_Category">
+    <End Role="axi_menu_items_category" Type="BrewberrysLocalDBModel.Store.axi_menu_items_category" Multiplicity="0..1" />
+    <End Role="axi_menu_items" Type="BrewberrysLocalDBModel.Store.axi_menu_items" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_menu_items_category">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_menu_items">
+        <PropertyRef Name="category_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MenuItems_Subcategory">
+    <End Role="axi_menu_items_subcategory" Type="BrewberrysLocalDBModel.Store.axi_menu_items_subcategory" Multiplicity="0..1" />
+    <End Role="axi_menu_items" Type="BrewberrysLocalDBModel.Store.axi_menu_items" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_menu_items_subcategory">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_menu_items">
+        <PropertyRef Name="subcategory_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Session_User">
+    <End Role="axi_users" Type="BrewberrysLocalDBModel.Store.axi_users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="axi_session" Type="BrewberrysLocalDBModel.Store.axi_session" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_session">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_state_id">
+    <End Role="axi_control_state" Type="BrewberrysLocalDBModel.Store.axi_control_state" Multiplicity="1" />
+    <End Role="axi_control_city" Type="BrewberrysLocalDBModel.Store.axi_control_city" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_control_state">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_control_city">
+        <PropertyRef Name="state_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

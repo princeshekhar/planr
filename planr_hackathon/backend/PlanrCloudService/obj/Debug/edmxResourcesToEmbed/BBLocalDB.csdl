@@ -1,0 +1,1011 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BBCloudDBModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="BBCloudDBEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="axi_admins" EntityType="BBCloudDBModel.axi_admins" />
+    <EntitySet Name="axi_banks" EntityType="BBCloudDBModel.axi_banks" />
+    <EntitySet Name="axi_blocked_ip" EntityType="BBCloudDBModel.axi_blocked_ip" />
+    <EntitySet Name="axi_cafe_activations" EntityType="BBCloudDBModel.axi_cafe_activations" />
+    <EntitySet Name="axi_cafe_details" EntityType="BBCloudDBModel.axi_cafe_details" />
+    <EntitySet Name="axi_cafe_incharges" EntityType="BBCloudDBModel.axi_cafe_incharges" />
+    <EntitySet Name="axi_cafe_menu_items" EntityType="BBCloudDBModel.axi_cafe_menu_items" />
+    <EntitySet Name="axi_cafe_profile" EntityType="BBCloudDBModel.axi_cafe_profile" />
+    <EntitySet Name="axi_cafes" EntityType="BBCloudDBModel.axi_cafes" />
+    <EntitySet Name="axi_control_city" EntityType="BBCloudDBModel.axi_control_city" />
+    <EntitySet Name="axi_control_config" EntityType="BBCloudDBModel.axi_control_config" />
+    <EntitySet Name="axi_control_country" EntityType="BBCloudDBModel.axi_control_country" />
+    <EntitySet Name="axi_control_license" EntityType="BBCloudDBModel.axi_control_license" />
+    <EntitySet Name="axi_control_state" EntityType="BBCloudDBModel.axi_control_state" />
+    <EntitySet Name="axi_geo_tagging" EntityType="BBCloudDBModel.axi_geo_tagging" />
+    <EntitySet Name="axi_ho_params" EntityType="BBCloudDBModel.axi_ho_params" />
+    <EntitySet Name="axi_menu_items" EntityType="BBCloudDBModel.axi_menu_items" />
+    <EntitySet Name="axi_menu_items_category" EntityType="BBCloudDBModel.axi_menu_items_category" />
+    <EntitySet Name="axi_menu_items_subcategory" EntityType="BBCloudDBModel.axi_menu_items_subcategory" />
+    <EntitySet Name="axi_profile_menu_items" EntityType="BBCloudDBModel.axi_profile_menu_items" />
+    <EntitySet Name="axi_psk_admin" EntityType="BBCloudDBModel.axi_psk_admin" />
+    <EntitySet Name="axi_psk_balance" EntityType="BBCloudDBModel.axi_psk_balance" />
+    <EntitySet Name="axi_psk_deposit" EntityType="BBCloudDBModel.axi_psk_deposit" />
+    <EntitySet Name="axi_psk_ho_logs" EntityType="BBCloudDBModel.axi_psk_ho_logs" />
+    <EntitySet Name="axi_psk_manager" EntityType="BBCloudDBModel.axi_psk_manager" />
+    <EntitySet Name="axi_psk_menu_item_log" EntityType="BBCloudDBModel.axi_psk_menu_item_log" />
+    <EntitySet Name="axi_psk_purchase" EntityType="BBCloudDBModel.axi_psk_purchase" />
+    <EntitySet Name="axi_psk_purchase_log" EntityType="BBCloudDBModel.axi_psk_purchase_log" />
+    <EntitySet Name="axi_psk_sales" EntityType="BBCloudDBModel.axi_psk_sales" />
+    <EntitySet Name="axi_psk_sales_log" EntityType="BBCloudDBModel.axi_psk_sales_log" />
+    <EntitySet Name="axi_psk_stock_items" EntityType="BBCloudDBModel.axi_psk_stock_items" />
+    <EntitySet Name="axi_psk_stock_logs" EntityType="BBCloudDBModel.axi_psk_stock_logs" />
+    <EntitySet Name="axi_psk_user_link" EntityType="BBCloudDBModel.axi_psk_user_link" />
+    <EntitySet Name="axi_session" EntityType="BBCloudDBModel.axi_session" />
+    <EntitySet Name="axi_sync_items" EntityType="BBCloudDBModel.axi_sync_items" />
+    <EntitySet Name="axi_users" EntityType="BBCloudDBModel.axi_users" />
+    <EntitySet Name="axi_validation" EntityType="BBCloudDBModel.axi_validation" />
+    <EntitySet Name="Tables" EntityType="BBCloudDBModel.Table" />
+    <AssociationSet Name="fk_deposit_bank" Association="BBCloudDBModel.fk_deposit_bank">
+      <End Role="axi_banks" EntitySet="axi_banks" />
+      <End Role="axi_psk_deposit" EntitySet="axi_psk_deposit" />
+    </AssociationSet>
+    <AssociationSet Name="fk_axi_cafes" Association="BBCloudDBModel.fk_axi_cafes">
+      <End Role="axi_cafes" EntitySet="axi_cafes" />
+      <End Role="axi_cafe_activations" EntitySet="axi_cafe_activations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CafeDetails_Cafe" Association="BBCloudDBModel.FK_CafeDetails_Cafe">
+      <End Role="axi_cafes" EntitySet="axi_cafes" />
+      <End Role="axi_cafe_details" EntitySet="axi_cafe_details" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CafeDetails_City" Association="BBCloudDBModel.FK_CafeDetails_City">
+      <End Role="axi_control_city" EntitySet="axi_control_city" />
+      <End Role="axi_cafe_details" EntitySet="axi_cafe_details" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CafeDetails_Incharge" Association="BBCloudDBModel.FK_CafeDetails_Incharge">
+      <End Role="axi_cafe_incharges" EntitySet="axi_cafe_incharges" />
+      <End Role="axi_cafe_details" EntitySet="axi_cafe_details" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CafeDetails_State" Association="BBCloudDBModel.FK_CafeDetails_State">
+      <End Role="axi_control_state" EntitySet="axi_control_state" />
+      <End Role="axi_cafe_details" EntitySet="axi_cafe_details" />
+    </AssociationSet>
+    <AssociationSet Name="fk_axi_cafe_menu_cafe_id" Association="BBCloudDBModel.fk_axi_cafe_menu_cafe_id">
+      <End Role="axi_cafes" EntitySet="axi_cafes" />
+      <End Role="axi_cafe_menu_items" EntitySet="axi_cafe_menu_items" />
+    </AssociationSet>
+    <AssociationSet Name="FK_axi_psk_menu_item_CafeMenuItems" Association="BBCloudDBModel.FK_axi_psk_menu_item_CafeMenuItems">
+      <End Role="axi_cafe_menu_items" EntitySet="axi_cafe_menu_items" />
+      <End Role="axi_psk_menu_item_log" EntitySet="axi_psk_menu_item_log" />
+    </AssociationSet>
+    <AssociationSet Name="fk_axi_prof_menu_prof" Association="BBCloudDBModel.fk_axi_prof_menu_prof">
+      <End Role="axi_cafe_profile" EntitySet="axi_cafe_profile" />
+      <End Role="axi_profile_menu_items" EntitySet="axi_profile_menu_items" />
+    </AssociationSet>
+    <AssociationSet Name="fk_axi_psk_cafe_admin" Association="BBCloudDBModel.fk_axi_psk_cafe_admin">
+      <End Role="axi_cafes" EntitySet="axi_cafes" />
+      <End Role="axi_psk_admin" EntitySet="axi_psk_admin" />
+    </AssociationSet>
+    <AssociationSet Name="fk_axi_psk_cafe_manager" Association="BBCloudDBModel.fk_axi_psk_cafe_manager">
+      <End Role="axi_cafes" EntitySet="axi_cafes" />
+      <End Role="axi_psk_manager" EntitySet="axi_psk_manager" />
+    </AssociationSet>
+    <AssociationSet Name="fk_axi_psk_zonal_user_cafe" Association="BBCloudDBModel.fk_axi_psk_zonal_user_cafe">
+      <End Role="axi_cafes" EntitySet="axi_cafes" />
+      <End Role="axi_psk_user_link" EntitySet="axi_psk_user_link" />
+    </AssociationSet>
+    <AssociationSet Name="FK_axi_sync_items_axi_cafes" Association="BBCloudDBModel.FK_axi_sync_items_axi_cafes">
+      <End Role="axi_cafes" EntitySet="axi_cafes" />
+      <End Role="axi_sync_items" EntitySet="axi_sync_items" />
+    </AssociationSet>
+    <AssociationSet Name="fk_balance_cafe" Association="BBCloudDBModel.fk_balance_cafe">
+      <End Role="axi_cafes" EntitySet="axi_cafes" />
+      <End Role="axi_psk_balance" EntitySet="axi_psk_balance" />
+    </AssociationSet>
+    <AssociationSet Name="fk_deposit_cafe" Association="BBCloudDBModel.fk_deposit_cafe">
+      <End Role="axi_cafes" EntitySet="axi_cafes" />
+      <End Role="axi_psk_deposit" EntitySet="axi_psk_deposit" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PskMenuLog_PSK" Association="BBCloudDBModel.FK_PskMenuLog_PSK">
+      <End Role="axi_cafes" EntitySet="axi_cafes" />
+      <End Role="axi_psk_menu_item_log" EntitySet="axi_psk_menu_item_log" />
+    </AssociationSet>
+    <AssociationSet Name="fk_stock_logs_psk" Association="BBCloudDBModel.fk_stock_logs_psk">
+      <End Role="axi_cafes" EntitySet="axi_cafes" />
+      <End Role="axi_psk_stock_logs" EntitySet="axi_psk_stock_logs" />
+    </AssociationSet>
+    <AssociationSet Name="fk_state_id" Association="BBCloudDBModel.fk_state_id">
+      <End Role="axi_control_state" EntitySet="axi_control_state" />
+      <End Role="axi_control_city" EntitySet="axi_control_city" />
+    </AssociationSet>
+    <AssociationSet Name="fk_country_id" Association="BBCloudDBModel.fk_country_id">
+      <End Role="axi_control_country" EntitySet="axi_control_country" />
+      <End Role="axi_control_state" EntitySet="axi_control_state" />
+    </AssociationSet>
+    <AssociationSet Name="FK_axi_psk_ho_logs_axi_ho_params" Association="BBCloudDBModel.FK_axi_psk_ho_logs_axi_ho_params">
+      <End Role="axi_ho_params" EntitySet="axi_ho_params" />
+      <End Role="axi_psk_ho_logs" EntitySet="axi_psk_ho_logs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MenuItems_Category" Association="BBCloudDBModel.FK_MenuItems_Category">
+      <End Role="axi_menu_items_category" EntitySet="axi_menu_items_category" />
+      <End Role="axi_menu_items" EntitySet="axi_menu_items" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MenuItems_Subcategory" Association="BBCloudDBModel.FK_MenuItems_Subcategory">
+      <End Role="axi_menu_items_subcategory" EntitySet="axi_menu_items_subcategory" />
+      <End Role="axi_menu_items" EntitySet="axi_menu_items" />
+    </AssociationSet>
+    <AssociationSet Name="fk_balance_user" Association="BBCloudDBModel.fk_balance_user">
+      <End Role="axi_users" EntitySet="axi_users" />
+      <End Role="axi_psk_balance" EntitySet="axi_psk_balance" />
+    </AssociationSet>
+    <AssociationSet Name="fk_deposit_user" Association="BBCloudDBModel.fk_deposit_user">
+      <End Role="axi_users" EntitySet="axi_users" />
+      <End Role="axi_psk_deposit" EntitySet="axi_psk_deposit" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PskMenuLog_User" Association="BBCloudDBModel.FK_PskMenuLog_User">
+      <End Role="axi_users" EntitySet="axi_users" />
+      <End Role="axi_psk_menu_item_log" EntitySet="axi_psk_menu_item_log" />
+    </AssociationSet>
+    <AssociationSet Name="fk_axi_psk_purchase_log" Association="BBCloudDBModel.fk_axi_psk_purchase_log">
+      <End Role="axi_psk_purchase" EntitySet="axi_psk_purchase" />
+      <End Role="axi_psk_purchase_log" EntitySet="axi_psk_purchase_log" />
+    </AssociationSet>
+    <AssociationSet Name="fk_axi_psk_sales_log" Association="BBCloudDBModel.fk_axi_psk_sales_log">
+      <End Role="axi_psk_sales" EntitySet="axi_psk_sales" />
+      <End Role="axi_psk_sales_log" EntitySet="axi_psk_sales_log" />
+    </AssociationSet>
+    <AssociationSet Name="fk_stock_item" Association="BBCloudDBModel.fk_stock_item">
+      <End Role="axi_psk_stock_items" EntitySet="axi_psk_stock_items" />
+      <End Role="axi_psk_stock_logs" EntitySet="axi_psk_stock_logs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Session_User" Association="BBCloudDBModel.FK_Session_User">
+      <End Role="axi_users" EntitySet="axi_users" />
+      <End Role="axi_session" EntitySet="axi_session" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="axi_admins">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="mobile" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="email" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="password" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="type" Type="Int32" Nullable="false" />
+    <Property Name="activated" Type="Int32" Nullable="false" />
+    <Property Name="last_login_time" Type="DateTime" Precision="3" />
+    <Property Name="last_login_ip" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="last_logout_time" Type="DateTime" Precision="3" />
+    <Property Name="last_logout_ip" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="failed_attempt" Type="Int32" Nullable="false" />
+    <Property Name="created" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="modified" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="axi_banks">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ifsc_code" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="account_number" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="address" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="axi_psk_deposit" Relationship="BBCloudDBModel.fk_deposit_bank" FromRole="axi_banks" ToRole="axi_psk_deposit" />
+  </EntityType>
+  <EntityType Name="axi_blocked_ip">
+    <Key>
+      <PropertyRef Name="ipAddr" />
+    </Key>
+    <Property Name="ipAddr" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="attempts" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="axi_cafe_activations">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="activation_code" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="cafe_id" Type="Int32" Nullable="false" />
+    <Property Name="created" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="modified" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="activated_time" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="axi_cafes" Relationship="BBCloudDBModel.fk_axi_cafes" FromRole="axi_cafe_activations" ToRole="axi_cafes" />
+  </EntityType>
+  <EntityType Name="axi_cafe_details">
+    <Key>
+      <PropertyRef Name="cafe_id" />
+    </Key>
+    <Property Name="cafe_id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="type" Type="Int32" Nullable="false" />
+    <Property Name="address" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="city" Type="Int32" />
+    <Property Name="state" Type="Int32" />
+    <Property Name="zip_code" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="lat_long" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="incharge_id" Type="Int32" />
+    <Property Name="phone" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="axi_cafes" Relationship="BBCloudDBModel.FK_CafeDetails_Cafe" FromRole="axi_cafe_details" ToRole="axi_cafes" />
+    <NavigationProperty Name="axi_control_city" Relationship="BBCloudDBModel.FK_CafeDetails_City" FromRole="axi_cafe_details" ToRole="axi_control_city" />
+    <NavigationProperty Name="axi_cafe_incharges" Relationship="BBCloudDBModel.FK_CafeDetails_Incharge" FromRole="axi_cafe_details" ToRole="axi_cafe_incharges" />
+    <NavigationProperty Name="axi_control_state" Relationship="BBCloudDBModel.FK_CafeDetails_State" FromRole="axi_cafe_details" ToRole="axi_control_state" />
+  </EntityType>
+  <EntityType Name="axi_cafe_incharges">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="mobile" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="email" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="password" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="activated" Type="Int32" Nullable="false" />
+    <Property Name="last_login_time" Type="DateTime" Precision="3" />
+    <Property Name="last_login_ip" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="last_logout_time" Type="DateTime" Precision="3" />
+    <Property Name="last_logout_ip" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="failed_attempt" Type="Int32" Nullable="false" />
+    <Property Name="created" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="modified" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="axi_cafe_details" Relationship="BBCloudDBModel.FK_CafeDetails_Incharge" FromRole="axi_cafe_incharges" ToRole="axi_cafe_details" />
+  </EntityType>
+  <EntityType Name="axi_cafe_menu_items">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="cafeID" Type="Int32" Nullable="false" />
+    <Property Name="menuItemCode" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="price" Type="Double" Nullable="false" />
+    <NavigationProperty Name="axi_cafes" Relationship="BBCloudDBModel.fk_axi_cafe_menu_cafe_id" FromRole="axi_cafe_menu_items" ToRole="axi_cafes" />
+    <NavigationProperty Name="axi_psk_menu_item_log" Relationship="BBCloudDBModel.FK_axi_psk_menu_item_CafeMenuItems" FromRole="axi_cafe_menu_items" ToRole="axi_psk_menu_item_log" />
+  </EntityType>
+  <EntityType Name="axi_cafe_profile">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="created" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="modified" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="axi_profile_menu_items" Relationship="BBCloudDBModel.fk_axi_prof_menu_prof" FromRole="axi_cafe_profile" ToRole="axi_profile_menu_items" />
+  </EntityType>
+  <EntityType Name="axi_cafes">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="guid" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="activated" Type="Int32" Nullable="false" />
+    <Property Name="expiration_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="last_login_time" Type="DateTime" Precision="3" />
+    <Property Name="last_login_ip" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="license_key" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="axi_cafe_activations" Relationship="BBCloudDBModel.fk_axi_cafes" FromRole="axi_cafes" ToRole="axi_cafe_activations" />
+    <NavigationProperty Name="axi_cafe_details" Relationship="BBCloudDBModel.FK_CafeDetails_Cafe" FromRole="axi_cafes" ToRole="axi_cafe_details" />
+    <NavigationProperty Name="axi_cafe_menu_items" Relationship="BBCloudDBModel.fk_axi_cafe_menu_cafe_id" FromRole="axi_cafes" ToRole="axi_cafe_menu_items" />
+    <NavigationProperty Name="axi_psk_admin" Relationship="BBCloudDBModel.fk_axi_psk_cafe_admin" FromRole="axi_cafes" ToRole="axi_psk_admin" />
+    <NavigationProperty Name="axi_psk_manager" Relationship="BBCloudDBModel.fk_axi_psk_cafe_manager" FromRole="axi_cafes" ToRole="axi_psk_manager" />
+    <NavigationProperty Name="axi_psk_user_link" Relationship="BBCloudDBModel.fk_axi_psk_zonal_user_cafe" FromRole="axi_cafes" ToRole="axi_psk_user_link" />
+    <NavigationProperty Name="axi_sync_items" Relationship="BBCloudDBModel.FK_axi_sync_items_axi_cafes" FromRole="axi_cafes" ToRole="axi_sync_items" />
+    <NavigationProperty Name="axi_psk_balance" Relationship="BBCloudDBModel.fk_balance_cafe" FromRole="axi_cafes" ToRole="axi_psk_balance" />
+    <NavigationProperty Name="axi_psk_deposit" Relationship="BBCloudDBModel.fk_deposit_cafe" FromRole="axi_cafes" ToRole="axi_psk_deposit" />
+    <NavigationProperty Name="axi_psk_menu_item_log" Relationship="BBCloudDBModel.FK_PskMenuLog_PSK" FromRole="axi_cafes" ToRole="axi_psk_menu_item_log" />
+    <NavigationProperty Name="axi_psk_stock_logs" Relationship="BBCloudDBModel.fk_stock_logs_psk" FromRole="axi_cafes" ToRole="axi_psk_stock_logs" />
+  </EntityType>
+  <EntityType Name="axi_control_city">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="state_id" Type="Int32" Nullable="false" />
+    <Property Name="lat" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="lon" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="axi_cafe_details" Relationship="BBCloudDBModel.FK_CafeDetails_City" FromRole="axi_control_city" ToRole="axi_cafe_details" />
+    <NavigationProperty Name="axi_control_state" Relationship="BBCloudDBModel.fk_state_id" FromRole="axi_control_city" ToRole="axi_control_state" />
+  </EntityType>
+  <EntityType Name="axi_control_config">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="default_country" Type="Int32" Nullable="false" />
+    <Property Name="default_timezone" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="support_email" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="smtp_server" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="smtp_username" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="smtp_password" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="smtp_port" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="axi_control_country">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="axi_control_state" Relationship="BBCloudDBModel.fk_country_id" FromRole="axi_control_country" ToRole="axi_control_state" />
+  </EntityType>
+  <EntityType Name="axi_control_license">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="total" Type="Int32" Nullable="false" />
+    <Property Name="used" Type="Int32" Nullable="false" />
+    <Property Name="created" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="modified" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="last_used_time" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="axi_control_state">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="country_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="axi_cafe_details" Relationship="BBCloudDBModel.FK_CafeDetails_State" FromRole="axi_control_state" ToRole="axi_cafe_details" />
+    <NavigationProperty Name="axi_control_city" Relationship="BBCloudDBModel.fk_state_id" FromRole="axi_control_state" ToRole="axi_control_city" />
+    <NavigationProperty Name="axi_control_country" Relationship="BBCloudDBModel.fk_country_id" FromRole="axi_control_state" ToRole="axi_control_country" />
+  </EntityType>
+  <EntityType Name="axi_geo_tagging">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="lat" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="lon" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="axi_ho_params">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="description" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="axi_psk_ho_logs" Relationship="BBCloudDBModel.FK_axi_psk_ho_logs_axi_ho_params" FromRole="axi_ho_params" ToRole="axi_psk_ho_logs" />
+  </EntityType>
+  <EntityType Name="axi_menu_items">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="code" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="description" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="category_id" Type="Int32" />
+    <Property Name="subcategory_id" Type="Int32" />
+    <Property Name="MRP" Type="Double" Nullable="false" />
+    <Property Name="image" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="enabled" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="axi_menu_items_category" Relationship="BBCloudDBModel.FK_MenuItems_Category" FromRole="axi_menu_items" ToRole="axi_menu_items_category" />
+    <NavigationProperty Name="axi_menu_items_subcategory" Relationship="BBCloudDBModel.FK_MenuItems_Subcategory" FromRole="axi_menu_items" ToRole="axi_menu_items_subcategory" />
+  </EntityType>
+  <EntityType Name="axi_menu_items_category">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="description" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="axi_menu_items" Relationship="BBCloudDBModel.FK_MenuItems_Category" FromRole="axi_menu_items_category" ToRole="axi_menu_items" />
+  </EntityType>
+  <EntityType Name="axi_menu_items_subcategory">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="description" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="axi_menu_items" Relationship="BBCloudDBModel.FK_MenuItems_Subcategory" FromRole="axi_menu_items_subcategory" ToRole="axi_menu_items" />
+  </EntityType>
+  <EntityType Name="axi_profile_menu_items">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="profileID" Type="Int32" Nullable="false" />
+    <Property Name="menuItemCode" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="price" Type="Double" Nullable="false" />
+    <NavigationProperty Name="axi_cafe_profile" Relationship="BBCloudDBModel.fk_axi_prof_menu_prof" FromRole="axi_profile_menu_items" ToRole="axi_cafe_profile" />
+  </EntityType>
+  <EntityType Name="axi_psk_admin">
+    <Key>
+      <PropertyRef Name="cafe_id" />
+    </Key>
+    <Property Name="cafe_id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="mob" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="email" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="axi_cafes" Relationship="BBCloudDBModel.fk_axi_psk_cafe_admin" FromRole="axi_psk_admin" ToRole="axi_cafes" />
+  </EntityType>
+  <EntityType Name="axi_psk_balance">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="psk_id" Type="Int32" Nullable="false" />
+    <Property Name="amount" Type="Double" Nullable="false" />
+    <Property Name="date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="user_id" Type="Int32" />
+    <NavigationProperty Name="axi_cafes" Relationship="BBCloudDBModel.fk_balance_cafe" FromRole="axi_psk_balance" ToRole="axi_cafes" />
+    <NavigationProperty Name="axi_users" Relationship="BBCloudDBModel.fk_balance_user" FromRole="axi_psk_balance" ToRole="axi_users" />
+  </EntityType>
+  <EntityType Name="axi_psk_deposit">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="bank_id" Type="Int32" />
+    <Property Name="psk_id" Type="Int32" Nullable="false" />
+    <Property Name="date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="amount" Type="Double" Nullable="false" />
+    <NavigationProperty Name="axi_banks" Relationship="BBCloudDBModel.fk_deposit_bank" FromRole="axi_psk_deposit" ToRole="axi_banks" />
+    <NavigationProperty Name="axi_cafes" Relationship="BBCloudDBModel.fk_deposit_cafe" FromRole="axi_psk_deposit" ToRole="axi_cafes" />
+    <NavigationProperty Name="axi_users" Relationship="BBCloudDBModel.fk_deposit_user" FromRole="axi_psk_deposit" ToRole="axi_users" />
+  </EntityType>
+  <EntityType Name="axi_psk_ho_logs">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="cafe_id" Type="Int32" Nullable="false" />
+    <Property Name="param_id" Type="Int32" Nullable="false" />
+    <Property Name="date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="comment" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="value" Type="Double" Nullable="false" />
+    <NavigationProperty Name="axi_ho_params" Relationship="BBCloudDBModel.FK_axi_psk_ho_logs_axi_ho_params" FromRole="axi_psk_ho_logs" ToRole="axi_ho_params" />
+  </EntityType>
+  <EntityType Name="axi_psk_manager">
+    <Key>
+      <PropertyRef Name="cafe_id" />
+    </Key>
+    <Property Name="cafe_id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="mob" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="email" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="axi_cafes" Relationship="BBCloudDBModel.fk_axi_psk_cafe_manager" FromRole="axi_psk_manager" ToRole="axi_cafes" />
+  </EntityType>
+  <EntityType Name="axi_psk_menu_item_log">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="psk_id" Type="Int32" Nullable="false" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="menu_item_id" Type="Int32" Nullable="false" />
+    <Property Name="opening" Type="Double" Nullable="false" />
+    <Property Name="item_order" Type="Double" Nullable="false" />
+    <Property Name="received" Type="Double" Nullable="false" />
+    <Property Name="consumption" Type="Double" Nullable="false" />
+    <Property Name="wastage" Type="Double" Nullable="false" />
+    <Property Name="closing" Type="Double" Nullable="false" />
+    <NavigationProperty Name="axi_cafe_menu_items" Relationship="BBCloudDBModel.FK_axi_psk_menu_item_CafeMenuItems" FromRole="axi_psk_menu_item_log" ToRole="axi_cafe_menu_items" />
+    <NavigationProperty Name="axi_cafes" Relationship="BBCloudDBModel.FK_PskMenuLog_PSK" FromRole="axi_psk_menu_item_log" ToRole="axi_cafes" />
+    <NavigationProperty Name="axi_users" Relationship="BBCloudDBModel.FK_PskMenuLog_User" FromRole="axi_psk_menu_item_log" ToRole="axi_users" />
+  </EntityType>
+  <EntityType Name="axi_psk_purchase">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="axi_psk_purchase_log" Relationship="BBCloudDBModel.fk_axi_psk_purchase_log" FromRole="axi_psk_purchase" ToRole="axi_psk_purchase_log" />
+  </EntityType>
+  <EntityType Name="axi_psk_purchase_log">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="cafe_id" Type="Int32" Nullable="false" />
+    <Property Name="param_id" Type="Int32" Nullable="false" />
+    <Property Name="date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="comment" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="value" Type="Double" Nullable="false" />
+    <NavigationProperty Name="axi_psk_purchase" Relationship="BBCloudDBModel.fk_axi_psk_purchase_log" FromRole="axi_psk_purchase_log" ToRole="axi_psk_purchase" />
+  </EntityType>
+  <EntityType Name="axi_psk_sales">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="axi_psk_sales_log" Relationship="BBCloudDBModel.fk_axi_psk_sales_log" FromRole="axi_psk_sales" ToRole="axi_psk_sales_log" />
+  </EntityType>
+  <EntityType Name="axi_psk_sales_log">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="cafe_id" Type="Int32" Nullable="false" />
+    <Property Name="param_id" Type="Int32" Nullable="false" />
+    <Property Name="date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="comment" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="value" Type="Double" Nullable="false" />
+    <NavigationProperty Name="axi_psk_sales" Relationship="BBCloudDBModel.fk_axi_psk_sales_log" FromRole="axi_psk_sales_log" ToRole="axi_psk_sales" />
+  </EntityType>
+  <EntityType Name="axi_psk_stock_items">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="unit" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="axi_psk_stock_logs" Relationship="BBCloudDBModel.fk_stock_item" FromRole="axi_psk_stock_items" ToRole="axi_psk_stock_logs" />
+  </EntityType>
+  <EntityType Name="axi_psk_stock_logs">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="psk_id" Type="Int32" Nullable="false" />
+    <Property Name="stock_id" Type="Int32" />
+    <Property Name="date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="updated" Type="Byte" Nullable="false" />
+    <Property Name="opening_stock" Type="Double" Nullable="false" />
+    <Property Name="ho_supply" Type="Double" Nullable="false" />
+    <Property Name="local_purchase" Type="Double" Nullable="false" />
+    <Property Name="local_purchase_rate" Type="Double" Nullable="false" />
+    <Property Name="wastage" Type="Double" Nullable="false" />
+    <Property Name="closing_stock" Type="Double" Nullable="false" />
+    <NavigationProperty Name="axi_cafes" Relationship="BBCloudDBModel.fk_stock_logs_psk" FromRole="axi_psk_stock_logs" ToRole="axi_cafes" />
+    <NavigationProperty Name="axi_psk_stock_items" Relationship="BBCloudDBModel.fk_stock_item" FromRole="axi_psk_stock_logs" ToRole="axi_psk_stock_items" />
+  </EntityType>
+  <EntityType Name="axi_psk_user_link">
+    <Key>
+      <PropertyRef Name="cafe_id" />
+    </Key>
+    <Property Name="cafe_id" Type="Int32" Nullable="false" />
+    <Property Name="user_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="axi_cafes" Relationship="BBCloudDBModel.fk_axi_psk_zonal_user_cafe" FromRole="axi_psk_user_link" ToRole="axi_cafes" />
+  </EntityType>
+  <EntityType Name="axi_session">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="user_id" Type="Int32" Nullable="false" />
+    <Property Name="GUID" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ip" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="browser" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="lat" Type="Double" Nullable="false" />
+    <Property Name="lon" Type="Double" Nullable="false" />
+    <Property Name="expiry" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="axi_users" Relationship="BBCloudDBModel.FK_Session_User" FromRole="axi_session" ToRole="axi_users" />
+  </EntityType>
+  <EntityType Name="axi_sync_items">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="sync_code" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="file" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="created_time" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="synched_time" Type="DateTime" Precision="3" />
+    <Property Name="status" Type="Byte" />
+    <Property Name="cafe_id" Type="Int32" />
+    <NavigationProperty Name="axi_cafes" Relationship="BBCloudDBModel.FK_axi_sync_items_axi_cafes" FromRole="axi_sync_items" ToRole="axi_cafes" />
+  </EntityType>
+  <EntityType Name="axi_users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="mobile" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="email" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="password" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="type" Type="Int32" Nullable="false" />
+    <Property Name="activated" Type="Int32" Nullable="false" />
+    <Property Name="last_login_time" Type="DateTime" Precision="3" />
+    <Property Name="last_login_ip" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="last_logout_time" Type="DateTime" Precision="3" />
+    <Property Name="last_logout_ip" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="failed_attempt" Type="Int32" Nullable="false" />
+    <Property Name="created" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="modified" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="axi_psk_balance" Relationship="BBCloudDBModel.fk_balance_user" FromRole="axi_users" ToRole="axi_psk_balance" />
+    <NavigationProperty Name="axi_psk_deposit" Relationship="BBCloudDBModel.fk_deposit_user" FromRole="axi_users" ToRole="axi_psk_deposit" />
+    <NavigationProperty Name="axi_psk_menu_item_log" Relationship="BBCloudDBModel.FK_PskMenuLog_User" FromRole="axi_users" ToRole="axi_psk_menu_item_log" />
+    <NavigationProperty Name="axi_session" Relationship="BBCloudDBModel.FK_Session_User" FromRole="axi_users" ToRole="axi_session" />
+  </EntityType>
+  <EntityType Name="axi_validation">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="emailCode" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="mobCode" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="emailVerified" Type="Int32" Nullable="false" />
+    <Property Name="mobVerified" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Table">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="cafe_id" Type="Int32" Nullable="false" />
+    <Property Name="connection_id" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="started" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="closed" Type="DateTime" Precision="3" />
+    <Property Name="status" Type="Byte" Nullable="false" />
+  </EntityType>
+  <Association Name="fk_deposit_bank">
+    <End Role="axi_banks" Type="BBCloudDBModel.axi_banks" Multiplicity="0..1" />
+    <End Role="axi_psk_deposit" Type="BBCloudDBModel.axi_psk_deposit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_banks">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_psk_deposit">
+        <PropertyRef Name="bank_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_axi_cafes">
+    <End Role="axi_cafes" Type="BBCloudDBModel.axi_cafes" Multiplicity="1" />
+    <End Role="axi_cafe_activations" Type="BBCloudDBModel.axi_cafe_activations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_cafes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_cafe_activations">
+        <PropertyRef Name="cafe_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CafeDetails_Cafe">
+    <End Role="axi_cafes" Type="BBCloudDBModel.axi_cafes" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="axi_cafe_details" Type="BBCloudDBModel.axi_cafe_details" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="axi_cafes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_cafe_details">
+        <PropertyRef Name="cafe_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CafeDetails_City">
+    <End Role="axi_control_city" Type="BBCloudDBModel.axi_control_city" Multiplicity="0..1" />
+    <End Role="axi_cafe_details" Type="BBCloudDBModel.axi_cafe_details" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_control_city">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_cafe_details">
+        <PropertyRef Name="city" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CafeDetails_Incharge">
+    <End Role="axi_cafe_incharges" Type="BBCloudDBModel.axi_cafe_incharges" Multiplicity="0..1" />
+    <End Role="axi_cafe_details" Type="BBCloudDBModel.axi_cafe_details" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_cafe_incharges">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_cafe_details">
+        <PropertyRef Name="incharge_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CafeDetails_State">
+    <End Role="axi_control_state" Type="BBCloudDBModel.axi_control_state" Multiplicity="0..1" />
+    <End Role="axi_cafe_details" Type="BBCloudDBModel.axi_cafe_details" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_control_state">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_cafe_details">
+        <PropertyRef Name="state" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_axi_cafe_menu_cafe_id">
+    <End Role="axi_cafes" Type="BBCloudDBModel.axi_cafes" Multiplicity="1" />
+    <End Role="axi_cafe_menu_items" Type="BBCloudDBModel.axi_cafe_menu_items" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_cafes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_cafe_menu_items">
+        <PropertyRef Name="cafeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_axi_psk_menu_item_CafeMenuItems">
+    <End Role="axi_cafe_menu_items" Type="BBCloudDBModel.axi_cafe_menu_items" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="axi_psk_menu_item_log" Type="BBCloudDBModel.axi_psk_menu_item_log" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_cafe_menu_items">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_psk_menu_item_log">
+        <PropertyRef Name="menu_item_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_axi_prof_menu_prof">
+    <End Role="axi_cafe_profile" Type="BBCloudDBModel.axi_cafe_profile" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="axi_profile_menu_items" Type="BBCloudDBModel.axi_profile_menu_items" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_cafe_profile">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_profile_menu_items">
+        <PropertyRef Name="profileID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_axi_psk_cafe_admin">
+    <End Role="axi_cafes" Type="BBCloudDBModel.axi_cafes" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="axi_psk_admin" Type="BBCloudDBModel.axi_psk_admin" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="axi_cafes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_psk_admin">
+        <PropertyRef Name="cafe_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_axi_psk_cafe_manager">
+    <End Role="axi_cafes" Type="BBCloudDBModel.axi_cafes" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="axi_psk_manager" Type="BBCloudDBModel.axi_psk_manager" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="axi_cafes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_psk_manager">
+        <PropertyRef Name="cafe_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_axi_psk_zonal_user_cafe">
+    <End Role="axi_cafes" Type="BBCloudDBModel.axi_cafes" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="axi_psk_user_link" Type="BBCloudDBModel.axi_psk_user_link" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="axi_cafes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_psk_user_link">
+        <PropertyRef Name="cafe_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_axi_sync_items_axi_cafes">
+    <End Role="axi_cafes" Type="BBCloudDBModel.axi_cafes" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="axi_sync_items" Type="BBCloudDBModel.axi_sync_items" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_cafes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_sync_items">
+        <PropertyRef Name="cafe_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_balance_cafe">
+    <End Role="axi_cafes" Type="BBCloudDBModel.axi_cafes" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="axi_psk_balance" Type="BBCloudDBModel.axi_psk_balance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_cafes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_psk_balance">
+        <PropertyRef Name="psk_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_deposit_cafe">
+    <End Role="axi_cafes" Type="BBCloudDBModel.axi_cafes" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="axi_psk_deposit" Type="BBCloudDBModel.axi_psk_deposit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_cafes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_psk_deposit">
+        <PropertyRef Name="psk_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PskMenuLog_PSK">
+    <End Role="axi_cafes" Type="BBCloudDBModel.axi_cafes" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="axi_psk_menu_item_log" Type="BBCloudDBModel.axi_psk_menu_item_log" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_cafes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_psk_menu_item_log">
+        <PropertyRef Name="psk_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_stock_logs_psk">
+    <End Role="axi_cafes" Type="BBCloudDBModel.axi_cafes" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="axi_psk_stock_logs" Type="BBCloudDBModel.axi_psk_stock_logs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_cafes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_psk_stock_logs">
+        <PropertyRef Name="psk_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_state_id">
+    <End Role="axi_control_state" Type="BBCloudDBModel.axi_control_state" Multiplicity="1" />
+    <End Role="axi_control_city" Type="BBCloudDBModel.axi_control_city" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_control_state">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_control_city">
+        <PropertyRef Name="state_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_country_id">
+    <End Role="axi_control_country" Type="BBCloudDBModel.axi_control_country" Multiplicity="1" />
+    <End Role="axi_control_state" Type="BBCloudDBModel.axi_control_state" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_control_country">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_control_state">
+        <PropertyRef Name="country_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_axi_psk_ho_logs_axi_ho_params">
+    <End Role="axi_ho_params" Type="BBCloudDBModel.axi_ho_params" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="axi_psk_ho_logs" Type="BBCloudDBModel.axi_psk_ho_logs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_ho_params">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="axi_psk_ho_logs">
+        <PropertyRef Name="param_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MenuItems_Category">
+    <End Role="axi_menu_items_category" Type="BBCloudDBModel.axi_menu_items_category" Multiplicity="0..1" />
+    <End Role="axi_menu_items" Type="BBCloudDBModel.axi_menu_items" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_menu_items_category">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_menu_items">
+        <PropertyRef Name="category_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MenuItems_Subcategory">
+    <End Role="axi_menu_items_subcategory" Type="BBCloudDBModel.axi_menu_items_subcategory" Multiplicity="0..1" />
+    <End Role="axi_menu_items" Type="BBCloudDBModel.axi_menu_items" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_menu_items_subcategory">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_menu_items">
+        <PropertyRef Name="subcategory_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_balance_user">
+    <End Role="axi_users" Type="BBCloudDBModel.axi_users" Multiplicity="0..1" />
+    <End Role="axi_psk_balance" Type="BBCloudDBModel.axi_psk_balance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_psk_balance">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_deposit_user">
+    <End Role="axi_users" Type="BBCloudDBModel.axi_users" Multiplicity="0..1" />
+    <End Role="axi_psk_deposit" Type="BBCloudDBModel.axi_psk_deposit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_psk_deposit">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PskMenuLog_User">
+    <End Role="axi_users" Type="BBCloudDBModel.axi_users" Multiplicity="0..1" />
+    <End Role="axi_psk_menu_item_log" Type="BBCloudDBModel.axi_psk_menu_item_log" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_psk_menu_item_log">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_axi_psk_purchase_log">
+    <End Role="axi_psk_purchase" Type="BBCloudDBModel.axi_psk_purchase" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="axi_psk_purchase_log" Type="BBCloudDBModel.axi_psk_purchase_log" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_psk_purchase">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_psk_purchase_log">
+        <PropertyRef Name="param_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_axi_psk_sales_log">
+    <End Role="axi_psk_sales" Type="BBCloudDBModel.axi_psk_sales" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="axi_psk_sales_log" Type="BBCloudDBModel.axi_psk_sales_log" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_psk_sales">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_psk_sales_log">
+        <PropertyRef Name="param_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_stock_item">
+    <End Role="axi_psk_stock_items" Type="BBCloudDBModel.axi_psk_stock_items" Multiplicity="0..1" />
+    <End Role="axi_psk_stock_logs" Type="BBCloudDBModel.axi_psk_stock_logs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_psk_stock_items">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_psk_stock_logs">
+        <PropertyRef Name="stock_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Session_User">
+    <End Role="axi_users" Type="BBCloudDBModel.axi_users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="axi_session" Type="BBCloudDBModel.axi_session" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_session">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

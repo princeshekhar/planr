@@ -1,0 +1,90 @@
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\BrewBerryCloudService.dll
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\BrewBerryCloudService.pdb
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\Antlr3.Runtime.dll
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\EntityFramework.dll
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\Microsoft.Web.Infrastructure.dll
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\Newtonsoft.Json.dll
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Net.Http.Formatting.dll
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.Cors.dll
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.Helpers.dll
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.Http.Cors.dll
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.Http.dll
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.Http.WebHost.dll
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.Mvc.dll
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.Optimization.dll
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.Providers.dll
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.Razor.dll
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.WebPages.Deployment.dll
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.WebPages.dll
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.WebPages.Razor.dll
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\WebGrease.dll
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\Newtonsoft.Json.xml
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Net.Http.Formatting.xml
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.Http.xml
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.Http.WebHost.xml
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\EntityFramework.xml
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.Helpers.xml
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.Mvc.xml
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.Razor.xml
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.WebPages.xml
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.WebPages.Deployment.xml
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.WebPages.Razor.xml
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\obj\Release\BrewBerryCloudService.dll
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\obj\Release\BrewBerryCloudService.pdb
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\obj\Release\BrewBerryCloudService.csprojResolveAssemblyReference.cache
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\EPPlus.dll
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\Microsoft.AspNet.SignalR.Core.dll
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\Microsoft.AspNet.SignalR.Owin.dll
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\Microsoft.Owin.Host.SystemWeb.dll
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\Owin.dll
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\EPPlus.xml
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\Microsoft.AspNet.SignalR.Core.xml
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\Microsoft.AspNet.SignalR.Owin.xml
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+K:\Actonate\Axinus\Project Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\BrewBerryCloudService.dll
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\BrewBerryCloudService.pdb
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\Antlr3.Runtime.dll
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\EntityFramework.dll
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\EPPlus.dll
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\Microsoft.AspNet.SignalR.Core.dll
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\Microsoft.AspNet.SignalR.Owin.dll
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\Microsoft.Web.Infrastructure.dll
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\Newtonsoft.Json.dll
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\Owin.dll
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Net.Http.Formatting.dll
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.Cors.dll
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.Helpers.dll
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.Http.Cors.dll
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.Http.dll
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.Http.WebHost.dll
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.Mvc.dll
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.Optimization.dll
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.Providers.dll
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.Razor.dll
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.WebPages.Deployment.dll
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.WebPages.dll
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.WebPages.Razor.dll
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\WebGrease.dll
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\EPPlus.xml
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\Microsoft.AspNet.SignalR.Core.xml
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\Microsoft.AspNet.SignalR.Owin.xml
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\Newtonsoft.Json.xml
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Net.Http.Formatting.xml
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.Http.xml
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.Http.WebHost.xml
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\EntityFramework.xml
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.Helpers.xml
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.Mvc.xml
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.Razor.xml
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.WebPages.xml
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.WebPages.Deployment.xml
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\bin\System.Web.WebPages.Razor.xml
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\obj\Release\BrewBerryCloudService.csprojResolveAssemblyReference.cache
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\obj\Release\BrewBerryCloudService.dll
+E:\Projects\Titan\Titan\Code Repo\BrewBerryCloudService\BrewBerryCloudService\obj\Release\BrewBerryCloudService.pdb

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="BrewberrysCloudDBEntities-Web.config Connection String" description="BrewberrysCloudDBEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/BBCloudDB.csdl|res://*/BBCloudDB.ssdl|res://*/BBCloudDB.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=jxptwyky0c.database.windows.net;initial catalog=BrewberrysCloudDB;user id=brewberryscloud@jxptwyky0c;password=|h1l?Qo_(_?t;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="K:\\Actonate\\Axinus\\Project\ Titan\\Code\ Repo\\BrewBerryCloudService\\BrewBerryCloudService\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='BrewberrysCloudDBEntities']/@connectionString" />
+  </parameter>
+</parameters>

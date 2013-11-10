@@ -1,0 +1,86 @@
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\PlanrCloudService.dll
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\PlanrCloudService.pdb
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\Antlr3.Runtime.dll
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\EntityFramework.dll
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\Microsoft.AspNet.SignalR.Core.dll
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\Microsoft.AspNet.SignalR.Owin.dll
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\Microsoft.Owin.Host.SystemWeb.dll
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\Microsoft.Web.Infrastructure.dll
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\Newtonsoft.Json.dll
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\Owin.dll
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\System.Net.Http.Formatting.dll
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.Cors.dll
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.Helpers.dll
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.Http.Cors.dll
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.Http.dll
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.Http.WebHost.dll
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.Mvc.dll
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.Optimization.dll
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.Providers.dll
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.Razor.dll
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.WebPages.Deployment.dll
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.WebPages.dll
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.WebPages.Razor.dll
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\WebGrease.dll
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\EPPlus.xml
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\Microsoft.AspNet.SignalR.Core.xml
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\Microsoft.AspNet.SignalR.Owin.xml
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\Microsoft.Owin.Host.SystemWeb.xml
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\Newtonsoft.Json.xml
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\System.Net.Http.Formatting.xml
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.Http.xml
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.Http.WebHost.xml
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\EntityFramework.xml
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.Helpers.xml
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.Mvc.xml
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.Razor.xml
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.WebPages.xml
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.WebPages.Deployment.xml
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.WebPages.Razor.xml
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\obj\Debug\PlanrCloudService.csprojResolveAssemblyReference.cache
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\obj\Debug\PlanrCloudService.dll
+K:\Actonate\Axinus\Project Planr\Code Repo\backend\PlanrCloudService\PlanrCloudService\obj\Debug\PlanrCloudService.pdb
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\PlanrCloudService.dll
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\PlanrCloudService.pdb
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\Antlr3.Runtime.dll
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\EntityFramework.dll
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\Microsoft.AspNet.SignalR.Owin.dll
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\Microsoft.Web.Infrastructure.dll
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\Newtonsoft.Json.dll
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\Owin.dll
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\System.Net.Http.Formatting.dll
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.Cors.dll
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.Helpers.dll
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.Http.Cors.dll
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.Http.dll
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.Http.WebHost.dll
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.Mvc.dll
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.Optimization.dll
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.Providers.dll
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.Razor.dll
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.WebPages.Deployment.dll
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.WebPages.dll
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.WebPages.Razor.dll
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\WebGrease.dll
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\Microsoft.AspNet.SignalR.Owin.xml
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\Newtonsoft.Json.xml
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\System.Net.Http.Formatting.xml
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.Http.xml
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.Http.WebHost.xml
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\EntityFramework.xml
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.Helpers.xml
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.Mvc.xml
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.Razor.xml
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.WebPages.xml
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.WebPages.Deployment.xml
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\bin\System.Web.WebPages.Razor.xml
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\obj\Debug\PlanrCloudService.dll
+C:\xampp\htdocs\planr\planr_hackathon\backend\PlanrCloudService\PlanrCloudService\obj\Debug\PlanrCloudService.pdb

@@ -1,0 +1,29 @@
+﻿<RecentFiles>
+  <RecentFiles>
+    <File id="8D324091-8B8E-46FF-A3A3-D048A5A046D1/d:Controllers/f:UserController.cs" caret="363" fromTop="15" />
+    <File id="8D324091-8B8E-46FF-A3A3-D048A5A046D1/d:Controllers/f:ControlController.cs" caret="256" fromTop="11" />
+    <File id="8D324091-8B8E-46FF-A3A3-D048A5A046D1/f:BBCloudDB.Context.cs" caret="3460" fromTop="10" />
+    <File id="8D324091-8B8E-46FF-A3A3-D048A5A046D1/f:axi_psk_ho_logs.cs" caret="838" fromTop="17" />
+    <File id="8D324091-8B8E-46FF-A3A3-D048A5A046D1/d:Controllers/f:MenuController.cs" caret="31330" fromTop="39" />
+    <File id="8D324091-8B8E-46FF-A3A3-D048A5A046D1/d:App_Start/f:RouteConfig.cs" caret="0" fromTop="0" />
+    <File id="8D324091-8B8E-46FF-A3A3-D048A5A046D1/d:App_Start/f:FilterConfig.cs" caret="0" fromTop="0" />
+    <File id="8D324091-8B8E-46FF-A3A3-D048A5A046D1/d:Controllers/f:AuthController.cs" caret="5220" fromTop="68" />
+    <File id="8D324091-8B8E-46FF-A3A3-D048A5A046D1/d:App_Start/f:WebApiConfig.cs" caret="315" fromTop="7" />
+    <File id="8D324091-8B8E-46FF-A3A3-D048A5A046D1/d:Controllers/f:CafesController.cs" caret="6298" fromTop="26" />
+<<<<<<< local
+    <File id="8D324091-8B8E-46FF-A3A3-D048A5A046D1/d:Controllers/f:PskController.cs" caret="140980" fromTop="43" />
+=======
+    <File id="8D324091-8B8E-46FF-A3A3-D048A5A046D1/f:CommonModules.cs" caret="28704" fromTop="11" />
+    <File id="8D324091-8B8E-46FF-A3A3-D048A5A046D1/d:Controllers/f:PskController.cs" caret="175163" fromTop="9" />
+>>>>>>> other
+  </RecentFiles>
+  <RecentEdits>
+    <File id="8D324091-8B8E-46FF-A3A3-D048A5A046D1/d:Controllers/f:UserController.cs" caret="363" fromTop="15" />
+    <File id="8D324091-8B8E-46FF-A3A3-D048A5A046D1/d:Controllers/f:ControlController.cs" caret="256" fromTop="11" />
+    <File id="8D324091-8B8E-46FF-A3A3-D048A5A046D1/d:Controllers/f:MenuController.cs" caret="27791" fromTop="13" />
+    <File id="8D324091-8B8E-46FF-A3A3-D048A5A046D1/d:Controllers/f:AuthController.cs" caret="3070" fromTop="3" />
+    <File id="8D324091-8B8E-46FF-A3A3-D048A5A046D1/d:Controllers/f:CafesController.cs" caret="6341" fromTop="30" />
+    <File id="8D324091-8B8E-46FF-A3A3-D048A5A046D1/f:CommonModules.cs" caret="27335" fromTop="12" />
+    <File id="8D324091-8B8E-46FF-A3A3-D048A5A046D1/d:Controllers/f:PskController.cs" caret="175445" fromTop="15" />
+  </RecentEdits>
+</RecentFiles>

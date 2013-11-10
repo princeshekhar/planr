@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9c7a563c6262466194f08dda7236de5c" Name="Diagram1" ZoomLevel="48">
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_admins" Width="1.5" PointX="10.522567217481587" PointY="1.2047820096857762" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_banks" Width="1.5" PointX="2.170868861568565" PointY="2.7977321756993105" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_blocked_ip" Width="1.5" PointX="4.09823477459058" PointY="1.4692630327629219" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_cafe_activations" Width="1.5" PointX="4.8207488603986564" PointY="2.7597487730717978" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_cafe_connections" Width="1.5" PointX="11.938787044928777" PointY="12.401100760512566" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_cafe_details" Width="1.5" PointX="7.0919534503910473" PointY="15.253297425458811" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_cafe_incharges" Width="1.5" PointX="0.080578364469380284" PointY="6.489090624493123" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_cafe_menu_items" Width="1.5" PointX="10.301781718759695" PointY="4.8884741090650081" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_cafe_profile" Width="1.5" PointX="9.8450298764952588" PointY="21.732897440778508" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_cafes" Width="1.5" PointX="0.41618625839063256" PointY="12.189481785609146" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_control_city" Width="1.5" PointX="0.086016381199479283" PointY="25.51663455065183" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_control_config" Width="1.5" PointX="8.3157746756057129" PointY="16.781710423893159" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_control_country" Width="1.5" PointX="1.1726692864544082" PointY="12.876796489989756" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_control_license" Width="1.5" PointX="8.9930819612895512" PointY="7.515490282101319" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_control_state" Width="1.5" PointX="5.2318693982585653" PointY="20.882684031912444" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_geo_tagging" Width="1.5" PointX="3.9364117067011124" PointY="1.027862117173086" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_ho_params" Width="1.5" PointX="8.3101770059718643" PointY="28.023414952691372" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_invoice_sync" Width="1.5" PointX="7.63785919343953" PointY="30.484515204319969" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_menu_items" Width="1.5" PointX="8.0856884327184826" PointY="29.866532354553478" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_menu_items_category" Width="1.5" PointX="4.35987551899621" PointY="29.919447108134371" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_menu_items_recipe" Width="1.5" PointX="9.1060215239906785" PointY="4.1491416712054709" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_menu_items_subcategory" Width="1.5" PointX="1.2447553804352671" PointY="17.752809920233119" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_profile_menu_items" Width="1.5" PointX="0.17840258412920057" PointY="26.507528153484468" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_psk_admin" Width="1.5" PointX="11.231824848443187" PointY="21.91673278339055" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_psk_balance" Width="1.5" PointX="7.2308422677362536" PointY="16.0651955530351" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_psk_deposit" Width="1.5" PointX="8.6989585145837438" PointY="29.206181748400528" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_psk_ho_logs" Width="1.5" PointX="4.8702462058841469" PointY="4.0103305298883143" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_psk_manager" Width="1.5" PointX="3.5355217175257962" PointY="2.5435446959657337" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_psk_menu_item_log" Width="1.5" PointX="4.1360185780264525" PointY="21.007273206956345" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_psk_purchase" Width="1.5" PointX="11.876480279432833" PointY="30.051829575585121" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_psk_purchase_log" Width="1.5" PointX="3.5578916759965438" PointY="5.3398400122950971" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_psk_sales" Width="1.5" PointX="7.8030363916433583" PointY="10.954081421230958" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_psk_sales_log" Width="1.5" PointX="0.71400107849109962" PointY="17.884013750536372" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_psk_stock_items" Width="1.5" PointX="9.40980952857519" PointY="4.1914606858936425" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_psk_stock_logs" Width="1.5" PointX="6.7955497907453921" PointY="28.986902712372551" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_psk_user_link" Width="1.5" PointX="5.7474893581808963" PointY="28.386880649433881" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_raw_materials" Width="1.5" PointX="3.7899610212957304" PointY="3.1903829142406503" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_raw_materials_category" Width="1.5" PointX="7.4650341456127514" PointY="28.080235345326475" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_session" Width="1.5" PointX="8.32398257605917" PointY="4.4225892147154493" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_sync_items" Width="1.5" PointX="6.1147388248307344" PointY="8.6195899437272878" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_unit" Width="1.5" PointX="5.59697383530297" PointY="2.0648191133815885" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_users" Width="1.5" PointX="7.5874665880517416" PointY="29.886456175654409" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.axi_validation" Width="1.5" PointX="11.132047997383424" PointY="13.290916136135774" />
+        <EntityTypeShape EntityType="BrewberrysCloudDBModel.Table" Width="1.5" PointX="7.5152020880557613" PointY="18.150141486036656" />
+        <AssociationConnector Association="BrewberrysCloudDBModel.fk_deposit_bank" />
+        <AssociationConnector Association="BrewberrysCloudDBModel.fk_axi_cafes" />
+        <AssociationConnector Association="BrewberrysCloudDBModel.fk_connections_cafes" />
+        <AssociationConnector Association="BrewberrysCloudDBModel.FK_CafeDetails_Cafe" />
+        <AssociationConnector Association="BrewberrysCloudDBModel.FK_CafeDetails_City" />
+        <AssociationConnector Association="BrewberrysCloudDBModel.FK_CafeDetails_State" />
+        <AssociationConnector Association="BrewberrysCloudDBModel.FK_CafeDetails_Users" />
+        <AssociationConnector Association="BrewberrysCloudDBModel.fk_axi_cafe_menu_cafe_id" />
+        <AssociationConnector Association="BrewberrysCloudDBModel.FK_axi_psk_menu_item_CafeMenuItems" />
+        <AssociationConnector Association="BrewberrysCloudDBModel.fk_axi_prof_menu_prof" />
+        <AssociationConnector Association="BrewberrysCloudDBModel.FK_axi_invoice_sync" />
+        <AssociationConnector Association="BrewberrysCloudDBModel.fk_axi_psk_cafe_admin" />
+        <AssociationConnector Association="BrewberrysCloudDBModel.fk_axi_psk_cafe_manager" />
+        <AssociationConnector Association="BrewberrysCloudDBModel.fk_axi_psk_zonal_user_cafe" />
+        <AssociationConnector Association="BrewberrysCloudDBModel.FK_axi_sync_items_axi_cafes" />
+        <AssociationConnector Association="BrewberrysCloudDBModel.fk_balance_cafe" />
+        <AssociationConnector Association="BrewberrysCloudDBModel.fk_deposit_cafe" />
+        <AssociationConnector Association="BrewberrysCloudDBModel.FK_PskMenuLog_PSK" />
+        <AssociationConnector Association="BrewberrysCloudDBModel.fk_stock_logs_psk" />
+        <AssociationConnector Association="BrewberrysCloudDBModel.fk_state_id" />
+        <AssociationConnector Association="BrewberrysCloudDBModel.fk_country_id" />
+        <AssociationConnector Association="BrewberrysCloudDBModel.FK_axi_psk_ho_logs_axi_ho_params" />
+        <AssociationConnector Association="BrewberrysCloudDBModel.FK_MenuItems_Category" />
+        <AssociationConnector Association="BrewberrysCloudDBModel.FK_MenuItems_Subcategory" />
+        <AssociationConnector Association="BrewberrysCloudDBModel.fk_recipe_unit" />
+        <AssociationConnector Association="BrewberrysCloudDBModel.fk_balance_user" />
+        <AssociationConnector Association="BrewberrysCloudDBModel.fk_deposit_user" />
+        <AssociationConnector Association="BrewberrysCloudDBModel.FK_PskMenuLog_User" />
+        <AssociationConnector Association="BrewberrysCloudDBModel.fk_axi_psk_purchase_log" />
+        <AssociationConnector Association="BrewberrysCloudDBModel.fk_axi_psk_sales_log" />
+        <AssociationConnector Association="BrewberrysCloudDBModel.fk_stock_item" />
+        <AssociationConnector Association="BrewberrysCloudDBModel.fk_rawmat_rawmatcat" />
+        <AssociationConnector Association="BrewberrysCloudDBModel.fk_rawmat_unit" />
+        <AssociationConnector Association="BrewberrysCloudDBModel.FK_Session_User" />
+        <AssociationConnector Association="BrewberrysCloudDBModel.axi_unit_fk" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

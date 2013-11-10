@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="brewberryscloud" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^K:\\Actonate\\Axinus\\Project\ Titan\\Code\ Repo\\BrewBerryCloudService\\BrewBerryCloudService\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^K:\\Actonate\\Axinus\\Project\ Titan\\Code\ Repo\\BrewBerryCloudService\\BrewBerryCloudService\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="BrewberrysCloudDBEntities-Web.config Connection String" description="" value="metadata=res://*/BBCloudDB.csdl|res://*/BBCloudDB.ssdl|res://*/BBCloudDB.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=jxptwyky0c.database.windows.net;Initial Catalog=BrewberrysCloudDB;Persist Security Info=True;User ID=brewberryscloud@jxptwyky0c;Password=|h1l?Qo_(_?t;MultipleActiveResultSets=True;Application Name=EntityFramework&quot;" tags="">
+    <parameterEntry kind="XmlFile" scope="K:\\Actonate\\Axinus\\Project\ Titan\\Code\ Repo\\BrewBerryCloudService\\BrewBerryCloudService\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='BrewberrysCloudDBEntities']/@connectionString" />
+  </parameter>
+  <parameter name="BrewBerryCloudService.BrewberrysLocalDBEntities-Web.config Connection String" description="BrewBerryCloudService.BrewberrysLocalDBEntities Connection String used in web.config by the application to access the database." value="BrewBerryCloudService.BrewberrysLocalDBEntities_ConnectionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="K:\\Actonate\\Axinus\\Project\ Titan\\Code\ Repo\\BrewBerryCloudService\\BrewBerryCloudService\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='BrewBerryCloudService.BrewberrysLocalDBEntities']/@connectionString" />
+  </parameter>
+</parameters>

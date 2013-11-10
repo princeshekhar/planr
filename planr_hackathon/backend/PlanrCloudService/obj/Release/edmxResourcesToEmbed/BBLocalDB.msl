@@ -1,0 +1,459 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BBCloudDBModelStoreContainer" CdmEntityContainer="BBCloudDBEntities">
+    <EntitySetMapping Name="axi_admins">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_admins">
+        <MappingFragment StoreEntitySet="axi_admins">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="activated" ColumnName="activated" />
+          <ScalarProperty Name="last_login_time" ColumnName="last_login_time" />
+          <ScalarProperty Name="last_login_ip" ColumnName="last_login_ip" />
+          <ScalarProperty Name="last_logout_time" ColumnName="last_logout_time" />
+          <ScalarProperty Name="last_logout_ip" ColumnName="last_logout_ip" />
+          <ScalarProperty Name="failed_attempt" ColumnName="failed_attempt" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="modified" ColumnName="modified" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_banks">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_banks">
+        <MappingFragment StoreEntitySet="axi_banks">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="ifsc_code" ColumnName="ifsc_code" />
+          <ScalarProperty Name="account_number" ColumnName="account_number" />
+          <ScalarProperty Name="address" ColumnName="address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_blocked_ip">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_blocked_ip">
+        <MappingFragment StoreEntitySet="axi_blocked_ip">
+          <ScalarProperty Name="ipAddr" ColumnName="ipAddr" />
+          <ScalarProperty Name="attempts" ColumnName="attempts" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_cafe_activations">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_cafe_activations">
+        <MappingFragment StoreEntitySet="axi_cafe_activations">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="activation_code" ColumnName="activation_code" />
+          <ScalarProperty Name="cafe_id" ColumnName="cafe_id" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="modified" ColumnName="modified" />
+          <ScalarProperty Name="activated_time" ColumnName="activated_time" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_cafe_details">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_cafe_details">
+        <MappingFragment StoreEntitySet="axi_cafe_details">
+          <ScalarProperty Name="cafe_id" ColumnName="cafe_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="zip_code" ColumnName="zip_code" />
+          <ScalarProperty Name="lat_long" ColumnName="lat_long" />
+          <ScalarProperty Name="incharge_id" ColumnName="incharge_id" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_cafe_incharges">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_cafe_incharges">
+        <MappingFragment StoreEntitySet="axi_cafe_incharges">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="activated" ColumnName="activated" />
+          <ScalarProperty Name="last_login_time" ColumnName="last_login_time" />
+          <ScalarProperty Name="last_login_ip" ColumnName="last_login_ip" />
+          <ScalarProperty Name="last_logout_time" ColumnName="last_logout_time" />
+          <ScalarProperty Name="last_logout_ip" ColumnName="last_logout_ip" />
+          <ScalarProperty Name="failed_attempt" ColumnName="failed_attempt" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="modified" ColumnName="modified" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_cafe_menu_items">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_cafe_menu_items">
+        <MappingFragment StoreEntitySet="axi_cafe_menu_items">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cafeID" ColumnName="cafeID" />
+          <ScalarProperty Name="menuItemCode" ColumnName="menuItemCode" />
+          <ScalarProperty Name="price" ColumnName="price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_cafe_profile">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_cafe_profile">
+        <MappingFragment StoreEntitySet="axi_cafe_profile">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="modified" ColumnName="modified" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_cafes">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_cafes">
+        <MappingFragment StoreEntitySet="axi_cafes">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="guid" ColumnName="guid" />
+          <ScalarProperty Name="activated" ColumnName="activated" />
+          <ScalarProperty Name="expiration_date" ColumnName="expiration_date" />
+          <ScalarProperty Name="last_login_time" ColumnName="last_login_time" />
+          <ScalarProperty Name="last_login_ip" ColumnName="last_login_ip" />
+          <ScalarProperty Name="license_key" ColumnName="license_key" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_control_city">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_control_city">
+        <MappingFragment StoreEntitySet="axi_control_city">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="state_id" ColumnName="state_id" />
+          <ScalarProperty Name="lat" ColumnName="lat" />
+          <ScalarProperty Name="lon" ColumnName="lon" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_control_config">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_control_config">
+        <MappingFragment StoreEntitySet="axi_control_config">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="default_country" ColumnName="default_country" />
+          <ScalarProperty Name="default_timezone" ColumnName="default_timezone" />
+          <ScalarProperty Name="support_email" ColumnName="support_email" />
+          <ScalarProperty Name="smtp_server" ColumnName="smtp_server" />
+          <ScalarProperty Name="smtp_username" ColumnName="smtp_username" />
+          <ScalarProperty Name="smtp_password" ColumnName="smtp_password" />
+          <ScalarProperty Name="smtp_port" ColumnName="smtp_port" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_control_country">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_control_country">
+        <MappingFragment StoreEntitySet="axi_control_country">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_control_license">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_control_license">
+        <MappingFragment StoreEntitySet="axi_control_license">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="used" ColumnName="used" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="modified" ColumnName="modified" />
+          <ScalarProperty Name="last_used_time" ColumnName="last_used_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_control_state">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_control_state">
+        <MappingFragment StoreEntitySet="axi_control_state">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="country_id" ColumnName="country_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_geo_tagging">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_geo_tagging">
+        <MappingFragment StoreEntitySet="axi_geo_tagging">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="lat" ColumnName="lat" />
+          <ScalarProperty Name="lon" ColumnName="lon" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_ho_params">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_ho_params">
+        <MappingFragment StoreEntitySet="axi_ho_params">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_menu_items">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_menu_items">
+        <MappingFragment StoreEntitySet="axi_menu_items">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="category_id" ColumnName="category_id" />
+          <ScalarProperty Name="subcategory_id" ColumnName="subcategory_id" />
+          <ScalarProperty Name="MRP" ColumnName="MRP" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="enabled" ColumnName="enabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_menu_items_category">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_menu_items_category">
+        <MappingFragment StoreEntitySet="axi_menu_items_category">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_menu_items_subcategory">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_menu_items_subcategory">
+        <MappingFragment StoreEntitySet="axi_menu_items_subcategory">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_profile_menu_items">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_profile_menu_items">
+        <MappingFragment StoreEntitySet="axi_profile_menu_items">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="profileID" ColumnName="profileID" />
+          <ScalarProperty Name="menuItemCode" ColumnName="menuItemCode" />
+          <ScalarProperty Name="price" ColumnName="price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_psk_admin">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_psk_admin">
+        <MappingFragment StoreEntitySet="axi_psk_admin">
+          <ScalarProperty Name="cafe_id" ColumnName="cafe_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="mob" ColumnName="mob" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_psk_balance">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_psk_balance">
+        <MappingFragment StoreEntitySet="axi_psk_balance">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="psk_id" ColumnName="psk_id" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_psk_deposit">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_psk_deposit">
+        <MappingFragment StoreEntitySet="axi_psk_deposit">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="bank_id" ColumnName="bank_id" />
+          <ScalarProperty Name="psk_id" ColumnName="psk_id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_psk_ho_logs">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_psk_ho_logs">
+        <MappingFragment StoreEntitySet="axi_psk_ho_logs">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cafe_id" ColumnName="cafe_id" />
+          <ScalarProperty Name="param_id" ColumnName="param_id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="comment" ColumnName="comment" />
+          <ScalarProperty Name="value" ColumnName="value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_psk_manager">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_psk_manager">
+        <MappingFragment StoreEntitySet="axi_psk_manager">
+          <ScalarProperty Name="cafe_id" ColumnName="cafe_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="mob" ColumnName="mob" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_psk_menu_item_log">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_psk_menu_item_log">
+        <MappingFragment StoreEntitySet="axi_psk_menu_item_log">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="psk_id" ColumnName="psk_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="menu_item_id" ColumnName="menu_item_id" />
+          <ScalarProperty Name="opening" ColumnName="opening" />
+          <ScalarProperty Name="item_order" ColumnName="item_order" />
+          <ScalarProperty Name="received" ColumnName="received" />
+          <ScalarProperty Name="consumption" ColumnName="consumption" />
+          <ScalarProperty Name="wastage" ColumnName="wastage" />
+          <ScalarProperty Name="closing" ColumnName="closing" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_psk_purchase">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_psk_purchase">
+        <MappingFragment StoreEntitySet="axi_psk_purchase">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_psk_purchase_log">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_psk_purchase_log">
+        <MappingFragment StoreEntitySet="axi_psk_purchase_log">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cafe_id" ColumnName="cafe_id" />
+          <ScalarProperty Name="param_id" ColumnName="param_id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="comment" ColumnName="comment" />
+          <ScalarProperty Name="value" ColumnName="value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_psk_sales">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_psk_sales">
+        <MappingFragment StoreEntitySet="axi_psk_sales">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_psk_sales_log">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_psk_sales_log">
+        <MappingFragment StoreEntitySet="axi_psk_sales_log">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cafe_id" ColumnName="cafe_id" />
+          <ScalarProperty Name="param_id" ColumnName="param_id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="comment" ColumnName="comment" />
+          <ScalarProperty Name="value" ColumnName="value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_psk_stock_items">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_psk_stock_items">
+        <MappingFragment StoreEntitySet="axi_psk_stock_items">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="unit" ColumnName="unit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_psk_stock_logs">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_psk_stock_logs">
+        <MappingFragment StoreEntitySet="axi_psk_stock_logs">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="psk_id" ColumnName="psk_id" />
+          <ScalarProperty Name="stock_id" ColumnName="stock_id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="updated" ColumnName="updated" />
+          <ScalarProperty Name="opening_stock" ColumnName="opening_stock" />
+          <ScalarProperty Name="ho_supply" ColumnName="ho_supply" />
+          <ScalarProperty Name="local_purchase" ColumnName="local_purchase" />
+          <ScalarProperty Name="local_purchase_rate" ColumnName="local_purchase_rate" />
+          <ScalarProperty Name="wastage" ColumnName="wastage" />
+          <ScalarProperty Name="closing_stock" ColumnName="closing_stock" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_psk_user_link">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_psk_user_link">
+        <MappingFragment StoreEntitySet="axi_psk_user_link">
+          <ScalarProperty Name="cafe_id" ColumnName="cafe_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_session">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_session">
+        <MappingFragment StoreEntitySet="axi_session">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+          <ScalarProperty Name="ip" ColumnName="ip" />
+          <ScalarProperty Name="browser" ColumnName="browser" />
+          <ScalarProperty Name="lat" ColumnName="lat" />
+          <ScalarProperty Name="lon" ColumnName="lon" />
+          <ScalarProperty Name="expiry" ColumnName="expiry" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_sync_items">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_sync_items">
+        <MappingFragment StoreEntitySet="axi_sync_items">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="sync_code" ColumnName="sync_code" />
+          <ScalarProperty Name="file" ColumnName="file" />
+          <ScalarProperty Name="created_time" ColumnName="created_time" />
+          <ScalarProperty Name="synched_time" ColumnName="synched_time" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="cafe_id" ColumnName="cafe_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_users">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_users">
+        <MappingFragment StoreEntitySet="axi_users">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="activated" ColumnName="activated" />
+          <ScalarProperty Name="last_login_time" ColumnName="last_login_time" />
+          <ScalarProperty Name="last_login_ip" ColumnName="last_login_ip" />
+          <ScalarProperty Name="last_logout_time" ColumnName="last_logout_time" />
+          <ScalarProperty Name="last_logout_ip" ColumnName="last_logout_ip" />
+          <ScalarProperty Name="failed_attempt" ColumnName="failed_attempt" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="modified" ColumnName="modified" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="axi_validation">
+      <EntityTypeMapping TypeName="BBCloudDBModel.axi_validation">
+        <MappingFragment StoreEntitySet="axi_validation">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="emailCode" ColumnName="emailCode" />
+          <ScalarProperty Name="mobCode" ColumnName="mobCode" />
+          <ScalarProperty Name="emailVerified" ColumnName="emailVerified" />
+          <ScalarProperty Name="mobVerified" ColumnName="mobVerified" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tables">
+      <EntityTypeMapping TypeName="BBCloudDBModel.Table">
+        <MappingFragment StoreEntitySet="Table">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cafe_id" ColumnName="cafe_id" />
+          <ScalarProperty Name="connection_id" ColumnName="connection_id" />
+          <ScalarProperty Name="started" ColumnName="started" />
+          <ScalarProperty Name="closed" ColumnName="closed" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

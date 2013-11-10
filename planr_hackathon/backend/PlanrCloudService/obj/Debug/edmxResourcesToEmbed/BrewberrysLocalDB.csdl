@@ -1,0 +1,650 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BrewberrysLocalDBModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="BrewberrysLocalDBEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="axi_admins" EntityType="BrewberrysLocalDBModel.axi_admins" />
+    <EntitySet Name="axi_blocked_ip" EntityType="BrewberrysLocalDBModel.axi_blocked_ip" />
+    <EntitySet Name="axi_cafe_activations" EntityType="BrewberrysLocalDBModel.axi_cafe_activations" />
+    <EntitySet Name="axi_cafe_details" EntityType="BrewberrysLocalDBModel.axi_cafe_details" />
+    <EntitySet Name="axi_cafe_incharges" EntityType="BrewberrysLocalDBModel.axi_cafe_incharges" />
+    <EntitySet Name="axi_cafe_menu_items" EntityType="BrewberrysLocalDBModel.axi_cafe_menu_items" />
+    <EntitySet Name="axi_cafe_profile" EntityType="BrewberrysLocalDBModel.axi_cafe_profile" />
+    <EntitySet Name="axi_cafes" EntityType="BrewberrysLocalDBModel.axi_cafes" />
+    <EntitySet Name="axi_control_city" EntityType="BrewberrysLocalDBModel.axi_control_city" />
+    <EntitySet Name="axi_control_config" EntityType="BrewberrysLocalDBModel.axi_control_config" />
+    <EntitySet Name="axi_control_country" EntityType="BrewberrysLocalDBModel.axi_control_country" />
+    <EntitySet Name="axi_control_license" EntityType="BrewberrysLocalDBModel.axi_control_license" />
+    <EntitySet Name="axi_control_state" EntityType="BrewberrysLocalDBModel.axi_control_state" />
+    <EntitySet Name="axi_geo_tagging" EntityType="BrewberrysLocalDBModel.axi_geo_tagging" />
+    <EntitySet Name="axi_menu_items" EntityType="BrewberrysLocalDBModel.axi_menu_items" />
+    <EntitySet Name="axi_menu_items_category" EntityType="BrewberrysLocalDBModel.axi_menu_items_category" />
+    <EntitySet Name="axi_menu_items_subcategory" EntityType="BrewberrysLocalDBModel.axi_menu_items_subcategory" />
+    <EntitySet Name="axi_profile_menu_items" EntityType="BrewberrysLocalDBModel.axi_profile_menu_items" />
+    <EntitySet Name="axi_psk_admin" EntityType="BrewberrysLocalDBModel.axi_psk_admin" />
+    <EntitySet Name="axi_psk_manager" EntityType="BrewberrysLocalDBModel.axi_psk_manager" />
+    <EntitySet Name="axi_psk_purchase" EntityType="BrewberrysLocalDBModel.axi_psk_purchase" />
+    <EntitySet Name="axi_psk_purchase_log" EntityType="BrewberrysLocalDBModel.axi_psk_purchase_log" />
+    <EntitySet Name="axi_psk_sales" EntityType="BrewberrysLocalDBModel.axi_psk_sales" />
+    <EntitySet Name="axi_psk_sales_log" EntityType="BrewberrysLocalDBModel.axi_psk_sales_log" />
+    <EntitySet Name="axi_session" EntityType="BrewberrysLocalDBModel.axi_session" />
+    <EntitySet Name="axi_users" EntityType="BrewberrysLocalDBModel.axi_users" />
+    <EntitySet Name="axi_validation" EntityType="BrewberrysLocalDBModel.axi_validation" />
+    <EntitySet Name="sysdiagrams" EntityType="BrewberrysLocalDBModel.sysdiagram" />
+    <AssociationSet Name="fk_axi_cafes" Association="BrewberrysLocalDBModel.fk_axi_cafes">
+      <End Role="axi_cafes" EntitySet="axi_cafes" />
+      <End Role="axi_cafe_activations" EntitySet="axi_cafe_activations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CafeDetails_Cafe" Association="BrewberrysLocalDBModel.FK_CafeDetails_Cafe">
+      <End Role="axi_cafes" EntitySet="axi_cafes" />
+      <End Role="axi_cafe_details" EntitySet="axi_cafe_details" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CafeDetails_City" Association="BrewberrysLocalDBModel.FK_CafeDetails_City">
+      <End Role="axi_control_city" EntitySet="axi_control_city" />
+      <End Role="axi_cafe_details" EntitySet="axi_cafe_details" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CafeDetails_Incharge" Association="BrewberrysLocalDBModel.FK_CafeDetails_Incharge">
+      <End Role="axi_cafe_incharges" EntitySet="axi_cafe_incharges" />
+      <End Role="axi_cafe_details" EntitySet="axi_cafe_details" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CafeDetails_State" Association="BrewberrysLocalDBModel.FK_CafeDetails_State">
+      <End Role="axi_control_state" EntitySet="axi_control_state" />
+      <End Role="axi_cafe_details" EntitySet="axi_cafe_details" />
+    </AssociationSet>
+    <AssociationSet Name="fk_axi_cafe_menu_cafe_id" Association="BrewberrysLocalDBModel.fk_axi_cafe_menu_cafe_id">
+      <End Role="axi_cafes" EntitySet="axi_cafes" />
+      <End Role="axi_cafe_menu_items" EntitySet="axi_cafe_menu_items" />
+    </AssociationSet>
+    <AssociationSet Name="fk_axi_prof_menu_prof" Association="BrewberrysLocalDBModel.fk_axi_prof_menu_prof">
+      <End Role="axi_cafe_profile" EntitySet="axi_cafe_profile" />
+      <End Role="axi_profile_menu_items" EntitySet="axi_profile_menu_items" />
+    </AssociationSet>
+    <AssociationSet Name="fk_axi_psk_cafe_admin" Association="BrewberrysLocalDBModel.fk_axi_psk_cafe_admin">
+      <End Role="axi_cafes" EntitySet="axi_cafes" />
+      <End Role="axi_psk_admin" EntitySet="axi_psk_admin" />
+    </AssociationSet>
+    <AssociationSet Name="fk_axi_psk_cafe_manager" Association="BrewberrysLocalDBModel.fk_axi_psk_cafe_manager">
+      <End Role="axi_cafes" EntitySet="axi_cafes" />
+      <End Role="axi_psk_manager" EntitySet="axi_psk_manager" />
+    </AssociationSet>
+    <AssociationSet Name="fk_state_id" Association="BrewberrysLocalDBModel.fk_state_id">
+      <End Role="axi_control_state" EntitySet="axi_control_state" />
+      <End Role="axi_control_city" EntitySet="axi_control_city" />
+    </AssociationSet>
+    <AssociationSet Name="fk_country_id" Association="BrewberrysLocalDBModel.fk_country_id">
+      <End Role="axi_control_country" EntitySet="axi_control_country" />
+      <End Role="axi_control_state" EntitySet="axi_control_state" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MenuItems_Category" Association="BrewberrysLocalDBModel.FK_MenuItems_Category">
+      <End Role="axi_menu_items_category" EntitySet="axi_menu_items_category" />
+      <End Role="axi_menu_items" EntitySet="axi_menu_items" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MenuItems_Subcategory" Association="BrewberrysLocalDBModel.FK_MenuItems_Subcategory">
+      <End Role="axi_menu_items_subcategory" EntitySet="axi_menu_items_subcategory" />
+      <End Role="axi_menu_items" EntitySet="axi_menu_items" />
+    </AssociationSet>
+    <AssociationSet Name="fk_axi_psk_purchase_log" Association="BrewberrysLocalDBModel.fk_axi_psk_purchase_log">
+      <End Role="axi_psk_purchase" EntitySet="axi_psk_purchase" />
+      <End Role="axi_psk_purchase_log" EntitySet="axi_psk_purchase_log" />
+    </AssociationSet>
+    <AssociationSet Name="fk_axi_psk_sales_log" Association="BrewberrysLocalDBModel.fk_axi_psk_sales_log">
+      <End Role="axi_psk_sales" EntitySet="axi_psk_sales" />
+      <End Role="axi_psk_sales_log" EntitySet="axi_psk_sales_log" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Session_User" Association="BrewberrysLocalDBModel.FK_Session_User">
+      <End Role="axi_users" EntitySet="axi_users" />
+      <End Role="axi_session" EntitySet="axi_session" />
+    </AssociationSet>
+    <AssociationSet Name="axi_psk_zonal" Association="BrewberrysLocalDBModel.axi_psk_zonal">
+      <End Role="axi_cafes" EntitySet="axi_cafes" />
+      <End Role="axi_users" EntitySet="axi_users" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="axi_admins">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="mobile" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="email" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="password" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="type" Nullable="false" />
+    <Property Type="Int32" Name="activated" Nullable="false" />
+    <Property Type="DateTime" Name="last_login_time" Precision="3" />
+    <Property Type="String" Name="last_login_ip" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="last_logout_time" Precision="3" />
+    <Property Type="String" Name="last_logout_ip" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="failed_attempt" Nullable="false" />
+    <Property Type="DateTime" Name="created" Nullable="false" Precision="3" />
+    <Property Type="DateTime" Name="modified" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="axi_blocked_ip">
+    <Key>
+      <PropertyRef Name="ipAddr" />
+    </Key>
+    <Property Type="String" Name="ipAddr" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="attempts" Nullable="false" />
+  </EntityType>
+  <EntityType Name="axi_cafe_activations">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="activation_code" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="cafe_id" Nullable="false" />
+    <Property Type="DateTime" Name="created" Nullable="false" Precision="3" />
+    <Property Type="DateTime" Name="modified" Nullable="false" Precision="3" />
+    <Property Type="DateTime" Name="activated_time" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="status" Nullable="false" />
+    <NavigationProperty Name="axi_cafes" Relationship="BrewberrysLocalDBModel.fk_axi_cafes" FromRole="axi_cafe_activations" ToRole="axi_cafes" />
+  </EntityType>
+  <EntityType Name="axi_cafe_details">
+    <Key>
+      <PropertyRef Name="cafe_id" />
+    </Key>
+    <Property Type="Int32" Name="cafe_id" Nullable="false" />
+    <Property Type="String" Name="name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="type" Nullable="false" />
+    <Property Type="String" Name="address" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="city" />
+    <Property Type="Int32" Name="state" />
+    <Property Type="String" Name="zip_code" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="lat_long" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="incharge_id" />
+    <Property Type="String" Name="phone" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="axi_cafes" Relationship="BrewberrysLocalDBModel.FK_CafeDetails_Cafe" FromRole="axi_cafe_details" ToRole="axi_cafes" />
+    <NavigationProperty Name="axi_control_city" Relationship="BrewberrysLocalDBModel.FK_CafeDetails_City" FromRole="axi_cafe_details" ToRole="axi_control_city" />
+    <NavigationProperty Name="axi_cafe_incharges" Relationship="BrewberrysLocalDBModel.FK_CafeDetails_Incharge" FromRole="axi_cafe_details" ToRole="axi_cafe_incharges" />
+    <NavigationProperty Name="axi_control_state" Relationship="BrewberrysLocalDBModel.FK_CafeDetails_State" FromRole="axi_cafe_details" ToRole="axi_control_state" />
+  </EntityType>
+  <EntityType Name="axi_cafe_incharges">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="mobile" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="email" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="password" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="activated" Nullable="false" />
+    <Property Type="DateTime" Name="last_login_time" Precision="3" />
+    <Property Type="String" Name="last_login_ip" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="last_logout_time" Precision="3" />
+    <Property Type="String" Name="last_logout_ip" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="failed_attempt" Nullable="false" />
+    <Property Type="DateTime" Name="created" Nullable="false" Precision="3" />
+    <Property Type="DateTime" Name="modified" Nullable="false" Precision="3" />
+    <NavigationProperty Name="axi_cafe_details" Relationship="BrewberrysLocalDBModel.FK_CafeDetails_Incharge" FromRole="axi_cafe_incharges" ToRole="axi_cafe_details" />
+  </EntityType>
+  <EntityType Name="axi_cafe_menu_items">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="cafeID" Nullable="false" />
+    <Property Type="String" Name="menuItemCode" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Double" Name="price" Nullable="false" />
+    <NavigationProperty Name="axi_cafes" Relationship="BrewberrysLocalDBModel.fk_axi_cafe_menu_cafe_id" FromRole="axi_cafe_menu_items" ToRole="axi_cafes" />
+  </EntityType>
+  <EntityType Name="axi_cafe_profile">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="created" Nullable="false" Precision="3" />
+    <Property Type="DateTime" Name="modified" Nullable="false" Precision="3" />
+    <NavigationProperty Name="axi_profile_menu_items" Relationship="BrewberrysLocalDBModel.fk_axi_prof_menu_prof" FromRole="axi_cafe_profile" ToRole="axi_profile_menu_items" />
+  </EntityType>
+  <EntityType Name="axi_cafes">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="guid" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="activated" Nullable="false" />
+    <Property Type="DateTime" Name="expiration_date" Nullable="false" Precision="3" />
+    <Property Type="DateTime" Name="last_login_time" Precision="3" />
+    <Property Type="String" Name="last_login_ip" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="license_key" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="axi_cafe_activations" Relationship="BrewberrysLocalDBModel.fk_axi_cafes" FromRole="axi_cafes" ToRole="axi_cafe_activations" />
+    <NavigationProperty Name="axi_cafe_details" Relationship="BrewberrysLocalDBModel.FK_CafeDetails_Cafe" FromRole="axi_cafes" ToRole="axi_cafe_details" />
+    <NavigationProperty Name="axi_cafe_menu_items" Relationship="BrewberrysLocalDBModel.fk_axi_cafe_menu_cafe_id" FromRole="axi_cafes" ToRole="axi_cafe_menu_items" />
+    <NavigationProperty Name="axi_psk_admin" Relationship="BrewberrysLocalDBModel.fk_axi_psk_cafe_admin" FromRole="axi_cafes" ToRole="axi_psk_admin" />
+    <NavigationProperty Name="axi_psk_manager" Relationship="BrewberrysLocalDBModel.fk_axi_psk_cafe_manager" FromRole="axi_cafes" ToRole="axi_psk_manager" />
+    <NavigationProperty Name="axi_users" Relationship="BrewberrysLocalDBModel.axi_psk_zonal" FromRole="axi_cafes" ToRole="axi_users" />
+  </EntityType>
+  <EntityType Name="axi_control_city">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="state_id" Nullable="false" />
+    <Property Type="String" Name="lat" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="lon" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="axi_cafe_details" Relationship="BrewberrysLocalDBModel.FK_CafeDetails_City" FromRole="axi_control_city" ToRole="axi_cafe_details" />
+    <NavigationProperty Name="axi_control_state" Relationship="BrewberrysLocalDBModel.fk_state_id" FromRole="axi_control_city" ToRole="axi_control_state" />
+  </EntityType>
+  <EntityType Name="axi_control_config">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="Int32" Name="default_country" Nullable="false" />
+    <Property Type="String" Name="default_timezone" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="support_email" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="smtp_server" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="smtp_username" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="smtp_password" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="smtp_port" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="axi_control_country">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="axi_control_state" Relationship="BrewberrysLocalDBModel.fk_country_id" FromRole="axi_control_country" ToRole="axi_control_state" />
+  </EntityType>
+  <EntityType Name="axi_control_license">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="total" Nullable="false" />
+    <Property Type="Int32" Name="used" Nullable="false" />
+    <Property Type="DateTime" Name="created" Nullable="false" Precision="3" />
+    <Property Type="DateTime" Name="modified" Nullable="false" Precision="3" />
+    <Property Type="DateTime" Name="last_used_time" Precision="3" />
+  </EntityType>
+  <EntityType Name="axi_control_state">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="country_id" Nullable="false" />
+    <NavigationProperty Name="axi_cafe_details" Relationship="BrewberrysLocalDBModel.FK_CafeDetails_State" FromRole="axi_control_state" ToRole="axi_cafe_details" />
+    <NavigationProperty Name="axi_control_city" Relationship="BrewberrysLocalDBModel.fk_state_id" FromRole="axi_control_state" ToRole="axi_control_city" />
+    <NavigationProperty Name="axi_control_country" Relationship="BrewberrysLocalDBModel.fk_country_id" FromRole="axi_control_state" ToRole="axi_control_country" />
+  </EntityType>
+  <EntityType Name="axi_geo_tagging">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="lat" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="lon" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="axi_menu_items">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="code" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="description" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="category_id" />
+    <Property Type="Int32" Name="subcategory_id" />
+    <Property Type="Double" Name="MRP" Nullable="false" />
+    <Property Type="String" Name="image" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="enabled" Nullable="false" />
+    <NavigationProperty Name="axi_menu_items_category" Relationship="BrewberrysLocalDBModel.FK_MenuItems_Category" FromRole="axi_menu_items" ToRole="axi_menu_items_category" />
+    <NavigationProperty Name="axi_menu_items_subcategory" Relationship="BrewberrysLocalDBModel.FK_MenuItems_Subcategory" FromRole="axi_menu_items" ToRole="axi_menu_items_subcategory" />
+  </EntityType>
+  <EntityType Name="axi_menu_items_category">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="description" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="axi_menu_items" Relationship="BrewberrysLocalDBModel.FK_MenuItems_Category" FromRole="axi_menu_items_category" ToRole="axi_menu_items" />
+  </EntityType>
+  <EntityType Name="axi_menu_items_subcategory">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="description" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="axi_menu_items" Relationship="BrewberrysLocalDBModel.FK_MenuItems_Subcategory" FromRole="axi_menu_items_subcategory" ToRole="axi_menu_items" />
+  </EntityType>
+  <EntityType Name="axi_profile_menu_items">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="Int32" Name="profileID" Nullable="false" />
+    <Property Type="String" Name="menuItemCode" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Double" Name="price" Nullable="false" />
+    <NavigationProperty Name="axi_cafe_profile" Relationship="BrewberrysLocalDBModel.fk_axi_prof_menu_prof" FromRole="axi_profile_menu_items" ToRole="axi_cafe_profile" />
+  </EntityType>
+  <EntityType Name="axi_psk_admin">
+    <Key>
+      <PropertyRef Name="cafe_id" />
+    </Key>
+    <Property Type="Int32" Name="cafe_id" Nullable="false" />
+    <Property Type="String" Name="name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="mob" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="email" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="axi_cafes" Relationship="BrewberrysLocalDBModel.fk_axi_psk_cafe_admin" FromRole="axi_psk_admin" ToRole="axi_cafes" />
+  </EntityType>
+  <EntityType Name="axi_psk_manager">
+    <Key>
+      <PropertyRef Name="cafe_id" />
+    </Key>
+    <Property Type="Int32" Name="cafe_id" Nullable="false" />
+    <Property Type="String" Name="name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="mob" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="email" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="axi_cafes" Relationship="BrewberrysLocalDBModel.fk_axi_psk_cafe_manager" FromRole="axi_psk_manager" ToRole="axi_cafes" />
+  </EntityType>
+  <EntityType Name="axi_psk_purchase">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="description" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="axi_psk_purchase_log" Relationship="BrewberrysLocalDBModel.fk_axi_psk_purchase_log" FromRole="axi_psk_purchase" ToRole="axi_psk_purchase_log" />
+  </EntityType>
+  <EntityType Name="axi_psk_purchase_log">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="cafe_id" Nullable="false" />
+    <Property Type="Int32" Name="param_id" Nullable="false" />
+    <Property Type="DateTime" Name="date" Nullable="false" Precision="3" />
+    <Property Type="String" Name="comment" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Double" Name="value" Nullable="false" />
+    <NavigationProperty Name="axi_psk_purchase" Relationship="BrewberrysLocalDBModel.fk_axi_psk_purchase_log" FromRole="axi_psk_purchase_log" ToRole="axi_psk_purchase" />
+  </EntityType>
+  <EntityType Name="axi_psk_sales">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="description" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="axi_psk_sales_log" Relationship="BrewberrysLocalDBModel.fk_axi_psk_sales_log" FromRole="axi_psk_sales" ToRole="axi_psk_sales_log" />
+  </EntityType>
+  <EntityType Name="axi_psk_sales_log">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="cafe_id" Nullable="false" />
+    <Property Type="Int32" Name="param_id" Nullable="false" />
+    <Property Type="DateTime" Name="date" Nullable="false" Precision="3" />
+    <Property Type="String" Name="comment" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Double" Name="value" Nullable="false" />
+    <NavigationProperty Name="axi_psk_sales" Relationship="BrewberrysLocalDBModel.fk_axi_psk_sales_log" FromRole="axi_psk_sales_log" ToRole="axi_psk_sales" />
+  </EntityType>
+  <EntityType Name="axi_session">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="user_id" Nullable="false" />
+    <Property Type="String" Name="GUID" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ip" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="browser" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Double" Name="lat" Nullable="false" />
+    <Property Type="Double" Name="lon" Nullable="false" />
+    <Property Type="DateTime" Name="expiry" Nullable="false" Precision="3" />
+    <NavigationProperty Name="axi_users" Relationship="BrewberrysLocalDBModel.FK_Session_User" FromRole="axi_session" ToRole="axi_users" />
+  </EntityType>
+  <EntityType Name="axi_users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="mobile" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="email" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="password" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="type" Nullable="false" />
+    <Property Type="Int32" Name="activated" Nullable="false" />
+    <Property Type="DateTime" Name="last_login_time" Precision="3" />
+    <Property Type="String" Name="last_login_ip" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="last_logout_time" Precision="3" />
+    <Property Type="String" Name="last_logout_ip" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="failed_attempt" Nullable="false" />
+    <Property Type="DateTime" Name="created" Nullable="false" Precision="3" />
+    <Property Type="DateTime" Name="modified" Nullable="false" Precision="3" />
+    <NavigationProperty Name="axi_session" Relationship="BrewberrysLocalDBModel.FK_Session_User" FromRole="axi_users" ToRole="axi_session" />
+    <NavigationProperty Name="axi_cafes" Relationship="BrewberrysLocalDBModel.axi_psk_zonal" FromRole="axi_users" ToRole="axi_cafes" />
+  </EntityType>
+  <EntityType Name="axi_validation">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="emailCode" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="mobCode" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="emailVerified" Nullable="false" />
+    <Property Type="Int32" Name="mobVerified" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Type="String" Name="name" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="principal_id" Nullable="false" />
+    <Property Type="Int32" Name="diagram_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="version" />
+    <Property Type="Binary" Name="definition" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="fk_axi_cafes">
+    <End Type="BrewberrysLocalDBModel.axi_cafes" Role="axi_cafes" Multiplicity="1" />
+    <End Type="BrewberrysLocalDBModel.axi_cafe_activations" Role="axi_cafe_activations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_cafes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_cafe_activations">
+        <PropertyRef Name="cafe_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CafeDetails_Cafe">
+    <End Type="BrewberrysLocalDBModel.axi_cafes" Role="axi_cafes" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="BrewberrysLocalDBModel.axi_cafe_details" Role="axi_cafe_details" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="axi_cafes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_cafe_details">
+        <PropertyRef Name="cafe_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CafeDetails_City">
+    <End Type="BrewberrysLocalDBModel.axi_control_city" Role="axi_control_city" Multiplicity="0..1" />
+    <End Type="BrewberrysLocalDBModel.axi_cafe_details" Role="axi_cafe_details" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_control_city">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_cafe_details">
+        <PropertyRef Name="city" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CafeDetails_Incharge">
+    <End Type="BrewberrysLocalDBModel.axi_cafe_incharges" Role="axi_cafe_incharges" Multiplicity="0..1" />
+    <End Type="BrewberrysLocalDBModel.axi_cafe_details" Role="axi_cafe_details" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_cafe_incharges">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_cafe_details">
+        <PropertyRef Name="incharge_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CafeDetails_State">
+    <End Type="BrewberrysLocalDBModel.axi_control_state" Role="axi_control_state" Multiplicity="0..1" />
+    <End Type="BrewberrysLocalDBModel.axi_cafe_details" Role="axi_cafe_details" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_control_state">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_cafe_details">
+        <PropertyRef Name="state" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_axi_cafe_menu_cafe_id">
+    <End Type="BrewberrysLocalDBModel.axi_cafes" Role="axi_cafes" Multiplicity="1" />
+    <End Type="BrewberrysLocalDBModel.axi_cafe_menu_items" Role="axi_cafe_menu_items" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_cafes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_cafe_menu_items">
+        <PropertyRef Name="cafeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_axi_prof_menu_prof">
+    <End Type="BrewberrysLocalDBModel.axi_cafe_profile" Role="axi_cafe_profile" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="BrewberrysLocalDBModel.axi_profile_menu_items" Role="axi_profile_menu_items" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_cafe_profile">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_profile_menu_items">
+        <PropertyRef Name="profileID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_axi_psk_cafe_admin">
+    <End Type="BrewberrysLocalDBModel.axi_cafes" Role="axi_cafes" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="BrewberrysLocalDBModel.axi_psk_admin" Role="axi_psk_admin" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="axi_cafes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_psk_admin">
+        <PropertyRef Name="cafe_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_axi_psk_cafe_manager">
+    <End Type="BrewberrysLocalDBModel.axi_cafes" Role="axi_cafes" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="BrewberrysLocalDBModel.axi_psk_manager" Role="axi_psk_manager" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="axi_cafes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_psk_manager">
+        <PropertyRef Name="cafe_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_state_id">
+    <End Type="BrewberrysLocalDBModel.axi_control_state" Role="axi_control_state" Multiplicity="1" />
+    <End Type="BrewberrysLocalDBModel.axi_control_city" Role="axi_control_city" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_control_state">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_control_city">
+        <PropertyRef Name="state_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_country_id">
+    <End Type="BrewberrysLocalDBModel.axi_control_country" Role="axi_control_country" Multiplicity="1" />
+    <End Type="BrewberrysLocalDBModel.axi_control_state" Role="axi_control_state" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_control_country">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_control_state">
+        <PropertyRef Name="country_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MenuItems_Category">
+    <End Type="BrewberrysLocalDBModel.axi_menu_items_category" Role="axi_menu_items_category" Multiplicity="0..1" />
+    <End Type="BrewberrysLocalDBModel.axi_menu_items" Role="axi_menu_items" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_menu_items_category">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_menu_items">
+        <PropertyRef Name="category_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MenuItems_Subcategory">
+    <End Type="BrewberrysLocalDBModel.axi_menu_items_subcategory" Role="axi_menu_items_subcategory" Multiplicity="0..1" />
+    <End Type="BrewberrysLocalDBModel.axi_menu_items" Role="axi_menu_items" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_menu_items_subcategory">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_menu_items">
+        <PropertyRef Name="subcategory_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_axi_psk_purchase_log">
+    <End Type="BrewberrysLocalDBModel.axi_psk_purchase" Role="axi_psk_purchase" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="BrewberrysLocalDBModel.axi_psk_purchase_log" Role="axi_psk_purchase_log" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_psk_purchase">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_psk_purchase_log">
+        <PropertyRef Name="param_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_axi_psk_sales_log">
+    <End Type="BrewberrysLocalDBModel.axi_psk_sales" Role="axi_psk_sales" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="BrewberrysLocalDBModel.axi_psk_sales_log" Role="axi_psk_sales_log" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_psk_sales">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_psk_sales_log">
+        <PropertyRef Name="param_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Session_User">
+    <End Type="BrewberrysLocalDBModel.axi_users" Role="axi_users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="BrewberrysLocalDBModel.axi_session" Role="axi_session" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="axi_users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="axi_session">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="axi_psk_zonal">
+    <End Type="BrewberrysLocalDBModel.axi_cafes" Role="axi_cafes" Multiplicity="*" />
+    <End Type="BrewberrysLocalDBModel.axi_users" Role="axi_users" Multiplicity="0..1" />
+  </Association>
+</Schema>
